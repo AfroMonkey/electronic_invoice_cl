@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="electronic_invoice_reference_doc_type_39" model="electronic_invoice.reference_doc_type">
+        <field name="code">39</field>
+        <field name="desc">Boleta Electrónica.</field>
+    </record>
+    <record id="electronic_invoice_reference_doc_type_41" model="electronic_invoice.reference_doc_type">
+        <field name="code">41</field>
+        <field name="desc">Boleta Exenta Electrónica.</field>
+    </record>
+    <record id="electronic_invoice_reference_doc_type_56" model="electronic_invoice.reference_doc_type">
+        <field name="code">56</field>
+        <field name="desc">Nota Débito Electrónica.</field>
+    </record>
+    <record id="electronic_invoice_reference_doc_type_61" model="electronic_invoice.reference_doc_type">
+        <field name="code">61</field>
+        <field name="desc">Nota Crédito Electrónica.</field>
+    </record>
+    <record id="electronic_invoice_reference_doc_type_50" model="electronic_invoice.reference_doc_type">
+        <field name="code">50</field>
+        <field name="desc">Guía de Despacho.</field>
+    </record>
+    <record id="electronic_invoice_reference_doc_type_52" model="electronic_invoice.reference_doc_type">
+        <field name="code">52</field>
+        <field name="desc">Guía de Despacho Electrónica.</field>
+    </record>
+    <record id="electronic_invoice_reference_doc_type_801" model="electronic_invoice.reference_doc_type">
+        <field name="code">801</field>
+        <field name="desc">Orden de Compra.</field>
+    </record>
+    <record id="electronic_invoice_reference_doc_type_802" model="electronic_invoice.reference_doc_type">
+        <field name="code">802</field>
+        <field name="desc">Nota de pedido.</field>
+    </record>
+    <record id="electronic_invoice_reference_doc_type_803" model="electronic_invoice.reference_doc_type">
+        <field name="code">803</field>
+        <field name="desc">Contrato.</field>
+    </record>
+    <record id="electronic_invoice_reference_doc_type_804" model="electronic_invoice.reference_doc_type">
+        <field name="code">804</field>
+        <field name="desc">Resolución.</field>
+    </record>
+    <record id="electronic_invoice_reference_doc_type_805" model="electronic_invoice.reference_doc_type">
+        <field name="code">805</field>
+        <field name="desc">Proceso ChileCompra.</field>
+    </record>
+    <record id="electronic_invoice_reference_doc_type_806" model="electronic_invoice.reference_doc_type">
+        <field name="code">806</field>
+        <field name="desc">Ficha ChileCompra.</field>
+    </record>
+    <record id="electronic_invoice_reference_doc_type_807" model="electronic_invoice.reference_doc_type">
+        <field name="code">807</field>
+        <field name="desc">DUS.</field>
+    </record>
+    <record id="electronic_invoice_reference_doc_type_OBS" model="electronic_invoice.reference_doc_type">
+        <field name="code">OBS</field>
+        <field name="desc">Referencia Informativa.</field>
+    </record>
+</odoo>

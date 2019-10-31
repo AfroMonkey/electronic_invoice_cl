@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from datetime import timedelta, datetime
+from unidecode import unidecode  # pip install unidecode
 
 from odoo import api, fields, models, _
 from odoo.exceptions import ValidationError
@@ -9,6 +10,7 @@ from xml_generator import get_xml
 
 
 DATE_FORMAT = '%d-%m-%Y'
+DESPATCH_DOC = 52
 
 
 class AccountInvoice(models.Model):
@@ -40,6 +42,12 @@ class AccountInvoice(models.Model):
     TransCiudadDestino = fields.Char(
         string=_('Ciudad'),
     )
+    TipoDespacho = fields.Many2one(
+        string=_('Despacho'),
+    )
+    TipoTraslado = fields.Many2one(
+        string=_('Traslado'),
+    )
 
     @api.depends('partner_id')
     def _get_bussines_field(self):
@@ -50,7 +58,7 @@ class AccountInvoice(models.Model):
     @api.multi
     def send_xml(self):
         data = {}
-        data['Tipo'] = 'TODO'  # TODO
+        data['Tipo'] = self.journal_id.code[:-1]
         data['Folio'] = self.id
         date_invoice = datetime.strptime(self.date_invoice, '%Y-%m-%d')
         date_invoice = datetime.strftime(date_invoice, DATE_FORMAT)
@@ -59,14 +67,16 @@ class AccountInvoice(models.Model):
         date_due += timedelta(days=self.payment_term_id.line_ids[0].days)
         date_due = datetime.strftime(date_due, DATE_FORMAT)
         data['FechaVencimiento'] = date_due
-        data['TipoDespacho'] = 'TODO'  # TODO
-        data['TipoTraslado'] = 'TODO'  # TODO
+        data['TipoDespacho'] = self.TipoDespacho.code if data['Tipo'] == DESPATCH_DOC else ''  # TODO code?
+        data['TipoTraslado'] = self.TipoTraslado.code if data['Tipo'] == DESPATCH_DOC else ''  # TODO code?
         data['FormaPago'] = 1 if self.payment_term_id.line_ids[0].days == 0 else 2
-        data['GlosaPago'] = 'TODO'  # TODO payment_term_id.line_ids[0].name doesn't exist
+        data['GlosaPago'] = self.payment_term_id.name
         data['Sucursal'] = self.sucursal
         data['Vendedor'] = self.user_id.name
-        data['ReceptorRut'] = 'TODO'  # TODO self.partner_id.company_id.vat[2:] COMPANY?
-        data['ReceptorRazon'] = 'TODO'  # TODO self.partner_id.company_id.name COMPANY?
+        if not self.partner_id or not self.partner_id.vat:
+            raise ValidationError(_('Partner must have VAT.'))
+        data['ReceptorRut'] = self.partner_id.vat[2:]
+        data['ReceptorRazon'] = self.partner_id.name
         data['ReceptorGiro'] = self.bussines_field_id.desc
         data['ReceptorContacto'] = self.partner_id.name
         data['ReceptorDireccion'] = self.partner_id.street
@@ -86,5 +96,7 @@ class AccountInvoice(models.Model):
         data['Iva'] = self.amount_tax
         data['Total'] = self.amount_total
         for key in data:
+            if type(data[key]) == unicode:
+                data[key] = unidecode(data[key])
             data[key] = str(data[key])
         get_xml(data)

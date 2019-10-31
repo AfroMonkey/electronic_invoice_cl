@@ -3,6 +3,6 @@
 from odoo import api, fields, models, _
 
 
-class RespartnerBussinesField(models.Model):
+class ElectronicInvoiceDespatchType(models.Model):
     _inherit = 'basic_code_desc_model'
-    _name = 'res.partner.bussines_field'
+    _name = 'electronic_invoice.despatch_type'

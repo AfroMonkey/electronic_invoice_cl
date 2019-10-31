@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="electronic_invoice_translation_type_1" model="electronic_invoice.translation_type">
+        <field name="code">1</field>
+        <field name="desc">Operación constituye venta.</field>
+    </record>
+    <record id="electronic_invoice_translation_type_2" model="electronic_invoice.translation_type">
+        <field name="code">2</field>
+        <field name="desc">Ventas por efectuar.</field>
+    </record>
+    <record id="electronic_invoice_translation_type_3" model="electronic_invoice.translation_type">
+        <field name="code">3</field>
+        <field name="desc">Consignaciones.</field>
+    </record>
+    <record id="electronic_invoice_translation_type_4" model="electronic_invoice.translation_type">
+        <field name="code">4</field>
+        <field name="desc">Entrega gratuita.</field>
+    </record>
+    <record id="electronic_invoice_translation_type_5" model="electronic_invoice.translation_type">
+        <field name="code">5</field>
+        <field name="desc">Traslados internos.</field>
+    </record>
+    <record id="electronic_invoice_translation_type_6" model="electronic_invoice.translation_type">
+        <field name="code">6</field>
+        <field name="desc">Otros traslados no venta.</field>
+    </record>
+    <record id="electronic_invoice_translation_type_7" model="electronic_invoice.translation_type">
+        <field name="code">7</field>
+        <field name="desc">Guía de devolución.</field>
+    </record>
+    <record id="electronic_invoice_translation_type_8" model="electronic_invoice.translation_type">
+        <field name="code">8</field>
+        <field name="desc">Traslado para exportación. (no venta).</field>
+    </record>
+    <record id="electronic_invoice_translation_type_9" model="electronic_invoice.translation_type">
+        <field name="code">9</field>
+        <field name="desc">Venta para exportación.</field>
+    </record>
+</odoo>

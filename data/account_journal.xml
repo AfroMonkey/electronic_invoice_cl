@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo noupdate="1">
+    <record id="account_journal_33" model="account.journal">
+        <field name="code">33V</field>
+        <field name="name">Factura Electrónica.</field>
+        <field name="type">sale</field>
+    </record>
+    <record id="account_journal_34" model="account.journal">
+        <field name="code">34V</field>
+        <field name="name">Factura No Afecta o Exenta Electrónica.</field>
+        <field name="type">sale</field>
+    </record>
+    <record id="account_journal_39" model="account.journal">
+        <field name="code">39V</field>
+        <field name="name">Boleta Electrónica.</field>
+        <field name="type">sale</field>
+    </record>
+    <record id="account_journal_41" model="account.journal">
+        <field name="code">41V</field>
+        <field name="name">Boleta Exenta Electrónica.</field>
+        <field name="type">sale</field>
+    </record>
+    <record id="account_journal_52" model="account.journal">
+        <field name="code">52V</field>
+        <field name="name">Guía de Despacho Electrónica</field>
+        <field name="type">sale</field>
+    </record>
+    <record id="account_journal_56" model="account.journal">
+        <field name="code">56V</field>
+        <field name="name">Nota de Débito Electrónica.</field>
+        <field name="type">sale</field>
+    </record>
+    <record id="account_journal_61" model="account.journal">
+        <field name="code">61V</field>
+        <field name="name">Nota de Crédito Electrónica.</field>
+        <field name="type">sale</field>
+    </record>
+</odoo>

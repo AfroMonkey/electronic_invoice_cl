@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="electronic_invoice_despatch_type_1" model="electronic_invoice.despatch_type">
+        <field name="code">1</field>
+        <field name="desc">Por cuenta del receptor.</field>
+    </record>
+    <record id="electronic_invoice_despatch_type_2" model="electronic_invoice.despatch_type">
+        <field name="code">2</field>
+        <field name="desc">Por cuenta del emisor a instalaciones del cliente.</field>
+    </record>
+    <record id="electronic_invoice_despatch_type_3" model="electronic_invoice.despatch_type">
+        <field name="code">3</field>
+        <field name="desc">Por cuenta del emisor a otras instalaciones.</field>
+    </record>
+</odoo>
