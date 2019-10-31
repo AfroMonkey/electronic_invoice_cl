@@ -1,0 +1,2699 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo noupdate="1">
+    <record id="bussines_field_11101" model="res.partner.bussines_field">
+        <field name="code">11101</field>
+        <field name="desc">CULTIVO DE TRIGO</field>
+    </record>
+    <record id="bussines_field_11102" model="res.partner.bussines_field">
+        <field name="code">11102</field>
+        <field name="desc">CULTIVO DE MAÍZ</field>
+    </record>
+    <record id="bussines_field_11103" model="res.partner.bussines_field">
+        <field name="code">11103</field>
+        <field name="desc">CULTIVO DE AVENA</field>
+    </record>
+    <record id="bussines_field_11104" model="res.partner.bussines_field">
+        <field name="code">11104</field>
+        <field name="desc">CULTIVO DE CEBADA</field>
+    </record>
+    <record id="bussines_field_11105" model="res.partner.bussines_field">
+        <field name="code">11105</field>
+        <field name="desc">CULTIVO DE OTROS CEREALES (EXCEPTO TRIGO, MAÍZ, AVENA Y CEBADA)</field>
+    </record>
+    <record id="bussines_field_11106" model="res.partner.bussines_field">
+        <field name="code">11106</field>
+        <field name="desc">CULTIVO DE POROTOS</field>
+    </record>
+    <record id="bussines_field_11107" model="res.partner.bussines_field">
+        <field name="code">11107</field>
+        <field name="desc">CULTIVO DE LUPINO</field>
+    </record>
+    <record id="bussines_field_11108" model="res.partner.bussines_field">
+        <field name="code">11108</field>
+        <field name="desc">CULTIVO DE OTRAS LEGUMBRES (EXCEPTO POROTOS Y LUPINO)</field>
+    </record>
+    <record id="bussines_field_11109" model="res.partner.bussines_field">
+        <field name="code">11109</field>
+        <field name="desc">CULTIVO DE SEMILLAS DE RAPS</field>
+    </record>
+    <record id="bussines_field_11110" model="res.partner.bussines_field">
+        <field name="code">11110</field>
+        <field name="desc">CULTIVO DE SEMILLAS DE MARAVILLA (GIRASOL)</field>
+    </record>
+    <record id="bussines_field_11111" model="res.partner.bussines_field">
+        <field name="code">11111</field>
+        <field name="desc">CULTIVO DE SEMILLAS DE CEREALES, LEGUMBRES Y OLEAGINOSAS (EXCEPTO SEMILLAS DE RAPS Y MARAVILLA)</field>
+    </record>
+    <record id="bussines_field_11200" model="res.partner.bussines_field">
+        <field name="code">11200</field>
+        <field name="desc">CULTIVO DE ARROZ</field>
+    </record>
+    <record id="bussines_field_11301" model="res.partner.bussines_field">
+        <field name="code">11301</field>
+        <field name="desc">CULTIVO DE PAPAS</field>
+    </record>
+    <record id="bussines_field_11302" model="res.partner.bussines_field">
+        <field name="code">11302</field>
+        <field name="desc">CULTIVO DE CAMOTES</field>
+    </record>
+    <record id="bussines_field_11303" model="res.partner.bussines_field">
+        <field name="code">11303</field>
+        <field name="desc">CULTIVO DE OTROS TUBÉRCULOS (EXCEPTO PAPAS Y CAMOTES)</field>
+    </record>
+    <record id="bussines_field_11304" model="res.partner.bussines_field">
+        <field name="code">11304</field>
+        <field name="desc">CULTIVO DE REMOLACHA AZUCARERA</field>
+    </record>
+    <record id="bussines_field_11305" model="res.partner.bussines_field">
+        <field name="code">11305</field>
+        <field name="desc">CULTIVO DE SEMILLAS DE HORTALIZAS</field>
+    </record>
+    <record id="bussines_field_11306" model="res.partner.bussines_field">
+        <field name="code">11306</field>
+        <field name="desc">CULTIVO DE HORTALIZAS Y MELONES</field>
+    </record>
+    <record id="bussines_field_11400" model="res.partner.bussines_field">
+        <field name="code">11400</field>
+        <field name="desc">CULTIVO DE CAÑA DE AZÚCAR</field>
+    </record>
+    <record id="bussines_field_11500" model="res.partner.bussines_field">
+        <field name="code">11500</field>
+        <field name="desc">CULTIVO DE TABACO</field>
+    </record>
+    <record id="bussines_field_11600" model="res.partner.bussines_field">
+        <field name="code">11600</field>
+        <field name="desc">CULTIVO DE PLANTAS DE FIBRA</field>
+    </record>
+    <record id="bussines_field_11901" model="res.partner.bussines_field">
+        <field name="code">11901</field>
+        <field name="desc">CULTIVO DE FLORES</field>
+    </record>
+    <record id="bussines_field_11902" model="res.partner.bussines_field">
+        <field name="code">11902</field>
+        <field name="desc">CULTIVOS FORRAJEROS EN PRADERAS MEJORADAS O SEMBRADAS; CULTIVOS SUPLEMENTARIOS FORRAJEROS</field>
+    </record>
+    <record id="bussines_field_11903" model="res.partner.bussines_field">
+        <field name="code">11903</field>
+        <field name="desc">CULTIVOS DE SEMILLAS DE FLORES; CULTIVO DE SEMILLAS DE PLANTAS FORRAJERAS</field>
+    </record>
+    <record id="bussines_field_12111" model="res.partner.bussines_field">
+        <field name="code">12111</field>
+        <field name="desc">CULTIVO DE UVA DESTINADA A LA PRODUCCIÓN DE PISCO Y AGUARDIENTE</field>
+    </record>
+    <record id="bussines_field_12112" model="res.partner.bussines_field">
+        <field name="code">12112</field>
+        <field name="desc">CULTIVO DE UVA DESTINADA A LA PRODUCCIÓN DE VINO</field>
+    </record>
+    <record id="bussines_field_12120" model="res.partner.bussines_field">
+        <field name="code">12120</field>
+        <field name="desc">CULTIVO DE UVA PARA MESA</field>
+    </record>
+    <record id="bussines_field_12200" model="res.partner.bussines_field">
+        <field name="code">12200</field>
+        <field name="desc">CULTIVO DE FRUTAS TROPICALES Y SUBTROPICALES (INCLUYE EL CULTIVO DE PALTAS)</field>
+    </record>
+    <record id="bussines_field_12300" model="res.partner.bussines_field">
+        <field name="code">12300</field>
+        <field name="desc">CULTIVO DE CÍTRICOS</field>
+    </record>
+    <record id="bussines_field_12400" model="res.partner.bussines_field">
+        <field name="code">12400</field>
+        <field name="desc">CULTIVO DE FRUTAS DE PEPITA Y DE HUESO</field>
+    </record>
+    <record id="bussines_field_12501" model="res.partner.bussines_field">
+        <field name="code">12501</field>
+        <field name="desc">CULTIVO DE SEMILLAS DE FRUTAS</field>
+    </record>
+    <record id="bussines_field_12502" model="res.partner.bussines_field">
+        <field name="code">12502</field>
+        <field name="desc">CULTIVO DE OTROS FRUTOS Y NUECES DE ÁRBOLES Y ARBUSTOS</field>
+    </record>
+    <record id="bussines_field_12600" model="res.partner.bussines_field">
+        <field name="code">12600</field>
+        <field name="desc">CULTIVO DE FRUTOS OLEAGINOSOS (INCLUYE EL CULTIVO DE ACEITUNAS)</field>
+    </record>
+    <record id="bussines_field_12700" model="res.partner.bussines_field">
+        <field name="code">12700</field>
+        <field name="desc">CULTIVO DE PLANTAS CON LAS QUE SE PREPARAN BEBIDAS (INCLUYE EL CULTIVO DE CAFÉ, TÉ Y MATE)</field>
+    </record>
+    <record id="bussines_field_12801" model="res.partner.bussines_field">
+        <field name="code">12801</field>
+        <field name="desc">CULTIVO DE ESPECIAS</field>
+    </record>
+    <record id="bussines_field_12802" model="res.partner.bussines_field">
+        <field name="code">12802</field>
+        <field name="desc">CULTIVO DE PLANTAS AROMÁTICAS, MEDICINALES Y FARMACÉUTICAS</field>
+    </record>
+    <record id="bussines_field_12900" model="res.partner.bussines_field">
+        <field name="code">12900</field>
+        <field name="desc">CULTIVO DE OTRAS PLANTAS PERENNES</field>
+    </record>
+    <record id="bussines_field_13000" model="res.partner.bussines_field">
+        <field name="code">13000</field>
+        <field name="desc">CULTIVO DE PLANTAS VIVAS INCLUIDA LA PRODUCCIÓN EN VIVEROS (EXCEPTO VIVEROS FORESTALES)</field>
+    </record>
+    <record id="bussines_field_14101" model="res.partner.bussines_field">
+        <field name="code">14101</field>
+        <field name="desc">CRÍA DE GANADO BOVINO PARA LA PRODUCCIÓN LECHERA</field>
+    </record>
+    <record id="bussines_field_14102" model="res.partner.bussines_field">
+        <field name="code">14102</field>
+        <field name="desc">CRÍA DE GANADO BOVINO PARA LA PRODUCCIÓN DE CARNE O COMO GANADO REPRODUCTOR</field>
+    </record>
+    <record id="bussines_field_14200" model="res.partner.bussines_field">
+        <field name="code">14200</field>
+        <field name="desc">CRÍA DE CABALLOS Y OTROS EQUINOS</field>
+    </record>
+    <record id="bussines_field_14300" model="res.partner.bussines_field">
+        <field name="code">14300</field>
+        <field name="desc">CRÍA DE LLAMAS, ALPACAS, VICUÑAS, GUANACOS Y OTROS CAMÉLIDOS</field>
+    </record>
+    <record id="bussines_field_14410" model="res.partner.bussines_field">
+        <field name="code">14410</field>
+        <field name="desc">CRÍA DE OVEJAS (OVINOS)</field>
+    </record>
+    <record id="bussines_field_14420" model="res.partner.bussines_field">
+        <field name="code">14420</field>
+        <field name="desc">CRÍA DE CABRAS (CAPRINOS)</field>
+    </record>
+    <record id="bussines_field_14500" model="res.partner.bussines_field">
+        <field name="code">14500</field>
+        <field name="desc">CRÍA DE CERDOS</field>
+    </record>
+    <record id="bussines_field_14601" model="res.partner.bussines_field">
+        <field name="code">14601</field>
+        <field name="desc">CRÍA DE AVES DE CORRAL PARA LA PRODUCCIÓN DE CARNE</field>
+    </record>
+    <record id="bussines_field_14602" model="res.partner.bussines_field">
+        <field name="code">14602</field>
+        <field name="desc">CRÍA DE AVES DE CORRAL PARA LA PRODUCCIÓN DE HUEVOS</field>
+    </record>
+    <record id="bussines_field_14901" model="res.partner.bussines_field">
+        <field name="code">14901</field>
+        <field name="desc">APICULTURA</field>
+    </record>
+    <record id="bussines_field_14909" model="res.partner.bussines_field">
+        <field name="code">14909</field>
+        <field name="desc">CRÍA DE OTROS ANIMALES N.C.P.</field>
+    </record>
+    <record id="bussines_field_15000" model="res.partner.bussines_field">
+        <field name="code">15000</field>
+        <field name="desc">CULTIVO DE PRODUCTOS AGRÍCOLAS EN COMBINACIÓN CON LA CRÍA DE ANIMALES (EXPLOTACIÓN MIXTA)</field>
+    </record>
+    <record id="bussines_field_16100" model="res.partner.bussines_field">
+        <field name="code">16100</field>
+        <field name="desc">ACTIVIDADES DE APOYO A LA AGRICULTURA</field>
+    </record>
+    <record id="bussines_field_16200" model="res.partner.bussines_field">
+        <field name="code">16200</field>
+        <field name="desc">ACTIVIDADES DE APOYO A LA GANADERÍA</field>
+    </record>
+    <record id="bussines_field_16300" model="res.partner.bussines_field">
+        <field name="code">16300</field>
+        <field name="desc">ACTIVIDADES POSCOSECHA</field>
+    </record>
+    <record id="bussines_field_16400" model="res.partner.bussines_field">
+        <field name="code">16400</field>
+        <field name="desc">TRATAMIENTO DE SEMILLAS PARA PROPAGACIÓN</field>
+    </record>
+    <record id="bussines_field_17000" model="res.partner.bussines_field">
+        <field name="code">17000</field>
+        <field name="desc">CAZA ORDINARIA Y MEDIANTE TRAMPAS Y ACTIVIDADES DE SERVICIOS CONEXAS</field>
+    </record>
+    <record id="bussines_field_21001" model="res.partner.bussines_field">
+        <field name="code">21001</field>
+        <field name="desc">EXPLOTACIÓN DE VIVEROS FORESTALES</field>
+    </record>
+    <record id="bussines_field_21002" model="res.partner.bussines_field">
+        <field name="code">21002</field>
+        <field name="desc">SILVICULTURA Y OTRAS ACTIVIDADES FORESTALES (EXCEPTO EXPLOTACIÓN DE VIVEROS FORESTALES)</field>
+    </record>
+    <record id="bussines_field_22000" model="res.partner.bussines_field">
+        <field name="code">22000</field>
+        <field name="desc">EXTRACCIÓN DE MADERA</field>
+    </record>
+    <record id="bussines_field_23000" model="res.partner.bussines_field">
+        <field name="code">23000</field>
+        <field name="desc">RECOLECCIÓN DE PRODUCTOS FORESTALES DISTINTOS DE LA MADERA</field>
+    </record>
+    <record id="bussines_field_24001" model="res.partner.bussines_field">
+        <field name="code">24001</field>
+        <field name="desc">SERVICIOS DE FORESTACIÓN A CAMBIO DE UNA RETRIBUCIÓN O POR CONTRATA</field>
+    </record>
+    <record id="bussines_field_24002" model="res.partner.bussines_field">
+        <field name="code">24002</field>
+        <field name="desc">SERVICIOS DE CORTA DE MADERA A CAMBIO DE UNA RETRIBUCIÓN O POR CONTRATA</field>
+    </record>
+    <record id="bussines_field_24003" model="res.partner.bussines_field">
+        <field name="code">24003</field>
+        <field name="desc">SERVICIOS DE EXTINCIÓN Y PREVENCIÓN DE INCENDIOS FORESTALES</field>
+    </record>
+    <record id="bussines_field_24009" model="res.partner.bussines_field">
+        <field name="code">24009</field>
+        <field name="desc">OTROS SERVICIOS DE APOYO A LA SILVICULTURA N.C.P.</field>
+    </record>
+    <record id="bussines_field_31110" model="res.partner.bussines_field">
+        <field name="code">31110</field>
+        <field name="desc">PESCA MARÍTIMA INDUSTRIAL, EXCEPTO DE BARCOS FACTORÍA</field>
+    </record>
+    <record id="bussines_field_31120" model="res.partner.bussines_field">
+        <field name="code">31120</field>
+        <field name="desc">PESCA MARÍTIMA ARTESANAL</field>
+    </record>
+    <record id="bussines_field_31130" model="res.partner.bussines_field">
+        <field name="code">31130</field>
+        <field name="desc">RECOLECCIÓN Y EXTRACCIÓN DE PRODUCTOS MARINOS</field>
+    </record>
+    <record id="bussines_field_31140" model="res.partner.bussines_field">
+        <field name="code">31140</field>
+        <field name="desc">SERVICIOS RELACIONADOS CON LA PESCA MARÍTIMA</field>
+    </record>
+    <record id="bussines_field_31200" model="res.partner.bussines_field">
+        <field name="code">31200</field>
+        <field name="desc">PESCA DE AGUA DULCE</field>
+    </record>
+    <record id="bussines_field_32110" model="res.partner.bussines_field">
+        <field name="code">32110</field>
+        <field name="desc">CULTIVO Y CRIANZA DE PECES MARINOS</field>
+    </record>
+    <record id="bussines_field_32120" model="res.partner.bussines_field">
+        <field name="code">32120</field>
+        <field name="desc">CULTIVO, REPRODUCCIÓN Y MANEJO DE ALGAS MARINAS</field>
+    </record>
+    <record id="bussines_field_32130" model="res.partner.bussines_field">
+        <field name="code">32130</field>
+        <field name="desc">REPRODUCCIÓN Y CRÍA DE MOLUSCOS, CRUSTÁCEOS Y GUSANOS MARINOS</field>
+    </record>
+    <record id="bussines_field_32140" model="res.partner.bussines_field">
+        <field name="code">32140</field>
+        <field name="desc">SERVICIOS RELACIONADOS CON LA ACUICULTURA MARINA</field>
+    </record>
+    <record id="bussines_field_32200" model="res.partner.bussines_field">
+        <field name="code">32200</field>
+        <field name="desc">ACUICULTURA DE AGUA DULCE</field>
+    </record>
+    <record id="bussines_field_40000" model="res.partner.bussines_field">
+        <field name="code">40000</field>
+        <field name="desc">EXTRACCIÓN Y PROCESAMIENTO DE COBRE</field>
+    </record>
+    <record id="bussines_field_51000" model="res.partner.bussines_field">
+        <field name="code">51000</field>
+        <field name="desc">EXTRACCIÓN DE CARBÓN DE PIEDRA</field>
+    </record>
+    <record id="bussines_field_52000" model="res.partner.bussines_field">
+        <field name="code">52000</field>
+        <field name="desc">EXTRACCIÓN DE LIGNITO</field>
+    </record>
+    <record id="bussines_field_61000" model="res.partner.bussines_field">
+        <field name="code">61000</field>
+        <field name="desc">EXTRACCIÓN DE PETRÓLEO CRUDO</field>
+    </record>
+    <record id="bussines_field_62000" model="res.partner.bussines_field">
+        <field name="code">62000</field>
+        <field name="desc">EXTRACCIÓN DE GAS NATURAL</field>
+    </record>
+    <record id="bussines_field_71000" model="res.partner.bussines_field">
+        <field name="code">71000</field>
+        <field name="desc">EXTRACCIÓN DE MINERALES DE HIERRO</field>
+    </record>
+    <record id="bussines_field_72100" model="res.partner.bussines_field">
+        <field name="code">72100</field>
+        <field name="desc">EXTRACCIÓN DE MINERALES DE URANIO Y TORIO</field>
+    </record>
+    <record id="bussines_field_72910" model="res.partner.bussines_field">
+        <field name="code">72910</field>
+        <field name="desc">EXTRACCIÓN DE ORO Y PLATA</field>
+    </record>
+    <record id="bussines_field_72991" model="res.partner.bussines_field">
+        <field name="code">72991</field>
+        <field name="desc">EXTRACCIÓN DE ZINC Y PLOMO</field>
+    </record>
+    <record id="bussines_field_72992" model="res.partner.bussines_field">
+        <field name="code">72992</field>
+        <field name="desc">EXTRACCIÓN DE MANGANESO</field>
+    </record>
+    <record id="bussines_field_72999" model="res.partner.bussines_field">
+        <field name="code">72999</field>
+        <field name="desc">EXTRACCIÓN DE OTROS MINERALES METALÍFEROS NO FERROSOS N.C.P. (EXCEPTO ZINC, PLOMO Y MANGANESO)</field>
+    </record>
+    <record id="bussines_field_81000" model="res.partner.bussines_field">
+        <field name="code">81000</field>
+        <field name="desc">EXTRACCIÓN DE PIEDRA, ARENA Y ARCILLA</field>
+    </record>
+    <record id="bussines_field_89110" model="res.partner.bussines_field">
+        <field name="code">89110</field>
+        <field name="desc">EXTRACCIÓN Y PROCESAMIENTO DE LITIO</field>
+    </record>
+    <record id="bussines_field_89190" model="res.partner.bussines_field">
+        <field name="code">89190</field>
+        <field name="desc">EXTRACCIÓN DE MINERALES PARA LA FABRICACIÓN DE ABONOS Y PRODUCTOS QUÍMICOS N.C.P.</field>
+    </record>
+    <record id="bussines_field_89200" model="res.partner.bussines_field">
+        <field name="code">89200</field>
+        <field name="desc">EXTRACCIÓN DE TURBA</field>
+    </record>
+    <record id="bussines_field_89300" model="res.partner.bussines_field">
+        <field name="code">89300</field>
+        <field name="desc">EXTRACCIÓN DE SAL</field>
+    </record>
+    <record id="bussines_field_89900" model="res.partner.bussines_field">
+        <field name="code">89900</field>
+        <field name="desc">EXPLOTACIÓN DE OTRAS MINAS Y CANTERAS N.C.P.</field>
+    </record>
+    <record id="bussines_field_91001" model="res.partner.bussines_field">
+        <field name="code">91001</field>
+        <field name="desc">ACTIVIDADES DE APOYO PARA LA EXTRACCIÓN DE PETRÓLEO Y GAS NATURAL PRESTADOS POR EMPRESAS</field>
+    </record>
+    <record id="bussines_field_91002" model="res.partner.bussines_field">
+        <field name="code">91002</field>
+        <field name="desc">ACTIVIDADES DE APOYO PARA LA EXTRACCIÓN DE PETRÓLEO Y GAS NATURAL PRESTADOS POR PROFESIONALES</field>
+    </record>
+    <record id="bussines_field_99001" model="res.partner.bussines_field">
+        <field name="code">99001</field>
+        <field name="desc">ACTIVIDADES DE APOYO PARA LA EXPLOTACIÓN DE OTRAS MINAS Y CANTERAS PRESTADOS POR EMPRESAS</field>
+    </record>
+    <record id="bussines_field_99002" model="res.partner.bussines_field">
+        <field name="code">99002</field>
+        <field name="desc">ACTIVIDADES DE APOYO PARA LA EXPLOTACIÓN DE OTRAS MINAS Y CANTERAS PRESTADOS POR PROFESIONALES</field>
+    </record>
+    <record id="bussines_field_101011" model="res.partner.bussines_field">
+        <field name="code">101011</field>
+        <field name="desc">EXPLOTACIÓN DE MATADEROS DE BOVINOS, OVINOS, EQUINOS, CAPRINOS, PORCINOS Y CAMÉLIDOS</field>
+    </record>
+    <record id="bussines_field_101019" model="res.partner.bussines_field">
+        <field name="code">101019</field>
+        <field name="desc">EXPLOTACIÓN DE MATADEROS DE AVES Y DE OTROS TIPOS DE ANIMALES N.C.P.</field>
+    </record>
+    <record id="bussines_field_101020" model="res.partner.bussines_field">
+        <field name="code">101020</field>
+        <field name="desc">ELABORACIÓN Y CONSERVACIÓN DE CARNE Y PRODUCTOS CÁRNICOS</field>
+    </record>
+    <record id="bussines_field_102010" model="res.partner.bussines_field">
+        <field name="code">102010</field>
+        <field name="desc">PRODUCCIÓN DE HARINA DE PESCADO</field>
+    </record>
+    <record id="bussines_field_102020" model="res.partner.bussines_field">
+        <field name="code">102020</field>
+        <field name="desc">ELABORACIÓN Y CONSERVACIÓN DE SALMÓNIDOS</field>
+    </record>
+    <record id="bussines_field_102030" model="res.partner.bussines_field">
+        <field name="code">102030</field>
+        <field name="desc">ELABORACIÓN Y CONSERVACIÓN DE OTROS PESCADOS, EN PLANTAS EN TIERRA (EXCEPTO BARCOS FACTORÍA)</field>
+    </record>
+    <record id="bussines_field_102040" model="res.partner.bussines_field">
+        <field name="code">102040</field>
+        <field name="desc">ELABORACIÓN Y CONSERVACIÓN DE CRUSTÁCEOS, MOLUSCOS Y OTROS PRODUCTOS ACUÁTICOS, EN PLANTAS EN TIERRA</field>
+    </record>
+    <record id="bussines_field_102050" model="res.partner.bussines_field">
+        <field name="code">102050</field>
+        <field name="desc">ACTIVIDADES DE ELABORACIÓN Y CONSERVACIÓN DE PESCADO, REALIZADAS EN BARCOS FACTORÍA</field>
+    </record>
+    <record id="bussines_field_102060" model="res.partner.bussines_field">
+        <field name="code">102060</field>
+        <field name="desc">ELABORACIÓN Y PROCESAMIENTO DE ALGAS</field>
+    </record>
+    <record id="bussines_field_103000" model="res.partner.bussines_field">
+        <field name="code">103000</field>
+        <field name="desc">ELABORACIÓN Y CONSERVACIÓN DE FRUTAS, LEGUMBRES Y HORTALIZAS</field>
+    </record>
+    <record id="bussines_field_104000" model="res.partner.bussines_field">
+        <field name="code">104000</field>
+        <field name="desc">ELABORACIÓN DE ACEITES Y GRASAS DE ORIGEN VEGETAL Y ANIMAL (EXCEPTO ELABORACIÓN DE MANTEQUILLA)</field>
+    </record>
+    <record id="bussines_field_105000" model="res.partner.bussines_field">
+        <field name="code">105000</field>
+        <field name="desc">ELABORACIÓN DE PRODUCTOS LÁCTEOS</field>
+    </record>
+    <record id="bussines_field_106101" model="res.partner.bussines_field">
+        <field name="code">106101</field>
+        <field name="desc">MOLIENDA DE TRIGO: PRODUCCIÓN DE HARINA, SÉMOLA Y GRÁNULOS</field>
+    </record>
+    <record id="bussines_field_106102" model="res.partner.bussines_field">
+        <field name="code">106102</field>
+        <field name="desc">MOLIENDA DE ARROZ; PRODUCCIÓN DE HARINA DE ARROZ</field>
+    </record>
+    <record id="bussines_field_106109" model="res.partner.bussines_field">
+        <field name="code">106109</field>
+        <field name="desc">ELABORACIÓN DE OTROS PRODUCTOS DE MOLINERÍA N.C.P.</field>
+    </record>
+    <record id="bussines_field_106200" model="res.partner.bussines_field">
+        <field name="code">106200</field>
+        <field name="desc">ELABORACIÓN DE ALMIDONES Y PRODUCTOS DERIVADOS DEL ALMIDÓN</field>
+    </record>
+    <record id="bussines_field_107100" model="res.partner.bussines_field">
+        <field name="code">107100</field>
+        <field name="desc">ELABORACIÓN DE PRODUCTOS DE PANADERÍA Y PASTELERÍA</field>
+    </record>
+    <record id="bussines_field_107200" model="res.partner.bussines_field">
+        <field name="code">107200</field>
+        <field name="desc">ELABORACIÓN DE AZÚCAR</field>
+    </record>
+    <record id="bussines_field_107300" model="res.partner.bussines_field">
+        <field name="code">107300</field>
+        <field name="desc">ELABORACIÓN DE CACAO, CHOCOLATE Y DE PRODUCTOS DE CONFITERÍA</field>
+    </record>
+    <record id="bussines_field_107400" model="res.partner.bussines_field">
+        <field name="code">107400</field>
+        <field name="desc">ELABORACIÓN DE MACARRONES, FIDEOS, ALCUZCUZ Y PRODUCTOS FARINÁCEOS SIMILARES</field>
+    </record>
+    <record id="bussines_field_107500" model="res.partner.bussines_field">
+        <field name="code">107500</field>
+        <field name="desc">ELABORACIÓN DE COMIDAS Y PLATOS PREPARADOS ENVASADOS, ROTULADOS Y CON INFORMACIÓN NUTRICIONAL</field>
+    </record>
+    <record id="bussines_field_107901" model="res.partner.bussines_field">
+        <field name="code">107901</field>
+        <field name="desc">ELABORACIÓN DE TÉ, CAFÉ, MATE E INFUSIONES DE HIERBAS</field>
+    </record>
+    <record id="bussines_field_107902" model="res.partner.bussines_field">
+        <field name="code">107902</field>
+        <field name="desc">ELABORACIÓN DE LEVADURAS NATURALES O ARTIFICIALES</field>
+    </record>
+    <record id="bussines_field_107903" model="res.partner.bussines_field">
+        <field name="code">107903</field>
+        <field name="desc">ELABORACIÓN DE VINAGRES, MOSTAZAS, MAYONESAS Y CONDIMENTOS EN GENERAL</field>
+    </record>
+    <record id="bussines_field_107909" model="res.partner.bussines_field">
+        <field name="code">107909</field>
+        <field name="desc">ELABORACIÓN DE OTROS PRODUCTOS ALIMENTICIOS N.C.P.</field>
+    </record>
+    <record id="bussines_field_108000" model="res.partner.bussines_field">
+        <field name="code">108000</field>
+        <field name="desc">ELABORACIÓN DE PIENSOS PREPARADOS PARA ANIMALES</field>
+    </record>
+    <record id="bussines_field_110110" model="res.partner.bussines_field">
+        <field name="code">110110</field>
+        <field name="desc">ELABORACIÓN DE PISCO (INDUSTRIAS PISQUERAS)</field>
+    </record>
+    <record id="bussines_field_110120" model="res.partner.bussines_field">
+        <field name="code">110120</field>
+        <field name="desc">DESTILACIÓN, RECTIFICACIÓN Y MEZCLAS DE BEBIDAS ALCOHÓLICAS; EXCEPTO PISCO</field>
+    </record>
+    <record id="bussines_field_110200" model="res.partner.bussines_field">
+        <field name="code">110200</field>
+        <field name="desc">ELABORACIÓN DE VINOS</field>
+    </record>
+    <record id="bussines_field_110300" model="res.partner.bussines_field">
+        <field name="code">110300</field>
+        <field name="desc">ELABORACIÓN DE BEBIDAS MALTEADAS Y DE MALTA</field>
+    </record>
+    <record id="bussines_field_110401" model="res.partner.bussines_field">
+        <field name="code">110401</field>
+        <field name="desc">ELABORACIÓN DE BEBIDAS NO ALCOHÓLICAS</field>
+    </record>
+    <record id="bussines_field_110402" model="res.partner.bussines_field">
+        <field name="code">110402</field>
+        <field name="desc">PRODUCCIÓN DE AGUAS MINERALES Y OTRAS AGUAS EMBOTELLADAS</field>
+    </record>
+    <record id="bussines_field_120001" model="res.partner.bussines_field">
+        <field name="code">120001</field>
+        <field name="desc">ELABORACIÓN DE CIGARROS Y CIGARRILLOS</field>
+    </record>
+    <record id="bussines_field_120009" model="res.partner.bussines_field">
+        <field name="code">120009</field>
+        <field name="desc">ELABORACIÓN DE OTROS PRODUCTOS DE TABACO N.C.P.</field>
+    </record>
+    <record id="bussines_field_131100" model="res.partner.bussines_field">
+        <field name="code">131100</field>
+        <field name="desc">PREPARACIÓN E HILATURA DE FIBRAS TEXTILES</field>
+    </record>
+    <record id="bussines_field_131200" model="res.partner.bussines_field">
+        <field name="code">131200</field>
+        <field name="desc">TEJEDURA DE PRODUCTOS TEXTILES</field>
+    </record>
+    <record id="bussines_field_131300" model="res.partner.bussines_field">
+        <field name="code">131300</field>
+        <field name="desc">ACABADO DE PRODUCTOS TEXTILES</field>
+    </record>
+    <record id="bussines_field_139100" model="res.partner.bussines_field">
+        <field name="code">139100</field>
+        <field name="desc">FABRICACIÓN DE TEJIDOS DE PUNTO Y GANCHILLO</field>
+    </record>
+    <record id="bussines_field_139200" model="res.partner.bussines_field">
+        <field name="code">139200</field>
+        <field name="desc">FABRICACIÓN DE ARTÍCULOS CONFECCIONADOS DE MATERIALES TEXTILES, EXCEPTO PRENDAS DE VESTIR</field>
+    </record>
+    <record id="bussines_field_139300" model="res.partner.bussines_field">
+        <field name="code">139300</field>
+        <field name="desc">FABRICACIÓN DE TAPICES Y ALFOMBRAS</field>
+    </record>
+    <record id="bussines_field_139400" model="res.partner.bussines_field">
+        <field name="code">139400</field>
+        <field name="desc">FABRICACIÓN DE CUERDAS, CORDELES, BRAMANTES Y REDES</field>
+    </record>
+    <record id="bussines_field_139900" model="res.partner.bussines_field">
+        <field name="code">139900</field>
+        <field name="desc">FABRICACIÓN DE OTROS PRODUCTOS TEXTILES N.C.P.</field>
+    </record>
+    <record id="bussines_field_141001" model="res.partner.bussines_field">
+        <field name="code">141001</field>
+        <field name="desc">FABRICACIÓN DE PRENDAS DE VESTIR DE MATERIALES TEXTILES Y SIMILARES</field>
+    </record>
+    <record id="bussines_field_141002" model="res.partner.bussines_field">
+        <field name="code">141002</field>
+        <field name="desc">FABRICACIÓN DE PRENDAS DE VESTIR DE CUERO NATURAL O ARTIFICIAL</field>
+    </record>
+    <record id="bussines_field_141003" model="res.partner.bussines_field">
+        <field name="code">141003</field>
+        <field name="desc">FABRICACIÓN DE ACCESORIOS DE VESTIR</field>
+    </record>
+    <record id="bussines_field_141004" model="res.partner.bussines_field">
+        <field name="code">141004</field>
+        <field name="desc">FABRICACIÓN DE ROPA DE TRABAJO</field>
+    </record>
+    <record id="bussines_field_142000" model="res.partner.bussines_field">
+        <field name="code">142000</field>
+        <field name="desc">FABRICACIÓN DE ARTÍCULOS DE PIEL</field>
+    </record>
+    <record id="bussines_field_143000" model="res.partner.bussines_field">
+        <field name="code">143000</field>
+        <field name="desc">FABRICACIÓN DE ARTÍCULOS DE PUNTO Y GANCHILLO</field>
+    </record>
+    <record id="bussines_field_151100" model="res.partner.bussines_field">
+        <field name="code">151100</field>
+        <field name="desc">CURTIDO Y ADOBO DE CUEROS; ADOBO Y TEÑIDO DE PIELES</field>
+    </record>
+    <record id="bussines_field_151200" model="res.partner.bussines_field">
+        <field name="code">151200</field>
+        <field name="desc">FABRICACIÓN DE MALETAS, BOLSOS Y ARTÍCULOS SIMILARES, ARTÍCULOS DE TALABARTERÍA Y GUARNICIONERÍA</field>
+    </record>
+    <record id="bussines_field_152000" model="res.partner.bussines_field">
+        <field name="code">152000</field>
+        <field name="desc">FABRICACIÓN DE CALZADO</field>
+    </record>
+    <record id="bussines_field_161000" model="res.partner.bussines_field">
+        <field name="code">161000</field>
+        <field name="desc">ASERRADO Y ACEPILLADURA DE MADERA</field>
+    </record>
+    <record id="bussines_field_162100" model="res.partner.bussines_field">
+        <field name="code">162100</field>
+        <field name="desc">FABRICACIÓN DE HOJAS DE MADERA PARA ENCHAPADO Y TABLEROS A BASE DE MADERA</field>
+    </record>
+    <record id="bussines_field_162200" model="res.partner.bussines_field">
+        <field name="code">162200</field>
+        <field name="desc">FABRICACIÓN DE PARTES Y PIEZAS DE CARPINTERÍA PARA EDIFICIOS Y CONSTRUCCIONES</field>
+    </record>
+    <record id="bussines_field_162300" model="res.partner.bussines_field">
+        <field name="code">162300</field>
+        <field name="desc">FABRICACIÓN DE RECIPIENTES DE MADERA</field>
+    </record>
+    <record id="bussines_field_162900" model="res.partner.bussines_field">
+        <field name="code">162900</field>
+        <field name="desc">FABRICACIÓN DE OTROS PRODUCTOS DE MADERA, DE ARTÍCULOS DE CORCHO, PAJA Y MATERIALES TRENZABLES</field>
+    </record>
+    <record id="bussines_field_170110" model="res.partner.bussines_field">
+        <field name="code">170110</field>
+        <field name="desc">FABRICACIÓN DE CELULOSA Y OTRAS PASTAS DE MADERA</field>
+    </record>
+    <record id="bussines_field_170190" model="res.partner.bussines_field">
+        <field name="code">170190</field>
+        <field name="desc">FABRICACIÓN DE PAPEL Y CARTÓN PARA SU POSTERIOR USO INDUSTRIAL N.C.P.</field>
+    </record>
+    <record id="bussines_field_170200" model="res.partner.bussines_field">
+        <field name="code">170200</field>
+        <field name="desc">FABRICACIÓN DE PAPEL Y CARTÓN ONDULADO Y DE ENVASES DE PAPEL Y CARTÓN</field>
+    </record>
+    <record id="bussines_field_170900" model="res.partner.bussines_field">
+        <field name="code">170900</field>
+        <field name="desc">FABRICACIÓN DE OTROS ARTÍCULOS DE PAPEL Y CARTÓN</field>
+    </record>
+    <record id="bussines_field_181101" model="res.partner.bussines_field">
+        <field name="code">181101</field>
+        <field name="desc">IMPRESIÓN DE LIBROS</field>
+    </record>
+    <record id="bussines_field_181109" model="res.partner.bussines_field">
+        <field name="code">181109</field>
+        <field name="desc">OTRAS ACTIVIDADES DE IMPRESIÓN N.C.P.</field>
+    </record>
+    <record id="bussines_field_181200" model="res.partner.bussines_field">
+        <field name="code">181200</field>
+        <field name="desc">ACTIVIDADES DE SERVICIOS RELACIONADAS CON LA IMPRESIÓN</field>
+    </record>
+    <record id="bussines_field_182000" model="res.partner.bussines_field">
+        <field name="code">182000</field>
+        <field name="desc">REPRODUCCIÓN DE GRABACIONES</field>
+    </record>
+    <record id="bussines_field_191000" model="res.partner.bussines_field">
+        <field name="code">191000</field>
+        <field name="desc">FABRICACIÓN DE PRODUCTOS DE HORNOS DE COQUE</field>
+    </record>
+    <record id="bussines_field_192000" model="res.partner.bussines_field">
+        <field name="code">192000</field>
+        <field name="desc">FABRICACIÓN DE PRODUCTOS DE LA REFINACIÓN DEL PETRÓLEO</field>
+    </record>
+    <record id="bussines_field_201101" model="res.partner.bussines_field">
+        <field name="code">201101</field>
+        <field name="desc">FABRICACIÓN DE CARBÓN VEGETAL (EXCEPTO ACTIVADO); FABRICACIÓN DE BRIQUETAS DE CARBÓN VEGETAL</field>
+    </record>
+    <record id="bussines_field_201109" model="res.partner.bussines_field">
+        <field name="code">201109</field>
+        <field name="desc">FABRICACIÓN DE OTRAS SUSTANCIAS QUÍMICAS BÁSICAS N.C.P.</field>
+    </record>
+    <record id="bussines_field_201200" model="res.partner.bussines_field">
+        <field name="code">201200</field>
+        <field name="desc">FABRICACIÓN DE ABONOS Y COMPUESTOS DE NITRÓGENO</field>
+    </record>
+    <record id="bussines_field_201300" model="res.partner.bussines_field">
+        <field name="code">201300</field>
+        <field name="desc">FABRICACIÓN DE PLÁSTICOS Y CAUCHO SINTÉTICO EN FORMAS PRIMARIAS</field>
+    </record>
+    <record id="bussines_field_202100" model="res.partner.bussines_field">
+        <field name="code">202100</field>
+        <field name="desc">FABRICACIÓN DE PLAGUICIDAS Y OTROS PRODUCTOS QUÍMICOS DE USO AGROPECUARIO</field>
+    </record>
+    <record id="bussines_field_202200" model="res.partner.bussines_field">
+        <field name="code">202200</field>
+        <field name="desc">FABRICACIÓN DE PINTURAS, BARNICES Y PRODUCTOS DE REVESTIMIENTO, TINTAS DE IMPRENTA Y MASILLAS</field>
+    </record>
+    <record id="bussines_field_202300" model="res.partner.bussines_field">
+        <field name="code">202300</field>
+        <field name="desc">FABRICACIÓN DE JABONES Y DETERGENTES, PREPARADOS PARA LIMPIAR, PERFUMES Y PREPARADOS DE TOCADOR</field>
+    </record>
+    <record id="bussines_field_202901" model="res.partner.bussines_field">
+        <field name="code">202901</field>
+        <field name="desc">FABRICACIÓN DE EXPLOSIVOS Y PRODUCTOS PIROTÉCNICOS</field>
+    </record>
+    <record id="bussines_field_202909" model="res.partner.bussines_field">
+        <field name="code">202909</field>
+        <field name="desc">FABRICACIÓN DE OTROS PRODUCTOS QUÍMICOS N.C.P.</field>
+    </record>
+    <record id="bussines_field_203000" model="res.partner.bussines_field">
+        <field name="code">203000</field>
+        <field name="desc">FABRICACIÓN DE FIBRAS ARTIFICIALES</field>
+    </record>
+    <record id="bussines_field_210000" model="res.partner.bussines_field">
+        <field name="code">210000</field>
+        <field name="desc">FABRICACIÓN DE PRODUCTOS FARMACÉUTICOS, SUSTANCIAS QUÍMICAS MEDICINALES Y PRODUCTOS BOTÁNICOS</field>
+    </record>
+    <record id="bussines_field_221100" model="res.partner.bussines_field">
+        <field name="code">221100</field>
+        <field name="desc">FABRICACIÓN DE CUBIERTAS Y CÁMARAS DE CAUCHO; RECAUCHUTADO Y RENOVACIÓN DE CUBIERTAS DE CAUCHO</field>
+    </record>
+    <record id="bussines_field_221900" model="res.partner.bussines_field">
+        <field name="code">221900</field>
+        <field name="desc">FABRICACIÓN DE OTROS PRODUCTOS DE CAUCHO</field>
+    </record>
+    <record id="bussines_field_222000" model="res.partner.bussines_field">
+        <field name="code">222000</field>
+        <field name="desc">FABRICACIÓN DE PRODUCTOS DE PLÁSTICO</field>
+    </record>
+    <record id="bussines_field_231001" model="res.partner.bussines_field">
+        <field name="code">231001</field>
+        <field name="desc">FABRICACIÓN DE VIDRIO PLANO</field>
+    </record>
+    <record id="bussines_field_231002" model="res.partner.bussines_field">
+        <field name="code">231002</field>
+        <field name="desc">FABRICACIÓN DE VIDRIO HUECO</field>
+    </record>
+    <record id="bussines_field_231003" model="res.partner.bussines_field">
+        <field name="code">231003</field>
+        <field name="desc">FABRICACIÓN DE FIBRAS DE VIDRIO</field>
+    </record>
+    <record id="bussines_field_231009" model="res.partner.bussines_field">
+        <field name="code">231009</field>
+        <field name="desc">FABRICACIÓN DE PRODUCTOS DE VIDRIO N.C.P.</field>
+    </record>
+    <record id="bussines_field_239100" model="res.partner.bussines_field">
+        <field name="code">239100</field>
+        <field name="desc">FABRICACIÓN DE PRODUCTOS REFRACTARIOS</field>
+    </record>
+    <record id="bussines_field_239200" model="res.partner.bussines_field">
+        <field name="code">239200</field>
+        <field name="desc">FABRICACIÓN DE MATERIALES DE CONSTRUCCIÓN DE ARCILLA</field>
+    </record>
+    <record id="bussines_field_239300" model="res.partner.bussines_field">
+        <field name="code">239300</field>
+        <field name="desc">FABRICACIÓN DE OTROS PRODUCTOS DE PORCELANA Y DE CERÁMICA</field>
+    </record>
+    <record id="bussines_field_239400" model="res.partner.bussines_field">
+        <field name="code">239400</field>
+        <field name="desc">FABRICACIÓN DE CEMENTO, CAL Y YESO</field>
+    </record>
+    <record id="bussines_field_239500" model="res.partner.bussines_field">
+        <field name="code">239500</field>
+        <field name="desc">FABRICACIÓN DE ARTÍCULOS DE HORMIGÓN, CEMENTO Y YESO</field>
+    </record>
+    <record id="bussines_field_239600" model="res.partner.bussines_field">
+        <field name="code">239600</field>
+        <field name="desc">CORTE, TALLA Y ACABADO DE LA PIEDRA</field>
+    </record>
+    <record id="bussines_field_239900" model="res.partner.bussines_field">
+        <field name="code">239900</field>
+        <field name="desc">FABRICACIÓN DE OTROS PRODUCTOS MINERALES NO METÁLICOS N.C.P.</field>
+    </record>
+    <record id="bussines_field_241000" model="res.partner.bussines_field">
+        <field name="code">241000</field>
+        <field name="desc">INDUSTRIAS BÁSICAS DE HIERRO Y ACERO</field>
+    </record>
+    <record id="bussines_field_242001" model="res.partner.bussines_field">
+        <field name="code">242001</field>
+        <field name="desc">FABRICACIÓN DE PRODUCTOS PRIMARIOS DE COBRE</field>
+    </record>
+    <record id="bussines_field_242002" model="res.partner.bussines_field">
+        <field name="code">242002</field>
+        <field name="desc">FABRICACIÓN DE PRODUCTOS PRIMARIOS DE ALUMINIO</field>
+    </record>
+    <record id="bussines_field_242009" model="res.partner.bussines_field">
+        <field name="code">242009</field>
+        <field name="desc">FABRICACIÓN DE PRODUCTOS PRIMARIOS DE METALES PRECIOSOS Y DE OTROS METALES NO FERROSOS N.C.P.</field>
+    </record>
+    <record id="bussines_field_243100" model="res.partner.bussines_field">
+        <field name="code">243100</field>
+        <field name="desc">FUNDICIÓN DE HIERRO Y ACERO</field>
+    </record>
+    <record id="bussines_field_243200" model="res.partner.bussines_field">
+        <field name="code">243200</field>
+        <field name="desc">FUNDICIÓN DE METALES NO FERROSOS</field>
+    </record>
+    <record id="bussines_field_251100" model="res.partner.bussines_field">
+        <field name="code">251100</field>
+        <field name="desc">FABRICACIÓN DE PRODUCTOS METÁLICOS PARA USO ESTRUCTURAL</field>
+    </record>
+    <record id="bussines_field_251201" model="res.partner.bussines_field">
+        <field name="code">251201</field>
+        <field name="desc">FABRICACIÓN DE RECIPIENTES DE METAL PARA GASES COMPRIMIDOS O LICUADOS</field>
+    </record>
+    <record id="bussines_field_251209" model="res.partner.bussines_field">
+        <field name="code">251209</field>
+        <field name="desc">FABRICACIÓN DE TANQUES, DEPÓSITOS Y RECIPIENTES DE METAL N.C.P.</field>
+    </record>
+    <record id="bussines_field_251300" model="res.partner.bussines_field">
+        <field name="code">251300</field>
+        <field name="desc">FABRICACIÓN DE GENERADORES DE VAPOR, EXCEPTO CALDERAS DE AGUA CALIENTE PARA CALEFACCIÓN CENTRAL</field>
+    </record>
+    <record id="bussines_field_252000" model="res.partner.bussines_field">
+        <field name="code">252000</field>
+        <field name="desc">FABRICACIÓN DE ARMAS Y MUNICIONES</field>
+    </record>
+    <record id="bussines_field_259100" model="res.partner.bussines_field">
+        <field name="code">259100</field>
+        <field name="desc">FORJA, PRENSADO, ESTAMPADO Y LAMINADO DE METALES; PULVIMETALURGIA</field>
+    </record>
+    <record id="bussines_field_259200" model="res.partner.bussines_field">
+        <field name="code">259200</field>
+        <field name="desc">TRATAMIENTO Y REVESTIMIENTO DE METALES; MAQUINADO</field>
+    </record>
+    <record id="bussines_field_259300" model="res.partner.bussines_field">
+        <field name="code">259300</field>
+        <field name="desc">FABRICACIÓN DE ARTÍCULOS DE CUCHILLERÍA, HERRAMIENTAS DE MANO Y ARTÍCULOS DE FERRETERÍA</field>
+    </record>
+    <record id="bussines_field_259900" model="res.partner.bussines_field">
+        <field name="code">259900</field>
+        <field name="desc">FABRICACIÓN DE OTROS PRODUCTOS ELABORADOS DE METAL N.C.P.</field>
+    </record>
+    <record id="bussines_field_261000" model="res.partner.bussines_field">
+        <field name="code">261000</field>
+        <field name="desc">FABRICACIÓN DE COMPONENTES Y TABLEROS ELECTRÓNICOS</field>
+    </record>
+    <record id="bussines_field_262000" model="res.partner.bussines_field">
+        <field name="code">262000</field>
+        <field name="desc">FABRICACIÓN DE COMPUTADORES Y EQUIPO PERIFÉRICO</field>
+    </record>
+    <record id="bussines_field_263000" model="res.partner.bussines_field">
+        <field name="code">263000</field>
+        <field name="desc">FABRICACIÓN DE EQUIPO DE COMUNICACIONES</field>
+    </record>
+    <record id="bussines_field_264000" model="res.partner.bussines_field">
+        <field name="code">264000</field>
+        <field name="desc">FABRICACIÓN DE APARATOS ELECTRÓNICOS DE CONSUMO</field>
+    </record>
+    <record id="bussines_field_265100" model="res.partner.bussines_field">
+        <field name="code">265100</field>
+        <field name="desc">FABRICACIÓN DE EQUIPO DE MEDICIÓN, PRUEBA, NAVEGACIÓN Y CONTROL</field>
+    </record>
+    <record id="bussines_field_265200" model="res.partner.bussines_field">
+        <field name="code">265200</field>
+        <field name="desc">FABRICACIÓN DE RELOJES</field>
+    </record>
+    <record id="bussines_field_266000" model="res.partner.bussines_field">
+        <field name="code">266000</field>
+        <field name="desc">FABRICACIÓN DE EQUIPO DE IRRADIACIÓN Y EQUIPO ELECTRÓNICO DE USO MÉDICO Y TERAPÉUTICO</field>
+    </record>
+    <record id="bussines_field_267000" model="res.partner.bussines_field">
+        <field name="code">267000</field>
+        <field name="desc">FABRICACIÓN DE INSTRUMENTOS ÓPTICOS Y EQUIPO FOTOGRÁFICO</field>
+    </record>
+    <record id="bussines_field_268000" model="res.partner.bussines_field">
+        <field name="code">268000</field>
+        <field name="desc">FABRICACIÓN DE SOPORTES MAGNÉTICOS Y ÓPTICOS</field>
+    </record>
+    <record id="bussines_field_271000" model="res.partner.bussines_field">
+        <field name="code">271000</field>
+        <field name="desc">FABRICACIÓN DE MOTORES, GENERADORES Y TRANSFORMADORES ELÉCTRICOS, APARATOS DE DISTRIBUCIÓN Y CONTROL</field>
+    </record>
+    <record id="bussines_field_272000" model="res.partner.bussines_field">
+        <field name="code">272000</field>
+        <field name="desc">FABRICACIÓN DE PILAS, BATERÍAS Y ACUMULADORES</field>
+    </record>
+    <record id="bussines_field_273100" model="res.partner.bussines_field">
+        <field name="code">273100</field>
+        <field name="desc">FABRICACIÓN DE CABLES DE FIBRA ÓPTICA</field>
+    </record>
+    <record id="bussines_field_273200" model="res.partner.bussines_field">
+        <field name="code">273200</field>
+        <field name="desc">FABRICACIÓN DE OTROS HILOS Y CABLES ELÉCTRICOS</field>
+    </record>
+    <record id="bussines_field_273300" model="res.partner.bussines_field">
+        <field name="code">273300</field>
+        <field name="desc">FABRICACIÓN DE DISPOSITIVOS DE CABLEADO</field>
+    </record>
+    <record id="bussines_field_274000" model="res.partner.bussines_field">
+        <field name="code">274000</field>
+        <field name="desc">FABRICACIÓN DE EQUIPO ELÉCTRICO DE ILUMINACIÓN</field>
+    </record>
+    <record id="bussines_field_275000" model="res.partner.bussines_field">
+        <field name="code">275000</field>
+        <field name="desc">FABRICACIÓN DE APARATOS DE USO DOMÉSTICO</field>
+    </record>
+    <record id="bussines_field_279000" model="res.partner.bussines_field">
+        <field name="code">279000</field>
+        <field name="desc">FABRICACIÓN DE OTROS TIPOS DE EQUIPO ELÉCTRICO</field>
+    </record>
+    <record id="bussines_field_281100" model="res.partner.bussines_field">
+        <field name="code">281100</field>
+        <field name="desc">FABRICACIÓN DE MOTORES Y TURBINAS, EXCEPTO PARA AERONAVES, VEHÍCULOS AUTOMOTORES Y MOTOCICLETAS</field>
+    </record>
+    <record id="bussines_field_281200" model="res.partner.bussines_field">
+        <field name="code">281200</field>
+        <field name="desc">FABRICACIÓN DE EQUIPO DE PROPULSIÓN DE FLUIDOS</field>
+    </record>
+    <record id="bussines_field_281300" model="res.partner.bussines_field">
+        <field name="code">281300</field>
+        <field name="desc">FABRICACIÓN DE OTRAS BOMBAS, COMPRESORES, GRIFOS Y VÁLVULAS</field>
+    </record>
+    <record id="bussines_field_281400" model="res.partner.bussines_field">
+        <field name="code">281400</field>
+        <field name="desc">FABRICACIÓN DE COJINETES, ENGRANAJES, TRENES DE ENGRANAJES Y PIEZAS DE TRANSMISIÓN</field>
+    </record>
+    <record id="bussines_field_281500" model="res.partner.bussines_field">
+        <field name="code">281500</field>
+        <field name="desc">FABRICACIÓN DE HORNOS, CALDERAS Y QUEMADORES</field>
+    </record>
+    <record id="bussines_field_281600" model="res.partner.bussines_field">
+        <field name="code">281600</field>
+        <field name="desc">FABRICACIÓN DE EQUIPO DE ELEVACIÓN Y MANIPULACIÓN</field>
+    </record>
+    <record id="bussines_field_281700" model="res.partner.bussines_field">
+        <field name="code">281700</field>
+        <field name="desc">FABRICACIÓN DE MAQUINARIA Y EQUIPO DE OFICINA (EXCEPTO COMPUTADORES Y EQUIPO PERIFÉRICO)</field>
+    </record>
+    <record id="bussines_field_281800" model="res.partner.bussines_field">
+        <field name="code">281800</field>
+        <field name="desc">FABRICACIÓN DE HERRAMIENTAS DE MANO MOTORIZADAS</field>
+    </record>
+    <record id="bussines_field_281900" model="res.partner.bussines_field">
+        <field name="code">281900</field>
+        <field name="desc">FABRICACIÓN DE OTROS TIPOS DE MAQUINARIA DE USO GENERAL</field>
+    </record>
+    <record id="bussines_field_282100" model="res.partner.bussines_field">
+        <field name="code">282100</field>
+        <field name="desc">FABRICACIÓN DE MAQUINARIA AGROPECUARIA Y FORESTAL</field>
+    </record>
+    <record id="bussines_field_282200" model="res.partner.bussines_field">
+        <field name="code">282200</field>
+        <field name="desc">FABRICACIÓN DE MAQUINARIA PARA LA CONFORMACIÓN DE METALES Y DE MÁQUINAS HERRAMIENTA</field>
+    </record>
+    <record id="bussines_field_282300" model="res.partner.bussines_field">
+        <field name="code">282300</field>
+        <field name="desc">FABRICACIÓN DE MAQUINARIA METALÚRGICA</field>
+    </record>
+    <record id="bussines_field_282400" model="res.partner.bussines_field">
+        <field name="code">282400</field>
+        <field name="desc">FABRICACIÓN DE MAQUINARIA PARA LA EXPLOTACIÓN DE MINAS Y CANTERAS Y PARA OBRAS DE CONSTRUCCIÓN</field>
+    </record>
+    <record id="bussines_field_282500" model="res.partner.bussines_field">
+        <field name="code">282500</field>
+        <field name="desc">FABRICACIÓN DE MAQUINARIA PARA LA ELABORACIÓN DE ALIMENTOS, BEBIDAS Y TABACO</field>
+    </record>
+    <record id="bussines_field_282600" model="res.partner.bussines_field">
+        <field name="code">282600</field>
+        <field name="desc">FABRICACIÓN DE MAQUINARIA PARA LA ELABORACIÓN DE PRODUCTOS TEXTILES, PRENDAS DE VESTIR Y CUEROS</field>
+    </record>
+    <record id="bussines_field_282900" model="res.partner.bussines_field">
+        <field name="code">282900</field>
+        <field name="desc">FABRICACIÓN DE OTROS TIPOS DE MAQUINARIA DE USO ESPECIAL</field>
+    </record>
+    <record id="bussines_field_291000" model="res.partner.bussines_field">
+        <field name="code">291000</field>
+        <field name="desc">FABRICACIÓN DE VEHÍCULOS AUTOMOTORES</field>
+    </record>
+    <record id="bussines_field_292000" model="res.partner.bussines_field">
+        <field name="code">292000</field>
+        <field name="desc">FABRICACIÓN DE CARROCERÍAS PARA VEHÍCULOS AUTOMOTORES; FABRICACIÓN DE REMOLQUES Y SEMIRREMOLQUES</field>
+    </record>
+    <record id="bussines_field_293000" model="res.partner.bussines_field">
+        <field name="code">293000</field>
+        <field name="desc">FABRICACIÓN DE PARTES, PIEZAS Y ACCESORIOS PARA VEHÍCULOS AUTOMOTORES</field>
+    </record>
+    <record id="bussines_field_301100" model="res.partner.bussines_field">
+        <field name="code">301100</field>
+        <field name="desc">CONSTRUCCIÓN DE BUQUES, EMBARCACIONES MENORES Y ESTRUCTURAS FLOTANTES</field>
+    </record>
+    <record id="bussines_field_301200" model="res.partner.bussines_field">
+        <field name="code">301200</field>
+        <field name="desc">CONSTRUCCIÓN DE EMBARCACIONES DE RECREO Y DE DEPORTE</field>
+    </record>
+    <record id="bussines_field_302000" model="res.partner.bussines_field">
+        <field name="code">302000</field>
+        <field name="desc">FABRICACIÓN DE LOCOMOTORAS Y MATERIAL RODANTE</field>
+    </record>
+    <record id="bussines_field_303000" model="res.partner.bussines_field">
+        <field name="code">303000</field>
+        <field name="desc">FABRICACIÓN DE AERONAVES, NAVES ESPACIALES Y MAQUINARIA CONEXA</field>
+    </record>
+    <record id="bussines_field_304000" model="res.partner.bussines_field">
+        <field name="code">304000</field>
+        <field name="desc">FABRICACIÓN DE VEHÍCULOS MILITARES DE COMBATE</field>
+    </record>
+    <record id="bussines_field_309100" model="res.partner.bussines_field">
+        <field name="code">309100</field>
+        <field name="desc">FABRICACIÓN DE MOTOCICLETAS</field>
+    </record>
+    <record id="bussines_field_309200" model="res.partner.bussines_field">
+        <field name="code">309200</field>
+        <field name="desc">FABRICACIÓN DE BICICLETAS Y DE SILLAS DE RUEDAS</field>
+    </record>
+    <record id="bussines_field_309900" model="res.partner.bussines_field">
+        <field name="code">309900</field>
+        <field name="desc">FABRICACIÓN DE OTROS TIPOS DE EQUIPO DE TRANSPORTE N.C.P.</field>
+    </record>
+    <record id="bussines_field_310001" model="res.partner.bussines_field">
+        <field name="code">310001</field>
+        <field name="desc">FABRICACIÓN DE MUEBLES PRINCIPALMENTE DE MADERA</field>
+    </record>
+    <record id="bussines_field_310009" model="res.partner.bussines_field">
+        <field name="code">310009</field>
+        <field name="desc">FABRICACIÓN DE COLCHONES; FABRICACIÓN DE OTROS MUEBLES N.C.P.</field>
+    </record>
+    <record id="bussines_field_321100" model="res.partner.bussines_field">
+        <field name="code">321100</field>
+        <field name="desc">FABRICACIÓN DE JOYAS Y ARTÍCULOS CONEXOS</field>
+    </record>
+    <record id="bussines_field_321200" model="res.partner.bussines_field">
+        <field name="code">321200</field>
+        <field name="desc">FABRICACIÓN DE BISUTERÍA Y ARTÍCULOS CONEXOS</field>
+    </record>
+    <record id="bussines_field_322000" model="res.partner.bussines_field">
+        <field name="code">322000</field>
+        <field name="desc">FABRICACIÓN DE INSTRUMENTOS MUSICALES</field>
+    </record>
+    <record id="bussines_field_323000" model="res.partner.bussines_field">
+        <field name="code">323000</field>
+        <field name="desc">FABRICACIÓN DE ARTÍCULOS DE DEPORTE</field>
+    </record>
+    <record id="bussines_field_324000" model="res.partner.bussines_field">
+        <field name="code">324000</field>
+        <field name="desc">FABRICACIÓN DE JUEGOS Y JUGUETES</field>
+    </record>
+    <record id="bussines_field_325001" model="res.partner.bussines_field">
+        <field name="code">325001</field>
+        <field name="desc">ACTIVIDADES DE LABORATORIOS DENTALES</field>
+    </record>
+    <record id="bussines_field_325009" model="res.partner.bussines_field">
+        <field name="code">325009</field>
+        <field name="desc">FABRICACIÓN DE INSTRUMENTOS Y MATERIALES MÉDICOS, OFTALMOLÓGICOS Y ODONTOLÓGICOS N.C.P.</field>
+    </record>
+    <record id="bussines_field_329000" model="res.partner.bussines_field">
+        <field name="code">329000</field>
+        <field name="desc">OTRAS INDUSTRIAS MANUFACTURERAS N.C.P.</field>
+    </record>
+    <record id="bussines_field_331100" model="res.partner.bussines_field">
+        <field name="code">331100</field>
+        <field name="desc">REPARACIÓN DE PRODUCTOS ELABORADOS DE METAL</field>
+    </record>
+    <record id="bussines_field_331201" model="res.partner.bussines_field">
+        <field name="code">331201</field>
+        <field name="desc">REPARACIÓN DE MAQUINARIA AGROPECUARIA Y FORESTAL</field>
+    </record>
+    <record id="bussines_field_331202" model="res.partner.bussines_field">
+        <field name="code">331202</field>
+        <field name="desc">REPARACIÓN DE MAQUINARIA METALÚRGICA, PARA LA MINERÍA, EXTRACCIÓN DE PETRÓLEO Y PARA LA CONSTRUCCIÓN</field>
+    </record>
+    <record id="bussines_field_331203" model="res.partner.bussines_field">
+        <field name="code">331203</field>
+        <field name="desc">REPARACIÓN DE MAQUINARIA PARA LA ELABORACIÓN DE ALIMENTOS, BEBIDAS Y TABACO</field>
+    </record>
+    <record id="bussines_field_331204" model="res.partner.bussines_field">
+        <field name="code">331204</field>
+        <field name="desc">REPARACIÓN DE MAQUINARIA PARA PRODUCIR TEXTILES, PRENDAS DE VESTIR, ARTÍCULOS DE CUERO Y CALZADO</field>
+    </record>
+    <record id="bussines_field_331209" model="res.partner.bussines_field">
+        <field name="code">331209</field>
+        <field name="desc">REPARACIÓN DE OTRO TIPO DE MAQUINARIA Y EQUIPOS INDUSTRIALES N.C.P.</field>
+    </record>
+    <record id="bussines_field_331301" model="res.partner.bussines_field">
+        <field name="code">331301</field>
+        <field name="desc">REPARACIÓN DE EQUIPO DE MEDICIÓN, PRUEBA, NAVEGACIÓN Y CONTROL</field>
+    </record>
+    <record id="bussines_field_331309" model="res.partner.bussines_field">
+        <field name="code">331309</field>
+        <field name="desc">REPARACIÓN DE OTROS EQUIPOS ELECTRÓNICOS Y ÓPTICOS N.C.P.</field>
+    </record>
+    <record id="bussines_field_331400" model="res.partner.bussines_field">
+        <field name="code">331400</field>
+        <field name="desc">REPARACIÓN DE EQUIPO ELÉCTRICO (EXCEPTO REPARACIÓN DE EQUIPO Y ENSERES DOMÉSTICOS)</field>
+    </record>
+    <record id="bussines_field_331501" model="res.partner.bussines_field">
+        <field name="code">331501</field>
+        <field name="desc">REPARACIÓN DE BUQUES, EMBARCACIONES MENORES Y ESTRUCTURAS FLOTANTES</field>
+    </record>
+    <record id="bussines_field_331502" model="res.partner.bussines_field">
+        <field name="code">331502</field>
+        <field name="desc">REPARACIÓN DE AERONAVES Y NAVES ESPACIALES</field>
+    </record>
+    <record id="bussines_field_331509" model="res.partner.bussines_field">
+        <field name="code">331509</field>
+        <field name="desc">REPARACIÓN DE OTROS EQUIPOS DE TRANSPORTE N.C.P., EXCEPTO VEHÍCULOS AUTOMOTORES</field>
+    </record>
+    <record id="bussines_field_331900" model="res.partner.bussines_field">
+        <field name="code">331900</field>
+        <field name="desc">REPARACIÓN DE OTROS TIPOS DE EQUIPO</field>
+    </record>
+    <record id="bussines_field_332000" model="res.partner.bussines_field">
+        <field name="code">332000</field>
+        <field name="desc">INSTALACIÓN DE MAQUINARIA Y EQUIPOS INDUSTRIALES</field>
+    </record>
+    <record id="bussines_field_351011" model="res.partner.bussines_field">
+        <field name="code">351011</field>
+        <field name="desc">GENERACIÓN DE ENERGÍA ELÉCTRICA EN CENTRALES HIDROELÉCTRICAS</field>
+    </record>
+    <record id="bussines_field_351012" model="res.partner.bussines_field">
+        <field name="code">351012</field>
+        <field name="desc">GENERACIÓN DE ENERGÍA ELÉCTRICA EN CENTRALES TERMOELÉCTRICAS</field>
+    </record>
+    <record id="bussines_field_351019" model="res.partner.bussines_field">
+        <field name="code">351019</field>
+        <field name="desc">GENERACIÓN DE ENERGÍA ELÉCTRICA EN OTRAS CENTRALES N.C.P.</field>
+    </record>
+    <record id="bussines_field_351020" model="res.partner.bussines_field">
+        <field name="code">351020</field>
+        <field name="desc">TRANSMISIÓN DE ENERGÍA ELÉCTRICA</field>
+    </record>
+    <record id="bussines_field_351030" model="res.partner.bussines_field">
+        <field name="code">351030</field>
+        <field name="desc">DISTRIBUCIÓN DE ENERGÍA ELÉCTRICA</field>
+    </record>
+    <record id="bussines_field_352010" model="res.partner.bussines_field">
+        <field name="code">352010</field>
+        <field name="desc">REGASIFICACIÓN DE GAS NATURAL LICUADO (GNL)</field>
+    </record>
+    <record id="bussines_field_352020" model="res.partner.bussines_field">
+        <field name="code">352020</field>
+        <field name="desc">FABRICACIÓN DE GAS; DISTRIBUCIÓN DE COMBUSTIBLES GASEOSOS POR TUBERÍA, EXCEPTO REGASIFICACIÓN DE GNL</field>
+    </record>
+    <record id="bussines_field_353001" model="res.partner.bussines_field">
+        <field name="code">353001</field>
+        <field name="desc">SUMINISTRO DE VAPOR Y DE AIRE ACONDICIONADO</field>
+    </record>
+    <record id="bussines_field_353002" model="res.partner.bussines_field">
+        <field name="code">353002</field>
+        <field name="desc">ELABORACIÓN DE HIELO (EXCEPTO FABRICACIÓN DE HIELO SECO)</field>
+    </record>
+    <record id="bussines_field_360000" model="res.partner.bussines_field">
+        <field name="code">360000</field>
+        <field name="desc">CAPTACIÓN, TRATAMIENTO Y DISTRIBUCIÓN DE AGUA</field>
+    </record>
+    <record id="bussines_field_370000" model="res.partner.bussines_field">
+        <field name="code">370000</field>
+        <field name="desc">EVACUACIÓN Y TRATAMIENTO DE AGUAS SERVIDAS</field>
+    </record>
+    <record id="bussines_field_381100" model="res.partner.bussines_field">
+        <field name="code">381100</field>
+        <field name="desc">RECOGIDA DE DESECHOS NO PELIGROSOS</field>
+    </record>
+    <record id="bussines_field_381200" model="res.partner.bussines_field">
+        <field name="code">381200</field>
+        <field name="desc">RECOGIDA DE DESECHOS PELIGROSOS</field>
+    </record>
+    <record id="bussines_field_382100" model="res.partner.bussines_field">
+        <field name="code">382100</field>
+        <field name="desc">TRATAMIENTO Y ELIMINACIÓN DE DESECHOS NO PELIGROSOS</field>
+    </record>
+    <record id="bussines_field_382200" model="res.partner.bussines_field">
+        <field name="code">382200</field>
+        <field name="desc">TRATAMIENTO Y ELIMINACIÓN DE DESECHOS PELIGROSOS</field>
+    </record>
+    <record id="bussines_field_383001" model="res.partner.bussines_field">
+        <field name="code">383001</field>
+        <field name="desc">RECUPERACIÓN Y RECICLAMIENTO DE DESPERDICIOS Y DESECHOS METÁLICOS</field>
+    </record>
+    <record id="bussines_field_383002" model="res.partner.bussines_field">
+        <field name="code">383002</field>
+        <field name="desc">RECUPERACIÓN Y RECICLAMIENTO DE PAPEL</field>
+    </record>
+    <record id="bussines_field_383003" model="res.partner.bussines_field">
+        <field name="code">383003</field>
+        <field name="desc">RECUPERACIÓN Y RECICLAMIENTO DE VIDRIO</field>
+    </record>
+    <record id="bussines_field_383009" model="res.partner.bussines_field">
+        <field name="code">383009</field>
+        <field name="desc">RECUPERACIÓN Y RECICLAMIENTO DE OTROS DESPERDICIOS Y DESECHOS N.C.P.</field>
+    </record>
+    <record id="bussines_field_390000" model="res.partner.bussines_field">
+        <field name="code">390000</field>
+        <field name="desc">ACTIVIDADES DE DESCONTAMINACIÓN Y OTROS SERVICIOS DE GESTIÓN DE DESECHOS</field>
+    </record>
+    <record id="bussines_field_410010" model="res.partner.bussines_field">
+        <field name="code">410010</field>
+        <field name="desc">CONSTRUCCIÓN DE EDIFICIOS PARA USO RESIDENCIAL</field>
+    </record>
+    <record id="bussines_field_410020" model="res.partner.bussines_field">
+        <field name="code">410020</field>
+        <field name="desc">CONSTRUCCIÓN DE EDIFICIOS PARA USO NO RESIDENCIAL</field>
+    </record>
+    <record id="bussines_field_421000" model="res.partner.bussines_field">
+        <field name="code">421000</field>
+        <field name="desc">CONSTRUCCIÓN DE CARRETERAS Y LÍNEAS DE FERROCARRIL</field>
+    </record>
+    <record id="bussines_field_422000" model="res.partner.bussines_field">
+        <field name="code">422000</field>
+        <field name="desc">CONSTRUCCIÓN DE PROYECTOS DE SERVICIO PÚBLICO</field>
+    </record>
+    <record id="bussines_field_429000" model="res.partner.bussines_field">
+        <field name="code">429000</field>
+        <field name="desc">CONSTRUCCIÓN DE OTRAS OBRAS DE INGENIERÍA CIVIL</field>
+    </record>
+    <record id="bussines_field_431100" model="res.partner.bussines_field">
+        <field name="code">431100</field>
+        <field name="desc">DEMOLICIÓN</field>
+    </record>
+    <record id="bussines_field_431200" model="res.partner.bussines_field">
+        <field name="code">431200</field>
+        <field name="desc">PREPARACIÓN DEL TERRENO</field>
+    </record>
+    <record id="bussines_field_432100" model="res.partner.bussines_field">
+        <field name="code">432100</field>
+        <field name="desc">INSTALACIONES ELÉCTRICAS</field>
+    </record>
+    <record id="bussines_field_432200" model="res.partner.bussines_field">
+        <field name="code">432200</field>
+        <field name="desc">INSTALACIONES DE GASFITERÍA, CALEFACCIÓN Y AIRE ACONDICIONADO</field>
+    </record>
+    <record id="bussines_field_432900" model="res.partner.bussines_field">
+        <field name="code">432900</field>
+        <field name="desc">OTRAS INSTALACIONES PARA OBRAS DE CONSTRUCCIÓN</field>
+    </record>
+    <record id="bussines_field_433000" model="res.partner.bussines_field">
+        <field name="code">433000</field>
+        <field name="desc">TERMINACIÓN Y ACABADO DE EDIFICIOS</field>
+    </record>
+    <record id="bussines_field_439000" model="res.partner.bussines_field">
+        <field name="code">439000</field>
+        <field name="desc">OTRAS ACTIVIDADES ESPECIALIZADAS DE CONSTRUCCIÓN</field>
+    </record>
+    <record id="bussines_field_451001" model="res.partner.bussines_field">
+        <field name="code">451001</field>
+        <field name="desc">VENTA AL POR MAYOR DE VEHÍCULOS AUTOMOTORES</field>
+    </record>
+    <record id="bussines_field_451002" model="res.partner.bussines_field">
+        <field name="code">451002</field>
+        <field name="desc">VENTA AL POR MENOR DE VEHÍCULOS AUTOMOTORES NUEVOS O USADOS (INCLUYE COMPRAVENTA)</field>
+    </record>
+    <record id="bussines_field_452001" model="res.partner.bussines_field">
+        <field name="code">452001</field>
+        <field name="desc">SERVICIO DE LAVADO DE VEHÍCULOS AUTOMOTORES</field>
+    </record>
+    <record id="bussines_field_452002" model="res.partner.bussines_field">
+        <field name="code">452002</field>
+        <field name="desc">MANTENIMIENTO Y REPARACIÓN DE VEHÍCULOS AUTOMOTORES</field>
+    </record>
+    <record id="bussines_field_453000" model="res.partner.bussines_field">
+        <field name="code">453000</field>
+        <field name="desc">VENTA DE PARTES, PIEZAS Y ACCESORIOS PARA VEHÍCULOS AUTOMOTORES</field>
+    </record>
+    <record id="bussines_field_454001" model="res.partner.bussines_field">
+        <field name="code">454001</field>
+        <field name="desc">VENTA DE MOTOCICLETAS</field>
+    </record>
+    <record id="bussines_field_454002" model="res.partner.bussines_field">
+        <field name="code">454002</field>
+        <field name="desc">VENTA DE PARTES, PIEZAS Y ACCESORIOS DE MOTOCICLETAS</field>
+    </record>
+    <record id="bussines_field_454003" model="res.partner.bussines_field">
+        <field name="code">454003</field>
+        <field name="desc">MANTENIMIENTO Y REPARACIÓN DE MOTOCICLETAS</field>
+    </record>
+    <record id="bussines_field_461001" model="res.partner.bussines_field">
+        <field name="code">461001</field>
+        <field name="desc">CORRETAJE AL POR MAYOR DE PRODUCTOS AGRÍCOLAS</field>
+    </record>
+    <record id="bussines_field_461002" model="res.partner.bussines_field">
+        <field name="code">461002</field>
+        <field name="desc">CORRETAJE AL POR MAYOR DE GANADO</field>
+    </record>
+    <record id="bussines_field_461009" model="res.partner.bussines_field">
+        <field name="code">461009</field>
+        <field name="desc">OTROS TIPOS DE CORRETAJES O REMATES AL POR MAYOR N.C.P.</field>
+    </record>
+    <record id="bussines_field_462010" model="res.partner.bussines_field">
+        <field name="code">462010</field>
+        <field name="desc">VENTA AL POR MAYOR DE MATERIAS PRIMAS AGRÍCOLAS</field>
+    </record>
+    <record id="bussines_field_462020" model="res.partner.bussines_field">
+        <field name="code">462020</field>
+        <field name="desc">VENTA AL POR MAYOR DE ANIMALES VIVOS</field>
+    </record>
+    <record id="bussines_field_462090" model="res.partner.bussines_field">
+        <field name="code">462090</field>
+        <field name="desc">VENTA AL POR MAYOR DE OTRAS MATERIAS PRIMAS AGROPECUARIAS N.C.P.</field>
+    </record>
+    <record id="bussines_field_463011" model="res.partner.bussines_field">
+        <field name="code">463011</field>
+        <field name="desc">VENTA AL POR MAYOR DE FRUTAS Y VERDURAS</field>
+    </record>
+    <record id="bussines_field_463012" model="res.partner.bussines_field">
+        <field name="code">463012</field>
+        <field name="desc">VENTA AL POR MAYOR DE CARNE Y PRODUCTOS CÁRNICOS</field>
+    </record>
+    <record id="bussines_field_463013" model="res.partner.bussines_field">
+        <field name="code">463013</field>
+        <field name="desc">VENTA AL POR MAYOR DE PRODUCTOS DEL MAR (PESCADOS, MARISCOS Y ALGAS)</field>
+    </record>
+    <record id="bussines_field_463014" model="res.partner.bussines_field">
+        <field name="code">463014</field>
+        <field name="desc">VENTA AL POR MAYOR DE PRODUCTOS DE CONFITERÍA</field>
+    </record>
+    <record id="bussines_field_463019" model="res.partner.bussines_field">
+        <field name="code">463019</field>
+        <field name="desc">VENTA AL POR MAYOR DE HUEVOS, LÁCTEOS, ABARROTES Y DE OTROS ALIMENTOS N.C.P.</field>
+    </record>
+    <record id="bussines_field_463020" model="res.partner.bussines_field">
+        <field name="code">463020</field>
+        <field name="desc">VENTA AL POR MAYOR DE BEBIDAS ALCOHÓLICAS Y NO ALCOHÓLICAS</field>
+    </record>
+    <record id="bussines_field_463030" model="res.partner.bussines_field">
+        <field name="code">463030</field>
+        <field name="desc">VENTA AL POR MAYOR DE TABACO</field>
+    </record>
+    <record id="bussines_field_464100" model="res.partner.bussines_field">
+        <field name="code">464100</field>
+        <field name="desc">VENTA AL POR MAYOR DE PRODUCTOS TEXTILES, PRENDAS DE VESTIR Y CALZADO</field>
+    </record>
+    <record id="bussines_field_464901" model="res.partner.bussines_field">
+        <field name="code">464901</field>
+        <field name="desc">VENTA AL POR MAYOR DE MUEBLES, EXCEPTO MUEBLES DE OFICINA</field>
+    </record>
+    <record id="bussines_field_464902" model="res.partner.bussines_field">
+        <field name="code">464902</field>
+        <field name="desc">VENTA AL POR MAYOR DE ARTÍCULOS ELÉCTRICOS Y ELECTRÓNICOS PARA EL HOGAR</field>
+    </record>
+    <record id="bussines_field_464903" model="res.partner.bussines_field">
+        <field name="code">464903</field>
+        <field name="desc">VENTA AL POR MAYOR DE ARTÍCULOS DE PERFUMERÍA, DE TOCADOR Y COSMÉTICOS</field>
+    </record>
+    <record id="bussines_field_464904" model="res.partner.bussines_field">
+        <field name="code">464904</field>
+        <field name="desc">VENTA AL POR MAYOR DE ARTÍCULOS DE PAPELERÍA Y ESCRITORIO</field>
+    </record>
+    <record id="bussines_field_464905" model="res.partner.bussines_field">
+        <field name="code">464905</field>
+        <field name="desc">VENTA AL POR MAYOR DE LIBROS</field>
+    </record>
+    <record id="bussines_field_464906" model="res.partner.bussines_field">
+        <field name="code">464906</field>
+        <field name="desc">VENTA AL POR MAYOR DE DIARIOS Y REVISTAS</field>
+    </record>
+    <record id="bussines_field_464907" model="res.partner.bussines_field">
+        <field name="code">464907</field>
+        <field name="desc">VENTA AL POR MAYOR DE PRODUCTOS FARMACÉUTICOS Y MEDICINALES</field>
+    </record>
+    <record id="bussines_field_464908" model="res.partner.bussines_field">
+        <field name="code">464908</field>
+        <field name="desc">VENTA AL POR MAYOR DE INSTRUMENTOS CIENTÍFICOS Y QUIRÚRGICOS</field>
+    </record>
+    <record id="bussines_field_464909" model="res.partner.bussines_field">
+        <field name="code">464909</field>
+        <field name="desc">VENTA AL POR MAYOR DE OTROS ENSERES DOMÉSTICOS N.C.P.</field>
+    </record>
+    <record id="bussines_field_465100" model="res.partner.bussines_field">
+        <field name="code">465100</field>
+        <field name="desc">VENTA AL POR MAYOR DE COMPUTADORES, EQUIPO PERIFÉRICO Y PROGRAMAS INFORMÁTICOS</field>
+    </record>
+    <record id="bussines_field_465200" model="res.partner.bussines_field">
+        <field name="code">465200</field>
+        <field name="desc">VENTA AL POR MAYOR DE EQUIPO, PARTES Y PIEZAS ELECTRÓNICOS Y DE TELECOMUNICACIONES</field>
+    </record>
+    <record id="bussines_field_465300" model="res.partner.bussines_field">
+        <field name="code">465300</field>
+        <field name="desc">VENTA AL POR MAYOR DE MAQUINARIA, EQUIPO Y MATERIALES AGROPECUARIOS</field>
+    </record>
+    <record id="bussines_field_465901" model="res.partner.bussines_field">
+        <field name="code">465901</field>
+        <field name="desc">VENTA AL POR MAYOR DE MAQUINARIA METALÚRGICA, PARA LA MINERÍA, EXTRACCIÓN DE PETRÓLEO Y CONSTRUCCIÓN</field>
+    </record>
+    <record id="bussines_field_465902" model="res.partner.bussines_field">
+        <field name="code">465902</field>
+        <field name="desc">VENTA AL POR MAYOR DE MAQUINARIA PARA LA ELABORACIÓN DE ALIMENTOS, BEBIDAS Y TABACO</field>
+    </record>
+    <record id="bussines_field_465903" model="res.partner.bussines_field">
+        <field name="code">465903</field>
+        <field name="desc">VENTA AL POR MAYOR DE MAQUINARIA PARA LA INDUSTRIA TEXTIL, DEL CUERO Y DEL CALZADO</field>
+    </record>
+    <record id="bussines_field_465904" model="res.partner.bussines_field">
+        <field name="code">465904</field>
+        <field name="desc">VENTA AL POR MAYOR DE MAQUINARIA Y EQUIPO DE OFICINA; VENTA AL POR MAYOR DE MUEBLES DE OFICINA</field>
+    </record>
+    <record id="bussines_field_465905" model="res.partner.bussines_field">
+        <field name="code">465905</field>
+        <field name="desc">VENTA AL POR MAYOR DE EQUIPO DE TRANSPORTE(EXCEPTO VEHÍCULOS AUTOMOTORES, MOTOCICLETAS Y BICICLETAS)</field>
+    </record>
+    <record id="bussines_field_465909" model="res.partner.bussines_field">
+        <field name="code">465909</field>
+        <field name="desc">VENTA AL POR MAYOR DE OTROS TIPOS DE MAQUINARIA Y EQUIPO N.C.P.</field>
+    </record>
+    <record id="bussines_field_466100" model="res.partner.bussines_field">
+        <field name="code">466100</field>
+        <field name="desc">VENTA AL POR MAYOR DE COMBUSTIBLES SÓLIDOS, LÍQUIDOS Y GASEOSOS Y PRODUCTOS CONEXOS</field>
+    </record>
+    <record id="bussines_field_466200" model="res.partner.bussines_field">
+        <field name="code">466200</field>
+        <field name="desc">VENTA AL POR MAYOR DE METALES Y MINERALES METALÍFEROS</field>
+    </record>
+    <record id="bussines_field_466301" model="res.partner.bussines_field">
+        <field name="code">466301</field>
+        <field name="desc">VENTA AL POR MAYOR DE MADERA EN BRUTO Y PRODUCTOS PRIMARIOS DE LA ELABORACIÓN DE MADERA</field>
+    </record>
+    <record id="bussines_field_466302" model="res.partner.bussines_field">
+        <field name="code">466302</field>
+        <field name="desc">VENTA AL POR MAYOR DE MATERIALES DE CONSTRUCCIÓN, ARTÍCULOS DE FERRETERÍA, GASFITERÍA Y CALEFACCIÓN</field>
+    </record>
+    <record id="bussines_field_466901" model="res.partner.bussines_field">
+        <field name="code">466901</field>
+        <field name="desc">VENTA AL POR MAYOR DE PRODUCTOS QUÍMICOS</field>
+    </record>
+    <record id="bussines_field_466902" model="res.partner.bussines_field">
+        <field name="code">466902</field>
+        <field name="desc">VENTA AL POR MAYOR DE DESECHOS METÁLICOS (CHATARRA)</field>
+    </record>
+    <record id="bussines_field_466909" model="res.partner.bussines_field">
+        <field name="code">466909</field>
+        <field name="desc">VENTA AL POR MAYOR DE DESPERDICIOS, DESECHOS Y OTROS PRODUCTOS N.C.P.</field>
+    </record>
+    <record id="bussines_field_469000" model="res.partner.bussines_field">
+        <field name="code">469000</field>
+        <field name="desc">VENTA AL POR MAYOR NO ESPECIALIZADA</field>
+    </record>
+    <record id="bussines_field_471100" model="res.partner.bussines_field">
+        <field name="code">471100</field>
+        <field name="desc">VENTA AL POR MENOR EN COMERCIOS DE ALIMENTOS, BEBIDAS O TABACO (SUPERMERCADOS E HIPERMERCADOS)</field>
+    </record>
+    <record id="bussines_field_471910" model="res.partner.bussines_field">
+        <field name="code">471910</field>
+        <field name="desc">VENTA AL POR MENOR EN COMERCIOS DE VESTUARIO Y PRODUCTOS PARA EL HOGAR (GRANDES TIENDAS)</field>
+    </record>
+    <record id="bussines_field_471990" model="res.partner.bussines_field">
+        <field name="code">471990</field>
+        <field name="desc">OTRAS ACTIVIDADES DE VENTA AL POR MENOR EN COMERCIOS NO ESPECIALIZADOS N.C.P.</field>
+    </record>
+    <record id="bussines_field_472101" model="res.partner.bussines_field">
+        <field name="code">472101</field>
+        <field name="desc">VENTA AL POR MENOR DE ALIMENTOS EN COMERCIOS ESPECIALIZADOS (ALMACENES PEQUEÑOS Y MINIMARKET)</field>
+    </record>
+    <record id="bussines_field_472102" model="res.partner.bussines_field">
+        <field name="code">472102</field>
+        <field name="desc">VENTA AL POR MENOR EN COMERCIOS ESPECIALIZADOS DE CARNE Y PRODUCTOS CÁRNICOS</field>
+    </record>
+    <record id="bussines_field_472103" model="res.partner.bussines_field">
+        <field name="code">472103</field>
+        <field name="desc">VENTA AL POR MENOR EN COMERCIOS ESPECIALIZADOS DE FRUTAS Y VERDURAS (VERDULERÍAS)</field>
+    </record>
+    <record id="bussines_field_472104" model="res.partner.bussines_field">
+        <field name="code">472104</field>
+        <field name="desc">VENTA AL POR MENOR EN COMERCIOS ESPECIALIZADOS DE PESCADO, MARISCOS Y PRODUCTOS CONEXOS</field>
+    </record>
+    <record id="bussines_field_472105" model="res.partner.bussines_field">
+        <field name="code">472105</field>
+        <field name="desc">VENTA AL POR MENOR EN COMERCIOS ESPECIALIZADOS DE PRODUCTOS DE PANADERÍA Y PASTELERÍA</field>
+    </record>
+    <record id="bussines_field_472109" model="res.partner.bussines_field">
+        <field name="code">472109</field>
+        <field name="desc">VENTA AL POR MENOR EN COMERCIOS ESPECIALIZADOS DE HUEVOS, CONFITES Y PRODUCTOS ALIMENTICIOS N.C.P.</field>
+    </record>
+    <record id="bussines_field_472200" model="res.partner.bussines_field">
+        <field name="code">472200</field>
+        <field name="desc">VENTA AL POR MENOR DE BEBIDAS ALCOHÓLICAS Y NO ALCOHÓLICAS EN COMERCIOS ESPECIALIZADOS (BOTILLERÍAS)</field>
+    </record>
+    <record id="bussines_field_472300" model="res.partner.bussines_field">
+        <field name="code">472300</field>
+        <field name="desc">VENTA AL POR MENOR DE TABACO Y PRODUCTOS DE TABACO EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_473000" model="res.partner.bussines_field">
+        <field name="code">473000</field>
+        <field name="desc">VENTA AL POR MENOR DE COMBUSTIBLES PARA VEHÍCULOS AUTOMOTORES EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_474100" model="res.partner.bussines_field">
+        <field name="code">474100</field>
+        <field name="desc">VENTA AL POR MENOR DE COMPUTADORES, EQUIPO PERIFÉRICO, PROGRAMAS INFORMÁTICOS Y EQUIPO DE TELECOM.</field>
+    </record>
+    <record id="bussines_field_474200" model="res.partner.bussines_field">
+        <field name="code">474200</field>
+        <field name="desc">VENTA AL POR MENOR DE EQUIPO DE SONIDO Y DE VIDEO EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_475100" model="res.partner.bussines_field">
+        <field name="code">475100</field>
+        <field name="desc">VENTA AL POR MENOR DE TELAS, LANAS, HILOS Y SIMILARES EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_475201" model="res.partner.bussines_field">
+        <field name="code">475201</field>
+        <field name="desc">VENTA AL POR MENOR DE ARTÍCULOS DE FERRETERÍA Y MATERIALES DE CONSTRUCCIÓN</field>
+    </record>
+    <record id="bussines_field_475202" model="res.partner.bussines_field">
+        <field name="code">475202</field>
+        <field name="desc">VENTA AL POR MENOR DE PINTURAS, BARNICES Y LACAS EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_475203" model="res.partner.bussines_field">
+        <field name="code">475203</field>
+        <field name="desc">VENTA AL POR MENOR DE PRODUCTOS DE VIDRIO EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_475300" model="res.partner.bussines_field">
+        <field name="code">475300</field>
+        <field name="desc">VENTA AL POR MENOR DE TAPICES, ALFOMBRAS Y CUBRIMIENTOS PARA PAREDES Y PISOS</field>
+    </record>
+    <record id="bussines_field_475901" model="res.partner.bussines_field">
+        <field name="code">475901</field>
+        <field name="desc">VENTA AL POR MENOR DE MUEBLES Y COLCHONES EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_475902" model="res.partner.bussines_field">
+        <field name="code">475902</field>
+        <field name="desc">VENTA AL POR MENOR DE INSTRUMENTOS MUSICALES EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_475909" model="res.partner.bussines_field">
+        <field name="code">475909</field>
+        <field name="desc">VENTA AL POR MENOR DE APARATOS ELÉCTRICOS, TEXTILES PARA EL HOGAR Y OTROS ENSERES DOMÉSTICOS N.C.P.</field>
+    </record>
+    <record id="bussines_field_476101" model="res.partner.bussines_field">
+        <field name="code">476101</field>
+        <field name="desc">VENTA AL POR MENOR DE LIBROS EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_476102" model="res.partner.bussines_field">
+        <field name="code">476102</field>
+        <field name="desc">VENTA AL POR MENOR DE DIARIOS Y REVISTAS EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_476103" model="res.partner.bussines_field">
+        <field name="code">476103</field>
+        <field name="desc">VENTA AL POR MENOR DE ARTÍCULOS DE PAPELERÍA Y ESCRITORIO EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_476200" model="res.partner.bussines_field">
+        <field name="code">476200</field>
+        <field name="desc">VENTA AL POR MENOR DE GRABACIONES DE MÚSICA Y DE VIDEO EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_476301" model="res.partner.bussines_field">
+        <field name="code">476301</field>
+        <field name="desc">VENTA AL POR MENOR DE ARTÍCULOS DE CAZA Y PESCA EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_476302" model="res.partner.bussines_field">
+        <field name="code">476302</field>
+        <field name="desc">VENTA AL POR MENOR DE BICICLETAS Y SUS REPUESTOS EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_476309" model="res.partner.bussines_field">
+        <field name="code">476309</field>
+        <field name="desc">VENTA AL POR MENOR DE OTROS ARTÍCULOS Y EQUIPOS DE DEPORTE N.C.P.</field>
+    </record>
+    <record id="bussines_field_476400" model="res.partner.bussines_field">
+        <field name="code">476400</field>
+        <field name="desc">VENTA AL POR MENOR DE JUEGOS Y JUGUETES EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_477101" model="res.partner.bussines_field">
+        <field name="code">477101</field>
+        <field name="desc">VENTA AL POR MENOR DE CALZADO EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_477102" model="res.partner.bussines_field">
+        <field name="code">477102</field>
+        <field name="desc">VENTA AL POR MENOR DE PRENDAS Y ACCESORIOS DE VESTIR EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_477103" model="res.partner.bussines_field">
+        <field name="code">477103</field>
+        <field name="desc">VENTA AL POR MENOR DE CARTERAS, MALETAS Y OTROS ACCESORIOS DE VIAJE EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_477201" model="res.partner.bussines_field">
+        <field name="code">477201</field>
+        <field name="desc">VENTA AL POR MENOR DE PRODUCTOS FARMACÉUTICOS Y MEDICINALES EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_477202" model="res.partner.bussines_field">
+        <field name="code">477202</field>
+        <field name="desc">VENTA AL POR MENOR DE ARTÍCULOS ORTOPÉDICOS EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_477203" model="res.partner.bussines_field">
+        <field name="code">477203</field>
+        <field name="desc">VENTA AL POR MENOR DE ARTÍCULOS DE PERFUMERÍA, DE TOCADOR Y COSMÉTICOS EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_477310" model="res.partner.bussines_field">
+        <field name="code">477310</field>
+        <field name="desc">VENTA AL POR MENOR DE GAS LICUADO EN BOMBONAS (CILINDROS) EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_477391" model="res.partner.bussines_field">
+        <field name="code">477391</field>
+        <field name="desc">VENTA AL POR MENOR DE ALIMENTO Y ACCESORIOS PARA MASCOTAS EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_477392" model="res.partner.bussines_field">
+        <field name="code">477392</field>
+        <field name="desc">VENTA AL POR MENOR DE ARMAS Y MUNICIONES EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_477393" model="res.partner.bussines_field">
+        <field name="code">477393</field>
+        <field name="desc">VENTA AL POR MENOR DE ARTÍCULOS ÓPTICOS EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_477394" model="res.partner.bussines_field">
+        <field name="code">477394</field>
+        <field name="desc">VENTA AL POR MENOR DE ARTÍCULOS DE JOYERÍA, BISUTERÍA Y RELOJERÍA EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_477395" model="res.partner.bussines_field">
+        <field name="code">477395</field>
+        <field name="desc">VENTA AL POR MENOR DE CARBÓN, LEÑA Y OTROS COMBUSTIBLES DE USO DOMÉSTICO EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_477396" model="res.partner.bussines_field">
+        <field name="code">477396</field>
+        <field name="desc">VENTA AL POR MENOR DE RECUERDOS, ARTESANÍAS Y ARTÍCULOS RELIGIOSOS EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_477397" model="res.partner.bussines_field">
+        <field name="code">477397</field>
+        <field name="desc">VENTA AL POR MENOR DE FLORES, PLANTAS, ARBOLES, SEMILLAS Y ABONOS EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_477398" model="res.partner.bussines_field">
+        <field name="code">477398</field>
+        <field name="desc">VENTA AL POR MENOR DE MASCOTAS EN COMERCIOS ESPECIALIZADOS</field>
+    </record>
+    <record id="bussines_field_477399" model="res.partner.bussines_field">
+        <field name="code">477399</field>
+        <field name="desc">VENTA AL POR MENOR DE OTROS PRODUCTOS EN COMERCIOS ESPECIALIZADOS N.C.P.</field>
+    </record>
+    <record id="bussines_field_477401" model="res.partner.bussines_field">
+        <field name="code">477401</field>
+        <field name="desc">VENTA AL POR MENOR DE ANTIGÜEDADES EN COMERCIOS</field>
+    </record>
+    <record id="bussines_field_477402" model="res.partner.bussines_field">
+        <field name="code">477402</field>
+        <field name="desc">VENTA AL POR MENOR DE ROPA USADA EN COMERCIOS</field>
+    </record>
+    <record id="bussines_field_477409" model="res.partner.bussines_field">
+        <field name="code">477409</field>
+        <field name="desc">VENTA AL POR MENOR DE OTROS ARTÍCULOS DE SEGUNDA MANO EN COMERCIOS N.C.P.</field>
+    </record>
+    <record id="bussines_field_478100" model="res.partner.bussines_field">
+        <field name="code">478100</field>
+        <field name="desc">VENTA AL POR MENOR DE ALIMENTOS, BEBIDAS Y TABACO EN PUESTOS DE VENTA Y MERCADOS (INCLUYE FERIAS)</field>
+    </record>
+    <record id="bussines_field_478200" model="res.partner.bussines_field">
+        <field name="code">478200</field>
+        <field name="desc">VENTA AL POR MENOR DE PRODUCTOS TEXTILES, PRENDAS DE VESTIR Y CALZADO EN PUESTOS DE VENTA Y MERCADOS</field>
+    </record>
+    <record id="bussines_field_478900" model="res.partner.bussines_field">
+        <field name="code">478900</field>
+        <field name="desc">VENTA AL POR MENOR DE OTROS PRODUCTOS EN PUESTOS DE VENTA Y MERCADOS (INCLUYE FERIAS)</field>
+    </record>
+    <record id="bussines_field_479100" model="res.partner.bussines_field">
+        <field name="code">479100</field>
+        <field name="desc">VENTA AL POR MENOR POR CORREO, POR INTERNET Y VÍA TELEFÓNICA</field>
+    </record>
+    <record id="bussines_field_479901" model="res.partner.bussines_field">
+        <field name="code">479901</field>
+        <field name="desc">VENTA AL POR MENOR REALIZADA POR INDEPENDIENTES EN LA LOCOMOCIÓN COLECTIVA (LEY 20.388)</field>
+    </record>
+    <record id="bussines_field_479902" model="res.partner.bussines_field">
+        <field name="code">479902</field>
+        <field name="desc">VENTA AL POR MENOR MEDIANTE MAQUINAS EXPENDEDORAS</field>
+    </record>
+    <record id="bussines_field_479903" model="res.partner.bussines_field">
+        <field name="code">479903</field>
+        <field name="desc">VENTA AL POR MENOR POR COMISIONISTAS (NO DEPENDIENTES DE COMERCIOS)</field>
+    </record>
+    <record id="bussines_field_479909" model="res.partner.bussines_field">
+        <field name="code">479909</field>
+        <field name="desc">OTRAS ACTIVIDADES DE VENTA POR MENOR NO REALIZADAS EN COMERCIOS, PUESTOS DE VENTA O MERCADOS N.C.P.</field>
+    </record>
+    <record id="bussines_field_491100" model="res.partner.bussines_field">
+        <field name="code">491100</field>
+        <field name="desc">TRANSPORTE INTERURBANO DE PASAJEROS POR FERROCARRIL</field>
+    </record>
+    <record id="bussines_field_491200" model="res.partner.bussines_field">
+        <field name="code">491200</field>
+        <field name="desc">TRANSPORTE DE CARGA POR FERROCARRIL</field>
+    </record>
+    <record id="bussines_field_492110" model="res.partner.bussines_field">
+        <field name="code">492110</field>
+        <field name="desc">TRANSPORTE URBANO Y SUBURBANO DE PASAJEROS VÍA METRO Y METROTREN</field>
+    </record>
+    <record id="bussines_field_492120" model="res.partner.bussines_field">
+        <field name="code">492120</field>
+        <field name="desc">TRANSPORTE URBANO Y SUBURBANO DE PASAJEROS VÍA LOCOMOCIÓN COLECTIVA</field>
+    </record>
+    <record id="bussines_field_492130" model="res.partner.bussines_field">
+        <field name="code">492130</field>
+        <field name="desc">TRANSPORTE DE PASAJEROS VÍA TAXI COLECTIVO</field>
+    </record>
+    <record id="bussines_field_492190" model="res.partner.bussines_field">
+        <field name="code">492190</field>
+        <field name="desc">OTRAS ACTIVIDADES DE TRANSPORTE URBANO Y SUBURBANO DE PASAJEROS POR VÍA TERRESTRE N.C.P.</field>
+    </record>
+    <record id="bussines_field_492210" model="res.partner.bussines_field">
+        <field name="code">492210</field>
+        <field name="desc">SERVICIOS DE TRANSPORTE DE ESCOLARES</field>
+    </record>
+    <record id="bussines_field_492220" model="res.partner.bussines_field">
+        <field name="code">492220</field>
+        <field name="desc">SERVICIOS DE TRANSPORTE DE TRABAJADORES</field>
+    </record>
+    <record id="bussines_field_492230" model="res.partner.bussines_field">
+        <field name="code">492230</field>
+        <field name="desc">SERVICIOS DE TRANSPORTE DE PASAJEROS EN TAXIS LIBRES Y RADIOTAXIS</field>
+    </record>
+    <record id="bussines_field_492240" model="res.partner.bussines_field">
+        <field name="code">492240</field>
+        <field name="desc">SERVICIOS DE TRANSPORTE A TURISTAS</field>
+    </record>
+    <record id="bussines_field_492250" model="res.partner.bussines_field">
+        <field name="code">492250</field>
+        <field name="desc">TRANSPORTE DE PASAJEROS EN BUSES INTERURBANOS</field>
+    </record>
+    <record id="bussines_field_492290" model="res.partner.bussines_field">
+        <field name="code">492290</field>
+        <field name="desc">OTRAS ACTIVIDADES DE TRANSPORTE DE PASAJEROS POR VÍA TERRESTRE N.C.P.</field>
+    </record>
+    <record id="bussines_field_492300" model="res.partner.bussines_field">
+        <field name="code">492300</field>
+        <field name="desc">TRANSPORTE DE CARGA POR CARRETERA</field>
+    </record>
+    <record id="bussines_field_493010" model="res.partner.bussines_field">
+        <field name="code">493010</field>
+        <field name="desc">TRANSPORTE POR OLEODUCTOS</field>
+    </record>
+    <record id="bussines_field_493020" model="res.partner.bussines_field">
+        <field name="code">493020</field>
+        <field name="desc">TRANSPORTE POR GASODUCTOS</field>
+    </record>
+    <record id="bussines_field_493090" model="res.partner.bussines_field">
+        <field name="code">493090</field>
+        <field name="desc">OTRAS ACTIVIDADES DE TRANSPORTE POR TUBERÍAS N.C.P.</field>
+    </record>
+    <record id="bussines_field_501100" model="res.partner.bussines_field">
+        <field name="code">501100</field>
+        <field name="desc">TRANSPORTE DE PASAJEROS MARÍTIMO Y DE CABOTAJE</field>
+    </record>
+    <record id="bussines_field_501200" model="res.partner.bussines_field">
+        <field name="code">501200</field>
+        <field name="desc">TRANSPORTE DE CARGA MARÍTIMO Y DE CABOTAJE</field>
+    </record>
+    <record id="bussines_field_502100" model="res.partner.bussines_field">
+        <field name="code">502100</field>
+        <field name="desc">TRANSPORTE DE PASAJEROS POR VÍAS DE NAVEGACIÓN INTERIORES</field>
+    </record>
+    <record id="bussines_field_502200" model="res.partner.bussines_field">
+        <field name="code">502200</field>
+        <field name="desc">TRANSPORTE DE CARGA POR VÍAS DE NAVEGACIÓN INTERIORES</field>
+    </record>
+    <record id="bussines_field_511000" model="res.partner.bussines_field">
+        <field name="code">511000</field>
+        <field name="desc">TRANSPORTE DE PASAJEROS POR VÍA AÉREA</field>
+    </record>
+    <record id="bussines_field_512000" model="res.partner.bussines_field">
+        <field name="code">512000</field>
+        <field name="desc">TRANSPORTE DE CARGA POR VÍA AÉREA</field>
+    </record>
+    <record id="bussines_field_521001" model="res.partner.bussines_field">
+        <field name="code">521001</field>
+        <field name="desc">EXPLOTACIÓN DE FRIGORÍFICOS PARA ALMACENAMIENTO Y DEPÓSITO</field>
+    </record>
+    <record id="bussines_field_521009" model="res.partner.bussines_field">
+        <field name="code">521009</field>
+        <field name="desc">OTROS SERVICIOS DE ALMACENAMIENTO Y DEPÓSITO N.C.P.</field>
+    </record>
+    <record id="bussines_field_522110" model="res.partner.bussines_field">
+        <field name="code">522110</field>
+        <field name="desc">EXPLOTACIÓN DE TERMINALES TERRESTRES DE PASAJEROS</field>
+    </record>
+    <record id="bussines_field_522120" model="res.partner.bussines_field">
+        <field name="code">522120</field>
+        <field name="desc">EXPLOTACIÓN DE ESTACIONAMIENTOS DE VEHÍCULOS AUTOMOTORES Y PARQUÍMETROS</field>
+    </record>
+    <record id="bussines_field_522130" model="res.partner.bussines_field">
+        <field name="code">522130</field>
+        <field name="desc">SERVICIOS PRESTADOS POR CONCESIONARIOS DE CARRETERAS</field>
+    </record>
+    <record id="bussines_field_522190" model="res.partner.bussines_field">
+        <field name="code">522190</field>
+        <field name="desc">ACTIVIDADES DE SERVICIOS VINCULADAS AL TRANSPORTE TERRESTRE N.C.P.</field>
+    </record>
+    <record id="bussines_field_522200" model="res.partner.bussines_field">
+        <field name="code">522200</field>
+        <field name="desc">ACTIVIDADES DE SERVICIOS VINCULADAS AL TRANSPORTE ACUÁTICO</field>
+    </record>
+    <record id="bussines_field_522300" model="res.partner.bussines_field">
+        <field name="code">522300</field>
+        <field name="desc">ACTIVIDADES DE SERVICIOS VINCULADAS AL TRANSPORTE AÉREO</field>
+    </record>
+    <record id="bussines_field_522400" model="res.partner.bussines_field">
+        <field name="code">522400</field>
+        <field name="desc">MANIPULACIÓN DE LA CARGA</field>
+    </record>
+    <record id="bussines_field_522910" model="res.partner.bussines_field">
+        <field name="code">522910</field>
+        <field name="desc">AGENCIAS DE ADUANAS</field>
+    </record>
+    <record id="bussines_field_522920" model="res.partner.bussines_field">
+        <field name="code">522920</field>
+        <field name="desc">AGENCIAS DE NAVES</field>
+    </record>
+    <record id="bussines_field_522990" model="res.partner.bussines_field">
+        <field name="code">522990</field>
+        <field name="desc">OTRAS ACTIVIDADES DE APOYO AL TRANSPORTE N.C.P.</field>
+    </record>
+    <record id="bussines_field_531000" model="res.partner.bussines_field">
+        <field name="code">531000</field>
+        <field name="desc">ACTIVIDADES POSTALES</field>
+    </record>
+    <record id="bussines_field_532000" model="res.partner.bussines_field">
+        <field name="code">532000</field>
+        <field name="desc">ACTIVIDADES DE MENSAJERÍA</field>
+    </record>
+    <record id="bussines_field_551001" model="res.partner.bussines_field">
+        <field name="code">551001</field>
+        <field name="desc">ACTIVIDADES DE HOTELES</field>
+    </record>
+    <record id="bussines_field_551002" model="res.partner.bussines_field">
+        <field name="code">551002</field>
+        <field name="desc">ACTIVIDADES DE MOTELES</field>
+    </record>
+    <record id="bussines_field_551003" model="res.partner.bussines_field">
+        <field name="code">551003</field>
+        <field name="desc">ACTIVIDADES DE RESIDENCIALES PARA TURISTAS</field>
+    </record>
+    <record id="bussines_field_551009" model="res.partner.bussines_field">
+        <field name="code">551009</field>
+        <field name="desc">OTRAS ACTIVIDADES DE ALOJAMIENTO PARA TURISTAS N.C.P.</field>
+    </record>
+    <record id="bussines_field_552000" model="res.partner.bussines_field">
+        <field name="code">552000</field>
+        <field name="desc">ACTIVIDADES DE CAMPING Y DE PARQUES PARA CASAS RODANTES</field>
+    </record>
+    <record id="bussines_field_559001" model="res.partner.bussines_field">
+        <field name="code">559001</field>
+        <field name="desc">ACTIVIDADES DE RESIDENCIALES PARA ESTUDIANTES Y TRABAJADORES</field>
+    </record>
+    <record id="bussines_field_559009" model="res.partner.bussines_field">
+        <field name="code">559009</field>
+        <field name="desc">OTRAS ACTIVIDADES DE ALOJAMIENTO N.C.P.</field>
+    </record>
+    <record id="bussines_field_561000" model="res.partner.bussines_field">
+        <field name="code">561000</field>
+        <field name="desc">ACTIVIDADES DE RESTAURANTES Y DE SERVICIO MÓVIL DE COMIDAS</field>
+    </record>
+    <record id="bussines_field_562100" model="res.partner.bussines_field">
+        <field name="code">562100</field>
+        <field name="desc">SUMINISTRO DE COMIDAS POR ENCARGO (SERVICIOS DE BANQUETERÍA)</field>
+    </record>
+    <record id="bussines_field_562900" model="res.partner.bussines_field">
+        <field name="code">562900</field>
+        <field name="desc">SUMINISTRO INDUSTRIAL DE COMIDAS POR ENCARGO; CONCESIÓN DE SERVICIOS DE ALIMENTACIÓN</field>
+    </record>
+    <record id="bussines_field_563001" model="res.partner.bussines_field">
+        <field name="code">563001</field>
+        <field name="desc">ACTIVIDADES DE DISCOTECAS Y CABARET (NIGHT CLUB), CON PREDOMINIO DEL SERVICIO DE BEBIDAS</field>
+    </record>
+    <record id="bussines_field_563009" model="res.partner.bussines_field">
+        <field name="code">563009</field>
+        <field name="desc">OTRAS ACTIVIDADES DE SERVICIO DE BEBIDAS N.C.P.</field>
+    </record>
+    <record id="bussines_field_581100" model="res.partner.bussines_field">
+        <field name="code">581100</field>
+        <field name="desc">EDICIÓN DE LIBROS</field>
+    </record>
+    <record id="bussines_field_581200" model="res.partner.bussines_field">
+        <field name="code">581200</field>
+        <field name="desc">EDICIÓN DE DIRECTORIOS Y LISTAS DE CORREO</field>
+    </record>
+    <record id="bussines_field_581300" model="res.partner.bussines_field">
+        <field name="code">581300</field>
+        <field name="desc">EDICIÓN DE DIARIOS, REVISTAS Y OTRAS PUBLICACIONES PERIÓDICAS</field>
+    </record>
+    <record id="bussines_field_581900" model="res.partner.bussines_field">
+        <field name="code">581900</field>
+        <field name="desc">OTRAS ACTIVIDADES DE EDICIÓN</field>
+    </record>
+    <record id="bussines_field_582000" model="res.partner.bussines_field">
+        <field name="code">582000</field>
+        <field name="desc">EDICIÓN DE PROGRAMAS INFORMÁTICOS</field>
+    </record>
+    <record id="bussines_field_591100" model="res.partner.bussines_field">
+        <field name="code">591100</field>
+        <field name="desc">ACTIVIDADES DE PRODUCCIÓN DE PELÍCULAS CINEMATOGRÁFICAS, VIDEOS Y PROGRAMAS DE TELEVISIÓN</field>
+    </record>
+    <record id="bussines_field_591200" model="res.partner.bussines_field">
+        <field name="code">591200</field>
+        <field name="desc">ACTIVIDADES DE POSTPRODUCCIÓN DE PELÍCULAS CINEMATOGRÁFICAS, VIDEOS Y PROGRAMAS DE TELEVISIÓN</field>
+    </record>
+    <record id="bussines_field_591300" model="res.partner.bussines_field">
+        <field name="code">591300</field>
+        <field name="desc">ACTIVIDADES DE DISTRIBUCIÓN DE PELÍCULAS CINEMATOGRÁFICAS, VIDEOS Y PROGRAMAS DE TELEVISIÓN</field>
+    </record>
+    <record id="bussines_field_591400" model="res.partner.bussines_field">
+        <field name="code">591400</field>
+        <field name="desc">ACTIVIDADES DE EXHIBICIÓN DE PELÍCULAS CINEMATOGRÁFICAS Y CINTAS DE VIDEO</field>
+    </record>
+    <record id="bussines_field_592000" model="res.partner.bussines_field">
+        <field name="code">592000</field>
+        <field name="desc">ACTIVIDADES DE GRABACIÓN DE SONIDO Y EDICIÓN DE MÚSICA</field>
+    </record>
+    <record id="bussines_field_601000" model="res.partner.bussines_field">
+        <field name="code">601000</field>
+        <field name="desc">TRANSMISIONES DE RADIO</field>
+    </record>
+    <record id="bussines_field_602000" model="res.partner.bussines_field">
+        <field name="code">602000</field>
+        <field name="desc">PROGRAMACIÓN Y TRANSMISIONES DE TELEVISIÓN</field>
+    </record>
+    <record id="bussines_field_611010" model="res.partner.bussines_field">
+        <field name="code">611010</field>
+        <field name="desc">TELEFONÍA FIJA</field>
+    </record>
+    <record id="bussines_field_611020" model="res.partner.bussines_field">
+        <field name="code">611020</field>
+        <field name="desc">TELEFONÍA LARGA DISTANCIA</field>
+    </record>
+    <record id="bussines_field_611030" model="res.partner.bussines_field">
+        <field name="code">611030</field>
+        <field name="desc">TELEVISIÓN DE PAGO POR CABLE</field>
+    </record>
+    <record id="bussines_field_611090" model="res.partner.bussines_field">
+        <field name="code">611090</field>
+        <field name="desc">OTROS SERVICIOS DE TELECOMUNICACIONES ALÁMBRICAS N.C.P.</field>
+    </record>
+    <record id="bussines_field_612010" model="res.partner.bussines_field">
+        <field name="code">612010</field>
+        <field name="desc">TELEFONÍA MÓVIL CELULAR</field>
+    </record>
+    <record id="bussines_field_612020" model="res.partner.bussines_field">
+        <field name="code">612020</field>
+        <field name="desc">RADIOCOMUNICACIONES MÓVILES</field>
+    </record>
+    <record id="bussines_field_612030" model="res.partner.bussines_field">
+        <field name="code">612030</field>
+        <field name="desc">TELEVISIÓN DE PAGO INALÁMBRICA</field>
+    </record>
+    <record id="bussines_field_612090" model="res.partner.bussines_field">
+        <field name="code">612090</field>
+        <field name="desc">OTROS SERVICIOS DE TELECOMUNICACIONES INALÁMBRICAS N.C.P.</field>
+    </record>
+    <record id="bussines_field_613010" model="res.partner.bussines_field">
+        <field name="code">613010</field>
+        <field name="desc">TELEFONÍA MÓVIL SATELITAL</field>
+    </record>
+    <record id="bussines_field_613020" model="res.partner.bussines_field">
+        <field name="code">613020</field>
+        <field name="desc">TELEVISIÓN DE PAGO SATELITAL</field>
+    </record>
+    <record id="bussines_field_613090" model="res.partner.bussines_field">
+        <field name="code">613090</field>
+        <field name="desc">OTROS SERVICIOS DE TELECOMUNICACIONES POR SATÉLITE N.C.P.</field>
+    </record>
+    <record id="bussines_field_619010" model="res.partner.bussines_field">
+        <field name="code">619010</field>
+        <field name="desc">CENTROS DE LLAMADOS Y CENTROS DE ACCESO A INTERNET</field>
+    </record>
+    <record id="bussines_field_619090" model="res.partner.bussines_field">
+        <field name="code">619090</field>
+        <field name="desc">OTRAS ACTIVIDADES DE TELECOMUNICACIONES N.C.P.</field>
+    </record>
+    <record id="bussines_field_620100" model="res.partner.bussines_field">
+        <field name="code">620100</field>
+        <field name="desc">ACTIVIDADES DE PROGRAMACIÓN INFORMÁTICA</field>
+    </record>
+    <record id="bussines_field_620200" model="res.partner.bussines_field">
+        <field name="code">620200</field>
+        <field name="desc">ACTIVIDADES DE CONSULTORÍA DE INFORMÁTICA Y DE GESTIÓN DE INSTALACIONES INFORMÁTICAS</field>
+    </record>
+    <record id="bussines_field_620900" model="res.partner.bussines_field">
+        <field name="code">620900</field>
+        <field name="desc">OTRAS ACTIVIDADES DE TECNOLOGÍA DE LA INFORMACIÓN Y DE SERVICIOS INFORMÁTICOS</field>
+    </record>
+    <record id="bussines_field_631100" model="res.partner.bussines_field">
+        <field name="code">631100</field>
+        <field name="desc">PROCESAMIENTO DE DATOS, HOSPEDAJE Y ACTIVIDADES CONEXAS</field>
+    </record>
+    <record id="bussines_field_631200" model="res.partner.bussines_field">
+        <field name="code">631200</field>
+        <field name="desc">PORTALES WEB</field>
+    </record>
+    <record id="bussines_field_639100" model="res.partner.bussines_field">
+        <field name="code">639100</field>
+        <field name="desc">ACTIVIDADES DE AGENCIAS DE NOTICIAS</field>
+    </record>
+    <record id="bussines_field_639900" model="res.partner.bussines_field">
+        <field name="code">639900</field>
+        <field name="desc">OTRAS ACTIVIDADES DE SERVICIOS DE INFORMACIÓN N.C.P.</field>
+    </record>
+    <record id="bussines_field_641100" model="res.partner.bussines_field">
+        <field name="code">641100</field>
+        <field name="desc">BANCA CENTRAL</field>
+    </record>
+    <record id="bussines_field_641910" model="res.partner.bussines_field">
+        <field name="code">641910</field>
+        <field name="desc">ACTIVIDADES BANCARIAS</field>
+    </record>
+    <record id="bussines_field_641990" model="res.partner.bussines_field">
+        <field name="code">641990</field>
+        <field name="desc">OTROS TIPOS DE INTERMEDIACIÓN MONETARIA N.C.P.</field>
+    </record>
+    <record id="bussines_field_642000" model="res.partner.bussines_field">
+        <field name="code">642000</field>
+        <field name="desc">ACTIVIDADES DE SOCIEDADES DE CARTERA</field>
+    </record>
+    <record id="bussines_field_643000" model="res.partner.bussines_field">
+        <field name="code">643000</field>
+        <field name="desc">FONDOS Y SOCIEDADES DE INVERSIÓN Y ENTIDADES FINANCIERAS SIMILARES</field>
+    </record>
+    <record id="bussines_field_649100" model="res.partner.bussines_field">
+        <field name="code">649100</field>
+        <field name="desc">LEASING FINANCIERO</field>
+    </record>
+    <record id="bussines_field_649201" model="res.partner.bussines_field">
+        <field name="code">649201</field>
+        <field name="desc">FINANCIERAS</field>
+    </record>
+    <record id="bussines_field_649202" model="res.partner.bussines_field">
+        <field name="code">649202</field>
+        <field name="desc">ACTIVIDADES DE CRÉDITO PRENDARIO</field>
+    </record>
+    <record id="bussines_field_649203" model="res.partner.bussines_field">
+        <field name="code">649203</field>
+        <field name="desc">CAJAS DE COMPENSACIÓN</field>
+    </record>
+    <record id="bussines_field_649209" model="res.partner.bussines_field">
+        <field name="code">649209</field>
+        <field name="desc">OTRAS ACTIVIDADES DE CONCESIÓN DE CRÉDITO N.C.P.</field>
+    </record>
+    <record id="bussines_field_649900" model="res.partner.bussines_field">
+        <field name="code">649900</field>
+        <field name="desc">OTRAS ACTIVIDADES DE SERVICIOS FINANCIEROS, EXCEPTO LAS DE SEGUROS Y FONDOS DE PENSIONES N.C.P.</field>
+    </record>
+    <record id="bussines_field_651100" model="res.partner.bussines_field">
+        <field name="code">651100</field>
+        <field name="desc">SEGUROS DE VIDA</field>
+    </record>
+    <record id="bussines_field_651210" model="res.partner.bussines_field">
+        <field name="code">651210</field>
+        <field name="desc">SEGUROS GENERALES, EXCEPTO ACTIVIDADES DE ISAPRES</field>
+    </record>
+    <record id="bussines_field_651220" model="res.partner.bussines_field">
+        <field name="code">651220</field>
+        <field name="desc">ACTIVIDADES DE ISAPRES</field>
+    </record>
+    <record id="bussines_field_652000" model="res.partner.bussines_field">
+        <field name="code">652000</field>
+        <field name="desc">REASEGUROS</field>
+    </record>
+    <record id="bussines_field_653000" model="res.partner.bussines_field">
+        <field name="code">653000</field>
+        <field name="desc">FONDOS DE PENSIONES</field>
+    </record>
+    <record id="bussines_field_661100" model="res.partner.bussines_field">
+        <field name="code">661100</field>
+        <field name="desc">ADMINISTRACIÓN DE MERCADOS FINANCIEROS</field>
+    </record>
+    <record id="bussines_field_661201" model="res.partner.bussines_field">
+        <field name="code">661201</field>
+        <field name="desc">ACTIVIDADES DE SECURITIZADORAS</field>
+    </record>
+    <record id="bussines_field_661202" model="res.partner.bussines_field">
+        <field name="code">661202</field>
+        <field name="desc">CORREDORES DE BOLSA</field>
+    </record>
+    <record id="bussines_field_661203" model="res.partner.bussines_field">
+        <field name="code">661203</field>
+        <field name="desc">AGENTES DE VALORES</field>
+    </record>
+    <record id="bussines_field_661204" model="res.partner.bussines_field">
+        <field name="code">661204</field>
+        <field name="desc">ACTIVIDADES DE CASAS DE CAMBIO Y OPERADORES DE DIVISA</field>
+    </record>
+    <record id="bussines_field_661209" model="res.partner.bussines_field">
+        <field name="code">661209</field>
+        <field name="desc">OTROS SERVICIOS DE CORRETAJE DE VALORES Y COMMODITIES N.C.P.</field>
+    </record>
+    <record id="bussines_field_661901" model="res.partner.bussines_field">
+        <field name="code">661901</field>
+        <field name="desc">ACTIVIDADES DE CÁMARAS DE COMPENSACIÓN</field>
+    </record>
+    <record id="bussines_field_661902" model="res.partner.bussines_field">
+        <field name="code">661902</field>
+        <field name="desc">ADMINISTRACIÓN DE TARJETAS DE CRÉDITO</field>
+    </record>
+    <record id="bussines_field_661903" model="res.partner.bussines_field">
+        <field name="code">661903</field>
+        <field name="desc">EMPRESAS DE ASESORÍA Y CONSULTORÍA EN INVERSIÓN FINANCIERA; SOCIEDADES DE APOYO AL GIRO</field>
+    </record>
+    <record id="bussines_field_661904" model="res.partner.bussines_field">
+        <field name="code">661904</field>
+        <field name="desc">ACTIVIDADES DE CLASIFICADORAS DE RIESGO</field>
+    </record>
+    <record id="bussines_field_661909" model="res.partner.bussines_field">
+        <field name="code">661909</field>
+        <field name="desc">OTRAS ACTIVIDADES AUXILIARES DE LAS ACTIVIDADES DE SERVICIOS FINANCIEROS N.C.P.</field>
+    </record>
+    <record id="bussines_field_662100" model="res.partner.bussines_field">
+        <field name="code">662100</field>
+        <field name="desc">EVALUACIÓN DE RIESGOS Y DAÑOS (INCLUYE ACTIVIDADES DE LIQUIDADORES DE SEGUROS)</field>
+    </record>
+    <record id="bussines_field_662200" model="res.partner.bussines_field">
+        <field name="code">662200</field>
+        <field name="desc">ACTIVIDADES DE AGENTES Y CORREDORES DE SEGUROS</field>
+    </record>
+    <record id="bussines_field_662900" model="res.partner.bussines_field">
+        <field name="code">662900</field>
+        <field name="desc">OTRAS ACTIVIDADES AUXILIARES DE LAS ACTIVIDADES DE SEGUROS Y FONDOS DE PENSIONES</field>
+    </record>
+    <record id="bussines_field_663010" model="res.partner.bussines_field">
+        <field name="code">663010</field>
+        <field name="desc">ADMINISTRADORAS DE FONDOS DE PENSIONES (AFP)</field>
+    </record>
+    <record id="bussines_field_663091" model="res.partner.bussines_field">
+        <field name="code">663091</field>
+        <field name="desc">ADMINISTRADORAS DE FONDOS DE INVERSIÓN</field>
+    </record>
+    <record id="bussines_field_663092" model="res.partner.bussines_field">
+        <field name="code">663092</field>
+        <field name="desc">ADMINISTRADORAS DE FONDOS MUTUOS</field>
+    </record>
+    <record id="bussines_field_663093" model="res.partner.bussines_field">
+        <field name="code">663093</field>
+        <field name="desc">ADMINISTRADORAS DE FICES (FONDOS DE INVERSIÓN DE CAPITAL EXTRANJERO)</field>
+    </record>
+    <record id="bussines_field_663094" model="res.partner.bussines_field">
+        <field name="code">663094</field>
+        <field name="desc">ADMINISTRADORAS DE FONDOS PARA LA VIVIENDA</field>
+    </record>
+    <record id="bussines_field_663099" model="res.partner.bussines_field">
+        <field name="code">663099</field>
+        <field name="desc">ADMINISTRADORAS DE FONDOS PARA OTROS FINES N.C.P.</field>
+    </record>
+    <record id="bussines_field_681011" model="res.partner.bussines_field">
+        <field name="code">681011</field>
+        <field name="desc">ALQUILER DE BIENES INMUEBLES AMOBLADOS O CON EQUIPOS Y MAQUINARIAS</field>
+    </record>
+    <record id="bussines_field_681012" model="res.partner.bussines_field">
+        <field name="code">681012</field>
+        <field name="desc">COMPRA, VENTA Y ALQUILER (EXCEPTO AMOBLADOS) DE INMUEBLES</field>
+    </record>
+    <record id="bussines_field_681020" model="res.partner.bussines_field">
+        <field name="code">681020</field>
+        <field name="desc">SERVICIOS IMPUTADOS DE ALQUILER DE VIVIENDAS</field>
+    </record>
+    <record id="bussines_field_682000" model="res.partner.bussines_field">
+        <field name="code">682000</field>
+        <field name="desc">ACTIVIDADES INMOBILIARIAS REALIZADAS A CAMBIO DE UNA RETRIBUCIÓN O POR CONTRATA</field>
+    </record>
+    <record id="bussines_field_691001" model="res.partner.bussines_field">
+        <field name="code">691001</field>
+        <field name="desc">SERVICIOS DE ASESORAMIENTO Y REPRESENTACIÓN JURÍDICA</field>
+    </record>
+    <record id="bussines_field_691002" model="res.partner.bussines_field">
+        <field name="code">691002</field>
+        <field name="desc">SERVICIO NOTARIAL</field>
+    </record>
+    <record id="bussines_field_691003" model="res.partner.bussines_field">
+        <field name="code">691003</field>
+        <field name="desc">CONSERVADOR DE BIENES RAÍCES</field>
+    </record>
+    <record id="bussines_field_691004" model="res.partner.bussines_field">
+        <field name="code">691004</field>
+        <field name="desc">RECEPTORES JUDICIALES</field>
+    </record>
+    <record id="bussines_field_691009" model="res.partner.bussines_field">
+        <field name="code">691009</field>
+        <field name="desc">SERVICIOS DE ARBITRAJE; SÍNDICOS DE QUIEBRA Y PERITOS JUDICIALES; OTRAS ACTIVIDADES JURÍDICAS N.C.P.</field>
+    </record>
+    <record id="bussines_field_692000" model="res.partner.bussines_field">
+        <field name="code">692000</field>
+        <field name="desc">ACTIVIDADES DE CONTABILIDAD, TENEDURÍA DE LIBROS Y AUDITORÍA; CONSULTORÍA FISCAL</field>
+    </record>
+    <record id="bussines_field_701000" model="res.partner.bussines_field">
+        <field name="code">701000</field>
+        <field name="desc">ACTIVIDADES DE OFICINAS PRINCIPALES</field>
+    </record>
+    <record id="bussines_field_702000" model="res.partner.bussines_field">
+        <field name="code">702000</field>
+        <field name="desc">ACTIVIDADES DE CONSULTORÍA DE GESTIÓN</field>
+    </record>
+    <record id="bussines_field_711001" model="res.partner.bussines_field">
+        <field name="code">711001</field>
+        <field name="desc">SERVICIOS DE ARQUITECTURA (DISEÑO DE EDIFICIOS, DIBUJO DE PLANOS DE CONSTRUCCIÓN, ENTRE OTROS)</field>
+    </record>
+    <record id="bussines_field_711002" model="res.partner.bussines_field">
+        <field name="code">711002</field>
+        <field name="desc">EMPRESAS DE SERVICIOS DE INGENIERÍA Y ACTIVIDADES CONEXAS DE CONSULTORÍA TÉCNICA</field>
+    </record>
+    <record id="bussines_field_711003" model="res.partner.bussines_field">
+        <field name="code">711003</field>
+        <field name="desc">SERVICIOS PROFESIONALES DE INGENIERÍA Y ACTIVIDADES CONEXAS DE CONSULTORÍA TÉCNICA</field>
+    </record>
+    <record id="bussines_field_712001" model="res.partner.bussines_field">
+        <field name="code">712001</field>
+        <field name="desc">ACTIVIDADES DE PLANTAS DE REVISIÓN TÉCNICA PARA VEHÍCULOS AUTOMOTORES</field>
+    </record>
+    <record id="bussines_field_712009" model="res.partner.bussines_field">
+        <field name="code">712009</field>
+        <field name="desc">OTROS SERVICIOS DE ENSAYOS Y ANÁLISIS TÉCNICOS (EXCEPTO ACTIVIDADES DE PLANTAS DE REVISIÓN TÉCNICA)</field>
+    </record>
+    <record id="bussines_field_721000" model="res.partner.bussines_field">
+        <field name="code">721000</field>
+        <field name="desc">INVESTIGACIONES Y DESARROLLO EXPERIMENTAL EN EL CAMPO DE LAS CIENCIAS NATURALES Y LA INGENIERÍA</field>
+    </record>
+    <record id="bussines_field_722000" model="res.partner.bussines_field">
+        <field name="code">722000</field>
+        <field name="desc">INVESTIGACIONES Y DESARROLLO EXPERIMENTAL EN EL CAMPO DE LAS CIENCIAS SOCIALES Y LAS HUMANIDADES</field>
+    </record>
+    <record id="bussines_field_731001" model="res.partner.bussines_field">
+        <field name="code">731001</field>
+        <field name="desc">SERVICIOS DE PUBLICIDAD PRESTADOS POR EMPRESAS</field>
+    </record>
+    <record id="bussines_field_731002" model="res.partner.bussines_field">
+        <field name="code">731002</field>
+        <field name="desc">SERVICIOS DE PUBLICIDAD PRESTADOS POR PROFESIONALES</field>
+    </record>
+    <record id="bussines_field_732000" model="res.partner.bussines_field">
+        <field name="code">732000</field>
+        <field name="desc">ESTUDIOS DE MERCADO Y ENCUESTAS DE OPINIÓN PÚBLICA</field>
+    </record>
+    <record id="bussines_field_741001" model="res.partner.bussines_field">
+        <field name="code">741001</field>
+        <field name="desc">ACTIVIDADES DE DISEÑO DE VESTUARIO</field>
+    </record>
+    <record id="bussines_field_741002" model="res.partner.bussines_field">
+        <field name="code">741002</field>
+        <field name="desc">ACTIVIDADES DE DISEÑO Y DECORACIÓN DE INTERIORES</field>
+    </record>
+    <record id="bussines_field_741009" model="res.partner.bussines_field">
+        <field name="code">741009</field>
+        <field name="desc">OTRAS ACTIVIDADES ESPECIALIZADAS DE DISEÑO N.C.P.</field>
+    </record>
+    <record id="bussines_field_742001" model="res.partner.bussines_field">
+        <field name="code">742001</field>
+        <field name="desc">SERVICIOS DE REVELADO, IMPRESIÓN Y AMPLIACIÓN DE FOTOGRAFÍAS</field>
+    </record>
+    <record id="bussines_field_742002" model="res.partner.bussines_field">
+        <field name="code">742002</field>
+        <field name="desc">SERVICIOS Y ACTIVIDADES DE FOTOGRAFÍA</field>
+    </record>
+    <record id="bussines_field_742003" model="res.partner.bussines_field">
+        <field name="code">742003</field>
+        <field name="desc">SERVICIOS PERSONALES DE FOTOGRAFÍA</field>
+    </record>
+    <record id="bussines_field_749001" model="res.partner.bussines_field">
+        <field name="code">749001</field>
+        <field name="desc">ASESORÍA Y GESTIÓN EN LA COMPRA O VENTA DE PEQUEÑAS Y MEDIANAS EMPRESAS</field>
+    </record>
+    <record id="bussines_field_749002" model="res.partner.bussines_field">
+        <field name="code">749002</field>
+        <field name="desc">SERVICIOS DE TRADUCCIÓN E INTERPRETACIÓN PRESTADOS POR EMPRESAS</field>
+    </record>
+    <record id="bussines_field_749003" model="res.partner.bussines_field">
+        <field name="code">749003</field>
+        <field name="desc">SERVICIOS PERSONALES DE TRADUCCIÓN E INTERPRETACIÓN</field>
+    </record>
+    <record id="bussines_field_749004" model="res.partner.bussines_field">
+        <field name="code">749004</field>
+        <field name="desc">ACTIVIDADES DE AGENCIAS Y AGENTES DE REPRESENTACIÓN DE ACTORES, DEPORTISTAS Y OTRAS FIGURAS PÚBLICAS</field>
+    </record>
+    <record id="bussines_field_749009" model="res.partner.bussines_field">
+        <field name="code">749009</field>
+        <field name="desc">OTRAS ACTIVIDADES PROFESIONALES, CIENTÍFICAS Y TÉCNICAS N.C.P.</field>
+    </record>
+    <record id="bussines_field_750001" model="res.partner.bussines_field">
+        <field name="code">750001</field>
+        <field name="desc">ACTIVIDADES DE CLÍNICAS VETERINARIAS</field>
+    </record>
+    <record id="bussines_field_750002" model="res.partner.bussines_field">
+        <field name="code">750002</field>
+        <field name="desc">ACTIVIDADES DE VETERINARIOS, TÉCNICOS Y OTRO PERSONAL AUXILIAR, PRESTADOS DE FORMA INDEPENDIENTE</field>
+    </record>
+    <record id="bussines_field_771000" model="res.partner.bussines_field">
+        <field name="code">771000</field>
+        <field name="desc">ALQUILER DE VEHÍCULOS AUTOMOTORES SIN CHOFER</field>
+    </record>
+    <record id="bussines_field_772100" model="res.partner.bussines_field">
+        <field name="code">772100</field>
+        <field name="desc">ALQUILER Y ARRENDAMIENTO DE EQUIPO RECREATIVO Y DEPORTIVO</field>
+    </record>
+    <record id="bussines_field_772200" model="res.partner.bussines_field">
+        <field name="code">772200</field>
+        <field name="desc">ALQUILER DE CINTAS DE VIDEO Y DISCOS</field>
+    </record>
+    <record id="bussines_field_772900" model="res.partner.bussines_field">
+        <field name="code">772900</field>
+        <field name="desc">ALQUILER DE OTROS EFECTOS PERSONALES Y ENSERES DOMÉSTICOS (INCLUYE MOBILIARIO PARA EVENTOS)</field>
+    </record>
+    <record id="bussines_field_773001" model="res.partner.bussines_field">
+        <field name="code">773001</field>
+        <field name="desc">ALQUILER DE EQUIPOS DE TRANSPORTE SIN OPERARIO, EXCEPTO VEHÍCULOS AUTOMOTORES</field>
+    </record>
+    <record id="bussines_field_773002" model="res.partner.bussines_field">
+        <field name="code">773002</field>
+        <field name="desc">ALQUILER DE MAQUINARIA Y EQUIPO AGROPECUARIO, FORESTAL, DE CONSTRUCCIÓN E ING. CIVIL, SIN OPERARIOS</field>
+    </record>
+    <record id="bussines_field_773003" model="res.partner.bussines_field">
+        <field name="code">773003</field>
+        <field name="desc">ALQUILER DE MAQUINARIA Y EQUIPO DE OFICINA, SIN OPERARIOS (SIN SERVICIO ADMINISTRATIVO)</field>
+    </record>
+    <record id="bussines_field_773009" model="res.partner.bussines_field">
+        <field name="code">773009</field>
+        <field name="desc">ALQUILER DE OTROS TIPOS DE MAQUINARIAS Y EQUIPOS SIN OPERARIO N.C.P.</field>
+    </record>
+    <record id="bussines_field_774000" model="res.partner.bussines_field">
+        <field name="code">774000</field>
+        <field name="desc">ARRENDAMIENTO DE PROPIEDAD INTELECTUAL Y SIMILARES, EXCEPTO OBRAS PROTEGIDAS POR DERECHOS DE AUTOR</field>
+    </record>
+    <record id="bussines_field_781000" model="res.partner.bussines_field">
+        <field name="code">781000</field>
+        <field name="desc">ACTIVIDADES DE AGENCIAS DE EMPLEO</field>
+    </record>
+    <record id="bussines_field_782000" model="res.partner.bussines_field">
+        <field name="code">782000</field>
+        <field name="desc">ACTIVIDADES DE AGENCIAS DE EMPLEO TEMPORAL (INCLUYE EMPRESAS DE SERVICIOS TRANSITORIOS)</field>
+    </record>
+    <record id="bussines_field_783000" model="res.partner.bussines_field">
+        <field name="code">783000</field>
+        <field name="desc">OTRAS ACTIVIDADES DE DOTACIÓN DE RECURSOS HUMANOS</field>
+    </record>
+    <record id="bussines_field_791100" model="res.partner.bussines_field">
+        <field name="code">791100</field>
+        <field name="desc">ACTIVIDADES DE AGENCIAS DE VIAJES</field>
+    </record>
+    <record id="bussines_field_791200" model="res.partner.bussines_field">
+        <field name="code">791200</field>
+        <field name="desc">ACTIVIDADES DE OPERADORES TURÍSTICOS</field>
+    </record>
+    <record id="bussines_field_799000" model="res.partner.bussines_field">
+        <field name="code">799000</field>
+        <field name="desc">OTROS SERVICIOS DE RESERVAS Y ACTIVIDADES CONEXAS (INCLUYE VENTA DE ENTRADAS PARA TEATRO, Y OTROS)</field>
+    </record>
+    <record id="bussines_field_801001" model="res.partner.bussines_field">
+        <field name="code">801001</field>
+        <field name="desc">SERVICIOS DE SEGURIDAD PRIVADA PRESTADOS POR EMPRESAS</field>
+    </record>
+    <record id="bussines_field_801002" model="res.partner.bussines_field">
+        <field name="code">801002</field>
+        <field name="desc">SERVICIO DE TRANSPORTE DE VALORES EN VEHÍCULOS BLINDADOS</field>
+    </record>
+    <record id="bussines_field_801003" model="res.partner.bussines_field">
+        <field name="code">801003</field>
+        <field name="desc">SERVICIOS DE SEGURIDAD PRIVADA PRESTADOS POR INDEPENDIENTES</field>
+    </record>
+    <record id="bussines_field_802000" model="res.partner.bussines_field">
+        <field name="code">802000</field>
+        <field name="desc">ACTIVIDADES DE SERVICIOS DE SISTEMAS DE SEGURIDAD (INCLUYE SERVICIOS DE CERRAJERÍA)</field>
+    </record>
+    <record id="bussines_field_803000" model="res.partner.bussines_field">
+        <field name="code">803000</field>
+        <field name="desc">ACTIVIDADES DE INVESTIGACIÓN (INCLUYE ACTIVIDADES DE INVESTIGADORES Y DETECTIVES PRIVADOS)</field>
+    </record>
+    <record id="bussines_field_811000" model="res.partner.bussines_field">
+        <field name="code">811000</field>
+        <field name="desc">ACTIVIDADES COMBINADAS DE APOYO A INSTALACIONES</field>
+    </record>
+    <record id="bussines_field_812100" model="res.partner.bussines_field">
+        <field name="code">812100</field>
+        <field name="desc">LIMPIEZA GENERAL DE EDIFICIOS</field>
+    </record>
+    <record id="bussines_field_812901" model="res.partner.bussines_field">
+        <field name="code">812901</field>
+        <field name="desc">DESRATIZACIÓN, DESINFECCIÓN Y EXTERMINIO DE PLAGAS NO AGRÍCOLAS</field>
+    </record>
+    <record id="bussines_field_812909" model="res.partner.bussines_field">
+        <field name="code">812909</field>
+        <field name="desc">OTRAS ACTIVIDADES DE LIMPIEZA DE EDIFICIOS E INSTALACIONES INDUSTRIALES N.C.P.</field>
+    </record>
+    <record id="bussines_field_813000" model="res.partner.bussines_field">
+        <field name="code">813000</field>
+        <field name="desc">ACTIVIDADES DE PAISAJISMO, SERVICIOS DE JARDINERÍA Y SERVICIOS CONEXOS</field>
+    </record>
+    <record id="bussines_field_821100" model="res.partner.bussines_field">
+        <field name="code">821100</field>
+        <field name="desc">ACTIVIDADES COMBINADAS DE SERVICIOS ADMINISTRATIVOS DE OFICINA</field>
+    </record>
+    <record id="bussines_field_821900" model="res.partner.bussines_field">
+        <field name="code">821900</field>
+        <field name="desc">FOTOCOPIADO, PREPARACIÓN DE DOCUMENTOS Y OTRAS ACTIVIDADES ESPECIALIZADAS DE APOYO DE OFICINA</field>
+    </record>
+    <record id="bussines_field_822000" model="res.partner.bussines_field">
+        <field name="code">822000</field>
+        <field name="desc">ACTIVIDADES DE CALL-CENTER</field>
+    </record>
+    <record id="bussines_field_823000" model="res.partner.bussines_field">
+        <field name="code">823000</field>
+        <field name="desc">ORGANIZACIÓN DE CONVENCIONES Y EXPOSICIONES COMERCIALES</field>
+    </record>
+    <record id="bussines_field_829110" model="res.partner.bussines_field">
+        <field name="code">829110</field>
+        <field name="desc">ACTIVIDADES DE AGENCIAS DE COBRO</field>
+    </record>
+    <record id="bussines_field_829120" model="res.partner.bussines_field">
+        <field name="code">829120</field>
+        <field name="desc">ACTIVIDADES DE AGENCIAS DE CALIFICACIÓN CREDITICIA</field>
+    </record>
+    <record id="bussines_field_829200" model="res.partner.bussines_field">
+        <field name="code">829200</field>
+        <field name="desc">ACTIVIDADES DE ENVASADO Y EMPAQUETADO</field>
+    </record>
+    <record id="bussines_field_829900" model="res.partner.bussines_field">
+        <field name="code">829900</field>
+        <field name="desc">OTRAS ACTIVIDADES DE SERVICIOS DE APOYO A LAS EMPRESAS N.C.P.</field>
+    </record>
+    <record id="bussines_field_841100" model="res.partner.bussines_field">
+        <field name="code">841100</field>
+        <field name="desc">ACTIVIDADES DE LA ADMINISTRACIÓN PÚBLICA EN GENERAL</field>
+    </record>
+    <record id="bussines_field_841200" model="res.partner.bussines_field">
+        <field name="code">841200</field>
+        <field name="desc">REGULACIÓN DE LAS ACTIVIDADES DE ORGANISMOS QUE PRESTAN SERVICIOS SANITARIOS, EDUCATIVOS, CULTURALES</field>
+    </record>
+    <record id="bussines_field_841300" model="res.partner.bussines_field">
+        <field name="code">841300</field>
+        <field name="desc">REGULACIÓN Y FACILITACIÓN DE LA ACTIVIDAD ECONÓMICA</field>
+    </record>
+    <record id="bussines_field_842100" model="res.partner.bussines_field">
+        <field name="code">842100</field>
+        <field name="desc">RELACIONES EXTERIORES</field>
+    </record>
+    <record id="bussines_field_842200" model="res.partner.bussines_field">
+        <field name="code">842200</field>
+        <field name="desc">ACTIVIDADES DE DEFENSA</field>
+    </record>
+    <record id="bussines_field_842300" model="res.partner.bussines_field">
+        <field name="code">842300</field>
+        <field name="desc">ACTIVIDADES DE MANTENIMIENTO DEL ORDEN PÚBLICO Y DE SEGURIDAD</field>
+    </record>
+    <record id="bussines_field_843010" model="res.partner.bussines_field">
+        <field name="code">843010</field>
+        <field name="desc">FONDO NACIONAL DE SALUD (FONASA)</field>
+    </record>
+    <record id="bussines_field_843020" model="res.partner.bussines_field">
+        <field name="code">843020</field>
+        <field name="desc">INSTITUTO DE PREVISIÓN SOCIAL (IPS)</field>
+    </record>
+    <record id="bussines_field_843090" model="res.partner.bussines_field">
+        <field name="code">843090</field>
+        <field name="desc">OTROS PLANES DE SEGURIDAD SOCIAL DE AFILIACIÓN OBLIGATORIA N.C.P.</field>
+    </record>
+    <record id="bussines_field_850011" model="res.partner.bussines_field">
+        <field name="code">850011</field>
+        <field name="desc">ENSEÑANZA PREESCOLAR PÚBLICA</field>
+    </record>
+    <record id="bussines_field_850012" model="res.partner.bussines_field">
+        <field name="code">850012</field>
+        <field name="desc">ENSEÑANZA PRIMARIA, SECUNDARIA CIENTÍFICO HUMANISTA Y TÉCNICO PROFESIONAL PÚBLICA</field>
+    </record>
+    <record id="bussines_field_850021" model="res.partner.bussines_field">
+        <field name="code">850021</field>
+        <field name="desc">ENSEÑANZA PREESCOLAR PRIVADA</field>
+    </record>
+    <record id="bussines_field_850022" model="res.partner.bussines_field">
+        <field name="code">850022</field>
+        <field name="desc">ENSEÑANZA PRIMARIA, SECUNDARIA CIENTÍFICO HUMANISTA Y TÉCNICO PROFESIONAL PRIVADA</field>
+    </record>
+    <record id="bussines_field_853110" model="res.partner.bussines_field">
+        <field name="code">853110</field>
+        <field name="desc">ENSEÑANZA SUPERIOR EN UNIVERSIDADES PÚBLICAS</field>
+    </record>
+    <record id="bussines_field_853120" model="res.partner.bussines_field">
+        <field name="code">853120</field>
+        <field name="desc">ENSEÑANZA SUPERIOR EN UNIVERSIDADES PRIVADAS</field>
+    </record>
+    <record id="bussines_field_853201" model="res.partner.bussines_field">
+        <field name="code">853201</field>
+        <field name="desc">ENSEÑANZA SUPERIOR EN INSTITUTOS PROFESIONALES</field>
+    </record>
+    <record id="bussines_field_853202" model="res.partner.bussines_field">
+        <field name="code">853202</field>
+        <field name="desc">ENSEÑANZA SUPERIOR EN CENTROS DE FORMACIÓN TÉCNICA</field>
+    </record>
+    <record id="bussines_field_854100" model="res.partner.bussines_field">
+        <field name="code">854100</field>
+        <field name="desc">ENSEÑANZA DEPORTIVA Y RECREATIVA</field>
+    </record>
+    <record id="bussines_field_854200" model="res.partner.bussines_field">
+        <field name="code">854200</field>
+        <field name="desc">ENSEÑANZA CULTURAL</field>
+    </record>
+    <record id="bussines_field_854901" model="res.partner.bussines_field">
+        <field name="code">854901</field>
+        <field name="desc">ENSEÑANZA PREUNIVERSITARIA</field>
+    </record>
+    <record id="bussines_field_854902" model="res.partner.bussines_field">
+        <field name="code">854902</field>
+        <field name="desc">SERVICIOS PERSONALES DE EDUCACIÓN</field>
+    </record>
+    <record id="bussines_field_854909" model="res.partner.bussines_field">
+        <field name="code">854909</field>
+        <field name="desc">OTROS TIPOS DE ENSEÑANZA N.C.P.</field>
+    </record>
+    <record id="bussines_field_855000" model="res.partner.bussines_field">
+        <field name="code">855000</field>
+        <field name="desc">ACTIVIDADES DE APOYO A LA ENSEÑANZA</field>
+    </record>
+    <record id="bussines_field_861010" model="res.partner.bussines_field">
+        <field name="code">861010</field>
+        <field name="desc">ACTIVIDADES DE HOSPITALES Y CLÍNICAS PÚBLICAS</field>
+    </record>
+    <record id="bussines_field_861020" model="res.partner.bussines_field">
+        <field name="code">861020</field>
+        <field name="desc">ACTIVIDADES DE HOSPITALES Y CLÍNICAS PRIVADAS</field>
+    </record>
+    <record id="bussines_field_862010" model="res.partner.bussines_field">
+        <field name="code">862010</field>
+        <field name="desc">ACTIVIDADES DE CENTROS DE SALUD MUNICIPALIZADOS (SERVICIOS DE SALUD PÚBLICA)</field>
+    </record>
+    <record id="bussines_field_862021" model="res.partner.bussines_field">
+        <field name="code">862021</field>
+        <field name="desc">CENTROS MÉDICOS PRIVADOS (ESTABLECIMIENTOS DE ATENCIÓN AMBULATORIA)</field>
+    </record>
+    <record id="bussines_field_862022" model="res.partner.bussines_field">
+        <field name="code">862022</field>
+        <field name="desc">CENTROS DE ATENCIÓN ODONTOLÓGICA PRIVADOS (ESTABLECIMIENTOS DE ATENCIÓN AMBULATORIA)</field>
+    </record>
+    <record id="bussines_field_862031" model="res.partner.bussines_field">
+        <field name="code">862031</field>
+        <field name="desc">SERVICIOS DE MÉDICOS PRESTADOS DE FORMA INDEPENDIENTE</field>
+    </record>
+    <record id="bussines_field_862032" model="res.partner.bussines_field">
+        <field name="code">862032</field>
+        <field name="desc">SERVICIOS DE ODONTÓLOGOS PRESTADOS DE FORMA INDEPENDIENTE</field>
+    </record>
+    <record id="bussines_field_869010" model="res.partner.bussines_field">
+        <field name="code">869010</field>
+        <field name="desc">ACTIVIDADES DE LABORATORIOS CLÍNICOS Y BANCOS DE SANGRE</field>
+    </record>
+    <record id="bussines_field_869091" model="res.partner.bussines_field">
+        <field name="code">869091</field>
+        <field name="desc">OTROS SERVICIOS DE ATENCIÓN DE LA SALUD HUMANA PRESTADOS POR EMPRESAS</field>
+    </record>
+    <record id="bussines_field_869092" model="res.partner.bussines_field">
+        <field name="code">869092</field>
+        <field name="desc">SERVICIOS PRESTADOS DE FORMA INDEPENDIENTE POR OTROS PROFESIONALES DE LA SALUD</field>
+    </record>
+    <record id="bussines_field_871000" model="res.partner.bussines_field">
+        <field name="code">871000</field>
+        <field name="desc">ACTIVIDADES DE ATENCIÓN DE ENFERMERÍA EN INSTITUCIONES</field>
+    </record>
+    <record id="bussines_field_872000" model="res.partner.bussines_field">
+        <field name="code">872000</field>
+        <field name="desc">ACTIVIDADES DE ATENCIÓN EN INSTITUCIONES PARA PERSONAS CON DISCAPACIDAD MENTAL Y TOXICÓMANOS</field>
+    </record>
+    <record id="bussines_field_873000" model="res.partner.bussines_field">
+        <field name="code">873000</field>
+        <field name="desc">ACTIVIDADES DE ATENCIÓN EN INSTITUCIONES PARA PERSONAS DE EDAD Y PERSONAS CON DISCAPACIDAD FÍSICA</field>
+    </record>
+    <record id="bussines_field_879000" model="res.partner.bussines_field">
+        <field name="code">879000</field>
+        <field name="desc">OTRAS ACTIVIDADES DE ATENCIÓN EN INSTITUCIONES</field>
+    </record>
+    <record id="bussines_field_881000" model="res.partner.bussines_field">
+        <field name="code">881000</field>
+        <field name="desc">ACTIVIDADES DE ASISTENCIA SOCIAL SIN ALOJAMIENTO PARA PERSONAS DE EDAD Y PERSONAS CON DISCAPACIDAD</field>
+    </record>
+    <record id="bussines_field_889000" model="res.partner.bussines_field">
+        <field name="code">889000</field>
+        <field name="desc">OTRAS ACTIVIDADES DE ASISTENCIA SOCIAL SIN ALOJAMIENTO</field>
+    </record>
+    <record id="bussines_field_900001" model="res.partner.bussines_field">
+        <field name="code">900001</field>
+        <field name="desc">SERVICIOS DE PRODUCCIÓN DE OBRAS DE TEATRO, CONCIERTOS, ESPECTÁCULOS DE DANZA, OTRAS PROD. ESCÉNICAS</field>
+    </record>
+    <record id="bussines_field_900002" model="res.partner.bussines_field">
+        <field name="code">900002</field>
+        <field name="desc">ACTIVIDADES ARTÍSTICAS REALIZADAS POR BANDAS DE MÚSICA, COMPAÑÍAS DE TEATRO, CIRCENSES Y SIMILARES</field>
+    </record>
+    <record id="bussines_field_900003" model="res.partner.bussines_field">
+        <field name="code">900003</field>
+        <field name="desc">ACTIVIDADES DE ARTISTAS REALIZADAS DE FORMA INDEPENDIENTE: ACTORES, MÚSICOS, ESCRITORES, ENTRE OTROS</field>
+    </record>
+    <record id="bussines_field_900004" model="res.partner.bussines_field">
+        <field name="code">900004</field>
+        <field name="desc">SERVICIOS PRESTADOS POR PERIODISTAS INDEPENDIENTES</field>
+    </record>
+    <record id="bussines_field_900009" model="res.partner.bussines_field">
+        <field name="code">900009</field>
+        <field name="desc">OTRAS ACTIVIDADES CREATIVAS, ARTÍSTICAS Y DE ENTRETENIMIENTO N.C.P.</field>
+    </record>
+    <record id="bussines_field_910100" model="res.partner.bussines_field">
+        <field name="code">910100</field>
+        <field name="desc">ACTIVIDADES DE BIBLIOTECAS Y ARCHIVOS</field>
+    </record>
+    <record id="bussines_field_910200" model="res.partner.bussines_field">
+        <field name="code">910200</field>
+        <field name="desc">ACTIVIDADES DE MUSEOS, GESTIÓN DE LUGARES Y EDIFICIOS HISTÓRICOS</field>
+    </record>
+    <record id="bussines_field_910300" model="res.partner.bussines_field">
+        <field name="code">910300</field>
+        <field name="desc">ACTIVIDADES DE JARDINES BOTÁNICOS, ZOOLÓGICOS Y RESERVAS NATURALES</field>
+    </record>
+    <record id="bussines_field_920010" model="res.partner.bussines_field">
+        <field name="code">920010</field>
+        <field name="desc">ACTIVIDADES DE CASINOS DE JUEGOS</field>
+    </record>
+    <record id="bussines_field_920090" model="res.partner.bussines_field">
+        <field name="code">920090</field>
+        <field name="desc">OTRAS ACTIVIDADES DE JUEGOS DE AZAR Y APUESTAS N.C.P.</field>
+    </record>
+    <record id="bussines_field_931101" model="res.partner.bussines_field">
+        <field name="code">931101</field>
+        <field name="desc">HIPÓDROMOS</field>
+    </record>
+    <record id="bussines_field_931102" model="res.partner.bussines_field">
+        <field name="code">931102</field>
+        <field name="desc">GESTIÓN DE SALAS DE BILLAR; GESTIÓN DE SALAS DE BOLOS (BOWLING)</field>
+    </record>
+    <record id="bussines_field_931109" model="res.partner.bussines_field">
+        <field name="code">931109</field>
+        <field name="desc">GESTIÓN DE OTRAS INSTALACIONES DEPORTIVAS N.C.P.</field>
+    </record>
+    <record id="bussines_field_931201" model="res.partner.bussines_field">
+        <field name="code">931201</field>
+        <field name="desc">ACTIVIDADES DE CLUBES DE FÚTBOL AMATEUR Y PROFESIONAL</field>
+    </record>
+    <record id="bussines_field_931209" model="res.partner.bussines_field">
+        <field name="code">931209</field>
+        <field name="desc">ACTIVIDADES DE OTROS CLUBES DEPORTIVOS N.C.P.</field>
+    </record>
+    <record id="bussines_field_931901" model="res.partner.bussines_field">
+        <field name="code">931901</field>
+        <field name="desc">PROMOCIÓN Y ORGANIZACIÓN DE COMPETENCIAS DEPORTIVAS</field>
+    </record>
+    <record id="bussines_field_931909" model="res.partner.bussines_field">
+        <field name="code">931909</field>
+        <field name="desc">OTRAS ACTIVIDADES DEPORTIVAS N.C.P.</field>
+    </record>
+    <record id="bussines_field_932100" model="res.partner.bussines_field">
+        <field name="code">932100</field>
+        <field name="desc">ACTIVIDADES DE PARQUES DE ATRACCIONES Y PARQUES TEMÁTICOS</field>
+    </record>
+    <record id="bussines_field_932901" model="res.partner.bussines_field">
+        <field name="code">932901</field>
+        <field name="desc">GESTIÓN DE SALAS DE POOL; GESTIÓN (EXPLOTACIÓN) DE JUEGOS ELECTRÓNICOS</field>
+    </record>
+    <record id="bussines_field_932909" model="res.partner.bussines_field">
+        <field name="code">932909</field>
+        <field name="desc">OTRAS ACTIVIDADES DE ESPARCIMIENTO Y RECREATIVAS N.C.P.</field>
+    </record>
+    <record id="bussines_field_941100" model="res.partner.bussines_field">
+        <field name="code">941100</field>
+        <field name="desc">ACTIVIDADES DE ASOCIACIONES EMPRESARIALES Y DE EMPLEADORES</field>
+    </record>
+    <record id="bussines_field_941200" model="res.partner.bussines_field">
+        <field name="code">941200</field>
+        <field name="desc">ACTIVIDADES DE ASOCIACIONES PROFESIONALES</field>
+    </record>
+    <record id="bussines_field_942000" model="res.partner.bussines_field">
+        <field name="code">942000</field>
+        <field name="desc">ACTIVIDADES DE SINDICATOS</field>
+    </record>
+    <record id="bussines_field_949100" model="res.partner.bussines_field">
+        <field name="code">949100</field>
+        <field name="desc">ACTIVIDADES DE ORGANIZACIONES RELIGIOSAS</field>
+    </record>
+    <record id="bussines_field_949200" model="res.partner.bussines_field">
+        <field name="code">949200</field>
+        <field name="desc">ACTIVIDADES DE ORGANIZACIONES POLÍTICAS</field>
+    </record>
+    <record id="bussines_field_949901" model="res.partner.bussines_field">
+        <field name="code">949901</field>
+        <field name="desc">ACTIVIDADES DE CENTROS DE MADRES</field>
+    </record>
+    <record id="bussines_field_949902" model="res.partner.bussines_field">
+        <field name="code">949902</field>
+        <field name="desc">ACTIVIDADES DE CLUBES SOCIALES</field>
+    </record>
+    <record id="bussines_field_949903" model="res.partner.bussines_field">
+        <field name="code">949903</field>
+        <field name="desc">FUNDACIONES Y CORPORACIONES; ASOCIACIONES QUE PROMUEVEN ACTIVIDADES CULTURALES O RECREATIVAS</field>
+    </record>
+    <record id="bussines_field_949904" model="res.partner.bussines_field">
+        <field name="code">949904</field>
+        <field name="desc">CONSEJO DE ADMINISTRACIÓN DE EDIFICIOS Y CONDOMINIOS</field>
+    </record>
+    <record id="bussines_field_949909" model="res.partner.bussines_field">
+        <field name="code">949909</field>
+        <field name="desc">ACTIVIDADES DE OTRAS ASOCIACIONES N.C.P.</field>
+    </record>
+    <record id="bussines_field_951100" model="res.partner.bussines_field">
+        <field name="code">951100</field>
+        <field name="desc">REPARACIÓN DE COMPUTADORES Y EQUIPO PERIFÉRICO</field>
+    </record>
+    <record id="bussines_field_951200" model="res.partner.bussines_field">
+        <field name="code">951200</field>
+        <field name="desc">REPARACIÓN DE EQUIPO DE COMUNICACIONES (INCLUYE LA REPARACIÓN TELÉFONOS CELULARES)</field>
+    </record>
+    <record id="bussines_field_952100" model="res.partner.bussines_field">
+        <field name="code">952100</field>
+        <field name="desc">REPARACIÓN DE APARATOS ELECTRÓNICOS DE CONSUMO (INCLUYE APARATOS DE TELEVISIÓN Y RADIO)</field>
+    </record>
+    <record id="bussines_field_952200" model="res.partner.bussines_field">
+        <field name="code">952200</field>
+        <field name="desc">REPARACIÓN DE APARATOS DE USO DOMÉSTICO, EQUIPO DOMÉSTICO Y DE JARDINERÍA</field>
+    </record>
+    <record id="bussines_field_952300" model="res.partner.bussines_field">
+        <field name="code">952300</field>
+        <field name="desc">REPARACIÓN DE CALZADO Y DE ARTÍCULOS DE CUERO</field>
+    </record>
+    <record id="bussines_field_952400" model="res.partner.bussines_field">
+        <field name="code">952400</field>
+        <field name="desc">REPARACIÓN DE MUEBLES Y ACCESORIOS DOMÉSTICOS</field>
+    </record>
+    <record id="bussines_field_952900" model="res.partner.bussines_field">
+        <field name="code">952900</field>
+        <field name="desc">REPARACIÓN DE OTROS EFECTOS PERSONALES Y ENSERES DOMÉSTICOS</field>
+    </record>
+    <record id="bussines_field_960100" model="res.partner.bussines_field">
+        <field name="code">960100</field>
+        <field name="desc">LAVADO Y LIMPIEZA, INCLUIDA LA LIMPIEZA EN SECO, DE PRODUCTOS TEXTILES Y DE PIEL</field>
+    </record>
+    <record id="bussines_field_960200" model="res.partner.bussines_field">
+        <field name="code">960200</field>
+        <field name="desc">PELUQUERÍA Y OTROS TRATAMIENTOS DE BELLEZA</field>
+    </record>
+    <record id="bussines_field_960310" model="res.partner.bussines_field">
+        <field name="code">960310</field>
+        <field name="desc">SERVICIOS FUNERARIOS</field>
+    </record>
+    <record id="bussines_field_960320" model="res.partner.bussines_field">
+        <field name="code">960320</field>
+        <field name="desc">SERVICIOS DE CEMENTERIOS</field>
+    </record>
+    <record id="bussines_field_960901" model="res.partner.bussines_field">
+        <field name="code">960901</field>
+        <field name="desc">SERVICIOS DE ADIESTRAMIENTO, GUARDERÍA, PELUQUERÍA, PASEO DE MASCOTAS (EXCEPTO ACT. VETERINARIAS)</field>
+    </record>
+    <record id="bussines_field_960902" model="res.partner.bussines_field">
+        <field name="code">960902</field>
+        <field name="desc">ACTIVIDADES DE SALONES DE MASAJES, BAÑOS TURCOS, SAUNAS, SERVICIO DE BAÑOS PÚBLICOS</field>
+    </record>
+    <record id="bussines_field_960909" model="res.partner.bussines_field">
+        <field name="code">960909</field>
+        <field name="desc">OTRAS ACTIVIDADES DE SERVICIOS PERSONALES N.C.P.</field>
+    </record>
+    <record id="bussines_field_970000" model="res.partner.bussines_field">
+        <field name="code">970000</field>
+        <field name="desc">ACTIVIDADES DE LOS HOGARES COMO EMPLEADORES DE PERSONAL DOMÉSTICO</field>
+    </record>
+    <record id="bussines_field_990000" model="res.partner.bussines_field">
+        <field name="code">990000</field>
+        <field name="desc">ACTIVIDADES DE ORGANIZACIONES Y ÓRGANOS EXTRATERRITORIALES</field>
+    </record>
+</odoo>
