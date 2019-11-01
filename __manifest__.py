@@ -2,7 +2,7 @@
 
 {
     'name': 'Electronic Invoice Chile',
-    'version': '0.1.0',
+    'version': '0.2.0',
     'author': 'Navarro Moisés',
     'website': 'https://github.com/AfroMonkey/electronic_invoice_cl',
     'category': 'Localization',
@@ -18,6 +18,8 @@
         'data/electronic_invoice_translation_type.xml',
         'data/res_partner_bussines_field.xml',
         'views/account_invoice.xml',
+        'views/account_tax.xml',
+        'views/product_uom.xml',
         'views/res_partner.xml',
     ],
     'external_dependencies': {

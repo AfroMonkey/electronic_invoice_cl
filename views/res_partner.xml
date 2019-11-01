@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <record id="view_partner_electronic_invoice_form" model="ir.ui.view">
-        <field name="name">res.partner.electronic_invoice.form</field>
+    <record id="view_partner_bussines_field_form" model="ir.ui.view">
+        <field name="name">res.partner.bussines_field.form</field>
         <field name="model">res.partner</field>
         <field name="inherit_id" ref="base.view_partner_form"/>
         <field name="arch" type="xml">
-            <field name="customer" position="before">
-                <field name="bussines_field_ids"/>
-            </field>
+            <div class="oe_title" position="after">
+                <group>
+                    <field name="bussines_field_ids" widget="many2many_tags"/>
+                </group>
+            </div>
         </field>
     </record>
 </odoo>

@@ -11,14 +11,13 @@ def insert(parent, child, text=""):
     parent.append(child)
 
 
-def get_xml(data):
-    DTE = etree.Element('DTE', version='1.0')
+def _process_data(DTE, data):
     insert(DTE, 'Tipo', data['Tipo'])
     insert(DTE, 'Folio', data['Folio'])
     insert(DTE, 'FechaEmision', data['FechaEmision'])
     insert(DTE, 'FechaVencimiento', data['FechaVencimiento'])
-    insert(DTE, 'TipoDespacho', data['TipoDespacho'])
-    insert(DTE, 'TipoTraslado', data['TipoTraslado'])
+    # TODO insert(DTE, 'TipoDespacho', data['TipoDespacho'])
+    # TODO insert(DTE, 'TipoTraslado', data['TipoTraslado'])
     insert(DTE, 'FormaPago', data['FormaPago'])
     insert(DTE, 'GlosaPago', data['GlosaPago'])
     insert(DTE, 'Sucursal', data['Sucursal'])
@@ -31,17 +30,57 @@ def get_xml(data):
     insert(DTE, 'ReceptorComuna', data['ReceptorComuna'])
     insert(DTE, 'ReceptorCiudad', data['ReceptorCiudad'])
     insert(DTE, 'ReceptorFono', data['ReceptorFono'])
-    insert(DTE, 'TransPatente', data['TransPatente'])
-    insert(DTE, 'TransRutChofer', data['TransRutChofer'])
-    insert(DTE, 'TransNombreChofer', data['TransNombreChofer'])
-    insert(DTE, 'TransDireccionDestino', data['TransDireccionDestino'])
-    insert(DTE, 'TransComunaDestino', data['TransComunaDestino'])
-    insert(DTE, 'TransCiudadDestino', data['TransCiudadDestino'])
+    # TODO insert(DTE, 'TransPatente', data['TransPatente'])
+    # TODO insert(DTE, 'TransRutChofer', data['TransRutChofer'])
+    # TODO insert(DTE, 'TransNombreChofer', data['TransNombreChofer'])
+    # TODO insert(DTE, 'TransDireccionDestino', data['TransDireccionDestino'])
+    # TODO insert(DTE, 'TransComunaDestino', data['TransComunaDestino'])
+    # TODO insert(DTE, 'TransCiudadDestino', data['TransCiudadDestino'])
     insert(DTE, 'Unitarios', data['Unitarios'])
     insert(DTE, 'Neto', data['Neto'])
     insert(DTE, 'Exento', data['Exento'])
     insert(DTE, 'Iva', data['Iva'])
     insert(DTE, 'Total', data['Total'])
+
+
+def _process_references(DTE, references):
+    for reference in references:
+        reference_child = etree.Element("Referencias")
+        insert(reference_child, "RefNroLin", reference['RefNroLin'])
+        insert(reference_child, "RefCodigo", reference['RefCodigo'])
+        insert(reference_child, "RefMotivo", reference['RefMotivo'])
+        insert(reference_child, "RefFolio", reference['RefFolio'])
+        insert(reference_child, "RefFecha", reference['RefFecha'])
+        insert(reference_child, "RefRazon", reference['RefRazon'])
+        DTE.append(reference_child)
+
+
+def _process_details(DTE, details):
+    for detail in details:
+        detail_child = etree.Element("Detalle")
+        insert(detail_child, "NrLinDetalle", detail['NrLinDetalle'])
+        insert(detail_child, "Codigo", detail['Codigo'])
+        insert(detail_child, "Descripcion", detail['Descripcion'])
+        insert(detail_child, "Glosa", detail['Glosa'])
+        insert(detail_child, "Cantidad", detail['Cantidad'])
+        insert(detail_child, "UnidadMedida", detail['UnidadMedida'])
+        insert(detail_child, "IndExento", detail['IndExento'])
+        insert(detail_child, "Unitario", detail['Unitario'])
+        insert(detail_child, "DescuentoLinea", detail['DescuentoLinea'])
+        insert(detail_child, "ValorDescuento", detail['ValorDescuento'])
+        insert(detail_child, "SubTotal", detail['SubTotal'])
+        # TODO insert(detail_child, "BrutoxBotella", detail['BrutoxBotella'])
+        insert(detail_child, "ImptoCodigo", detail['ImptoCodigo'])
+        insert(detail_child, "ImptoTaza", detail['ImptoTaza'])
+        insert(detail_child, "ImptoMonto", detail['ImptoMonto'])
+        DTE.append(detail_child)
+
+
+def get_xml(data, references, details):
+    DTE = etree.Element('DTE', version='1.0')
+    _process_data(DTE, data)
+    _process_references(DTE, references)
+    _process_details(DTE, details)
 
     _logger.info(etree.tostring(DTE, pretty_print=True))
 

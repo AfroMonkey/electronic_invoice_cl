@@ -15,19 +15,16 @@
                 <field name="bussines_field_id"/>
             </field>
             <notebook position="inside">
-                <page string="Transporte">
-                    <group string="Vehiculo">
-                        <field name="TransPatente"/>
-                    </group>
-                    <group string="Chofer">
-                        <field name="TransRutChofer"/>
-                        <field name="TransNombreChofer"/>
-                    </group>
-                    <group string="Destino">
-                        <field name="TransDireccionDestino"/>
-                        <field name="TransComunaDestino"/>
-                        <field name="TransCiudadDestino"/>
-                    </group>
+                <page string="References" >
+                    <field name="reference_ids">
+                        <tree editable="bottom">
+                            <field name="name"/>
+                            <field name="RefMotivo"/>
+                            <field name="RefFolio"/>
+                            <field name="RefFecha"/>
+                            <field name="RefRazon"/>
+                        </tree>
+                    </field>
                 </page>
             </notebook>
         </field>
