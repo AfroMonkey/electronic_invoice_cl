@@ -2,7 +2,7 @@
 
 {
     'name': 'Electronic Invoice Chile',
-    'version': '0.2.0',
+    'version': '1.0.0',
     'author': 'Navarro Moisés',
     'website': 'https://github.com/AfroMonkey/electronic_invoice_cl',
     'category': 'Localization',
@@ -20,11 +20,13 @@
         'views/account_invoice.xml',
         'views/account_tax.xml',
         'views/product_uom.xml',
+        'views/res_company.xml',
         'views/res_partner.xml',
     ],
     'external_dependencies': {
         'python': [
             'unidecode',  # pip install unidecode
+            'zeep',  # pip install zeep
         ]
     }
 }

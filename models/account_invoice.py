@@ -3,11 +3,13 @@
 from datetime import timedelta, datetime
 from unidecode import unidecode  # pip install unidecode
 from collections import OrderedDict
+from base64 import encodestring
+from zeep import Client  # pip install zeep
 
 from odoo import api, fields, models, _
-from odoo.exceptions import ValidationError
+from odoo.exceptions import ValidationError, UserError
 
-from xml_generator import get_xml
+from electronic_invoice_api import get_xml, send_xml
 
 
 DATE_FORMAT = '%d-%m-%Y'
@@ -61,6 +63,29 @@ class AccountInvoice(models.Model):
         comodel_name='account.invoice.reference',
         inverse_name='invoice_id',
     )
+    electronic_invoice_xml = fields.Binary(
+        attachment=True,
+        copy=False,
+        readonly=True,
+        string=_('XML')
+    )
+    fname_electronic_invoice_xml = fields.Char(
+        compute='_get_fname_electronic_invoice_xml'
+    )
+    ei_error_code = fields.Char(
+    )
+    ei_status = fields.Char(
+        readonly=True,
+        string=_('Status')
+    )
+    ei_pdf = fields.Char(
+        readonly=True,
+        string=_('PDF')
+    )
+    ei_ring = fields.Char(
+        readonly=True,
+        string=_('Ring')
+    )
 
     @api.onchange('partner_id')
     def _bussines_field_domain(self):
@@ -72,6 +97,12 @@ class AccountInvoice(models.Model):
         for record in self:
             if record.partner_id and record.partner_id.bussines_field_ids:
                 record.bussines_field_id = record.partner_id.bussines_field_ids[0]
+
+    @api.depends('number')
+    def _get_fname_electronic_invoice_xml(self):
+        for record in self:
+            if record.electronic_invoice_xml:
+                record.fname_electronic_invoice_xml = '{}.xml'.format(record.number)
 
     def _get_data(self):
         data = OrderedDict()
@@ -147,4 +178,22 @@ class AccountInvoice(models.Model):
         data = self._get_data()
         references = self._get_references()
         details = self._get_details()
-        get_xml(data, references, details)
+        xml_string = get_xml(data, references, details)
+        response = send_xml(
+            url=self.company_id.ei_url,
+            user=self.company_id.ei_user,
+            password=self.company_id.ei_password,
+            id_user=self.company_id.ei_id_user,
+            id_company=self.company_id.ei_id_company,
+            environment=self.company_id.ei_environment,
+            ringing=self.company_id.ei_ringing,
+            xml_string=xml_string
+        )
+        self.electronic_invoice_xml = encodestring(xml_string)
+        self.ei_error_code = response[0]
+        self.ei_status = response[3]
+        if self.ei_error_code:
+            return  # TODO log?
+        self.number = response[2]
+        self.ei_pdf = response[4]
+        self.ei_ring = response[5]

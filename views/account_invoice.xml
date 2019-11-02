@@ -26,6 +26,15 @@
                         </tree>
                     </field>
                 </page>
+                <page string="Electronic Invoice" >
+                    <group>
+                        <field name="fname_electronic_invoice_xml" invisible="1"/>
+                        <field name="electronic_invoice_xml" filename="fname_electronic_invoice_xml"/>
+                        <field name="ei_status"/>
+                        <field name="ei_pdf" widget="url"/>
+                        <field name="ei_ring" widget="url"/>
+                    </group>
+                </page>
             </notebook>
         </field>
     </record>

@@ -1,4 +1,5 @@
 from lxml import etree
+from zeep import Client
 
 import logging
 
@@ -81,40 +82,25 @@ def get_xml(data, references, details):
     _process_data(DTE, data)
     _process_references(DTE, references)
     _process_details(DTE, details)
+    _logger.info('XML for {} invoice created'.format(data['Folio']))
+    return '<?xml version="1.0" encoding="UTF-8"?>' + etree.tostring(DTE, pretty_print=True)
 
-    _logger.info(etree.tostring(DTE, pretty_print=True))
 
+def send_xml(url, user, password, id_user, id_company, environment, ringing, xml_string):
+    client = Client(url)
 
-# data_demo = {
-#     'Tipo': '33',
-#     'Folio': '16',
-#     'FechaEmision': '17-09-2019',
-#     'FechaVencimiento': '17-09-2019',
-#     'TipoDespacho': '',
-#     'TipoTraslado': '',
-#     'FormaPago': '2',
-#     'GlosaPago': 'Cheque a Fecha',
-#     'Sucursal': 'Osorno',
-#     'Vendedor': 'Daniel Soto',
-#     'ReceptorRut': '96719960-5',
-#     'ReceptorRazon': 'AGRICOLA Y COMERCIAL GM LTDA.',
-#     'ReceptorGiro': 'EXPLOTACION AGRO-COMERCIAL',
-#     'ReceptorContacto': '',
-#     'ReceptorDireccion': 'FRANCISCO BILBAO 1860 3er PISO',
-#     'ReceptorComuna': 'OSORNO',
-#     'ReceptorCiudad': 'OSORNO',
-#     'ReceptorFono': '64-235879',
-#     'TransPatente': 'DF-5678',
-#     'TransRutChofer': '13822280-2',
-#     'TransNombreChofer': 'Pedro Sandoval',
-#     'TransDireccionDestino': 'FDO EDUVIGES',
-#     'TransComunaDestino': 'FUTRONO',
-#     'TransCiudadDestino': 'FUTRONO',
-#     'Unitarios': '1',
-#     'Neto': '22293',
-#     'Exento': '',
-#     'Iva': '4236',
-#     'Total': '30486',
-# }
-
-# get_xml(data_demo)
+    res = client.service.recibexml(
+        xml_string,
+        user,
+        password,
+        id_user,
+        id_company,
+        environment,
+        ringing,
+    )
+    res = res.split('|')
+    if res[0]:
+        _logger.error('Electronic Invoice: {}'.format(res))
+    else:
+        _logger.info('Electronic Invoice: {}'.format(res))
+    return res
