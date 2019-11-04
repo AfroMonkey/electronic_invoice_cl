@@ -128,7 +128,7 @@ class AccountInvoice(models.Model):
         data['ReceptorDireccion'] = self.partner_id.street
         data['ReceptorComuna'] = self.partner_id.street2
         data['ReceptorCiudad'] = self.partner_id.city
-        data['ReceptorFono'] = self.partner_id.phone or partner_id.mobile
+        data['ReceptorFono'] = self.partner_id.phone or self.partner_id.mobile
         data['Unitarios'] = 1
         exento = sum(line.price_subtotal for line in self.invoice_line_ids if not line.invoice_line_tax_ids)
         data['Neto'] = self.amount_untaxed - exento
