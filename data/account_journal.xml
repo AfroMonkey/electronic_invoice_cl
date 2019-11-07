@@ -20,11 +20,11 @@
         <field name="name">Boleta Exenta Electrónica.</field>
         <field name="type">sale</field>
     </record>
-    <record id="account_journal_52" model="account.journal">
+    <!-- <record id="account_journal_52" model="account.journal">
         <field name="code">52V</field>
         <field name="name">Guía de Despacho Electrónica</field>
         <field name="type">sale</field>
-    </record>
+    </record> -->
     <record id="account_journal_56" model="account.journal">
         <field name="code">56V</field>
         <field name="name">Nota de Débito Electrónica.</field>

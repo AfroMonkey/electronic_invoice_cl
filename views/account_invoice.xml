@@ -5,9 +5,12 @@
         <field name="model">account.invoice</field>
         <field name="inherit_id" ref="account.invoice_form"/>
         <field name="arch" type="xml">
-            <header position="inside">
+            <button name="action_invoice_open" position="after">
                 <button name="send_xml" string="Send XML" type="object" class="oe_highlight"/>
-            </header>
+            </button>
+            <button name="action_invoice_open" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </button>
             <field name="fiscal_position_id" position="before">
                 <field name="sucursal"/>
             </field>
@@ -15,7 +18,7 @@
                 <field name="bussines_field_id"/>
             </field>
             <notebook position="inside">
-                <page string="References" >
+                <page string="References">
                     <field name="reference_ids">
                         <tree editable="bottom">
                             <field name="name"/>
@@ -26,7 +29,7 @@
                         </tree>
                     </field>
                 </page>
-                <page string="Electronic Invoice" >
+                <page string="Electronic Invoice">
                     <group>
                         <field name="fname_electronic_invoice_xml" invisible="1"/>
                         <field name="electronic_invoice_xml" filename="fname_electronic_invoice_xml"/>

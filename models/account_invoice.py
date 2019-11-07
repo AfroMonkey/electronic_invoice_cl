@@ -102,7 +102,10 @@ class AccountInvoice(models.Model):
     def _get_fname_electronic_invoice_xml(self):
         for record in self:
             if record.electronic_invoice_xml:
-                record.fname_electronic_invoice_xml = '{}.xml'.format(record.number)
+                if record.number:
+                    record.fname_electronic_invoice_xml = '{}.xml'.format(record.number)
+                else:
+                    record.fname_electronic_invoice_xml = '{} {}.xml'.format(record.partner_id.vat, record.date_invoice)
 
     def _get_data(self):
         data = OrderedDict()
@@ -121,7 +124,7 @@ class AccountInvoice(models.Model):
         data['Vendedor'] = self.user_id.name
         if not self.partner_id or not self.partner_id.vat:
             raise ValidationError(_('Partner must have VAT.'))
-        data['ReceptorRut'] = self.partner_id.vat[2:]
+        data['ReceptorRut'] = '{}-{}'.format(self.partner_id.vat[2:-1], self.partner_id.vat[-1:])
         data['ReceptorRazon'] = self.partner_id.name
         data['ReceptorGiro'] = self.bussines_field_id.desc
         data['ReceptorContacto'] = self.partner_id.name
@@ -146,7 +149,7 @@ class AccountInvoice(models.Model):
                 'RefCodigo': reference.name.code,
                 'RefMotivo': reference.RefMotivo,
                 'RefFolio': reference.RefFolio,
-                'RefFecha': reference.RefFecha,
+                'RefFecha': datetime.strptime(reference.RefFecha, '%Y-%m-%d'),
                 'RefRazon': reference.RefRazon,
             }))
         return references
@@ -161,7 +164,7 @@ class AccountInvoice(models.Model):
                 'Glosa': line.name,
                 'Cantidad': line.quantity,
                 'UnidadMedida': line.uom_id.code,
-                'IndExento': 'SI' if line.invoice_line_tax_ids else 'NO',
+                'IndExento': 'NO' if line.invoice_line_tax_ids else 'SI',
                 'Unitario': line.price_unit,
                 'DescuentoLinea': '$',  # TODO check
                 'ValorDescuento': line.discount * line.price_subtotal,  # TODO check
@@ -179,6 +182,7 @@ class AccountInvoice(models.Model):
         references = self._get_references()
         details = self._get_details()
         xml_string = get_xml(data, references, details)
+        self.electronic_invoice_xml = encodestring(xml_string)
         response = send_xml(
             url=self.company_id.ei_url,
             user=self.company_id.ei_user,
@@ -189,11 +193,12 @@ class AccountInvoice(models.Model):
             ringing=self.company_id.ei_ringing,
             xml_string=xml_string
         )
-        self.electronic_invoice_xml = encodestring(xml_string)
         self.ei_error_code = response[0]
         self.ei_status = response[3]
-        if self.ei_error_code:
-            return  # TODO log?
+        if not self.ei_error_code:
+            self.action_invoice_open()
+        else:
+            return  # TODO log
         self.number = response[2]
         self.ei_pdf = response[4]
         self.ei_ring = response[5]

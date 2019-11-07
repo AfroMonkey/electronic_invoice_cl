@@ -1,0 +1,429 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* electronic_invoice_cl
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-11-07 00:22+0000\n"
+"PO-Revision-Date: 2019-11-07 00:22+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: electronic_invoice_cl
+#: selection:account.invoice.reference,RefMotivo:0
+msgid "Anulación"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_bussines_field_id
+msgid "Bussines field id"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_res_partner_bussines_field_ids
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_res_users_bussines_field_ids
+msgid "Bussines field ids"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: code:addons/electronic_invoice_cl/models/account_invoice.py:54
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_TransCiudadDestino
+#, python-format
+msgid "Ciudad"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_tax_code
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_basic_code_desc_model_code
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_despatch_type_code
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_reference_doc_type_code
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_translation_type_code
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_product_uom_code
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_res_partner_bussines_field_code
+msgid "Code"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model,name:electronic_invoice_cl.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: code:addons/electronic_invoice_cl/models/account_invoice.py:51
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_TransComunaDestino
+#, python-format
+msgid "Comuna"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: selection:account.invoice.reference,RefMotivo:0
+msgid "Corrección monto"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: selection:account.invoice.reference,RefMotivo:0
+msgid "Corrección texto"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_reference_create_uid
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_despatch_type_create_uid
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_reference_doc_type_create_uid
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_translation_type_create_uid
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_res_partner_bussines_field_create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_reference_create_date
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_despatch_type_create_date
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_reference_doc_type_create_date
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_translation_type_create_date
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_res_partner_bussines_field_create_date
+msgid "Created on"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: code:addons/electronic_invoice_cl/models/account_invoice_reference.py:17
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_reference_name
+#, python-format
+msgid "Código"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_basic_code_desc_model_desc
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_despatch_type_desc
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_reference_doc_type_desc
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_translation_type_desc
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_res_partner_bussines_field_desc
+msgid "Desc"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: code:addons/electronic_invoice_cl/models/account_invoice.py:57
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_TipoDespacho
+#, python-format
+msgid "Despacho"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: code:addons/electronic_invoice_cl/models/account_invoice.py:48
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_TransDireccionDestino
+#, python-format
+msgid "Dirección"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_reference_display_name
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_basic_code_desc_model_display_name
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_despatch_type_display_name
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_reference_doc_type_display_name
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_translation_type_display_name
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_res_partner_bussines_field_display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_ei_error_code
+msgid "Ei error code"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.ui.view,arch_db:electronic_invoice_cl.electronic_invoice_form
+#: model:ir.ui.view,arch_db:electronic_invoice_cl.view_company_ei_form
+msgid "Electronic Invoice"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: code:addons/electronic_invoice_cl/models/res_company.py:31
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_res_company_ei_environment
+#, python-format
+msgid "Environment"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: code:addons/electronic_invoice_cl/models/account_invoice_reference.py:33
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_reference_RefFecha
+#, python-format
+msgid "Fecha"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_fname_electronic_invoice_xml
+msgid "Fname electronic invoice xml"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: code:addons/electronic_invoice_cl/models/account_invoice_reference.py:29
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_reference_RefFolio
+#, python-format
+msgid "Folio"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_reference_id
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_basic_code_desc_model_id
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_despatch_type_id
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_reference_doc_type_id
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_translation_type_id
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_res_partner_bussines_field_id
+msgid "ID"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: code:addons/electronic_invoice_cl/models/res_company.py:27
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_res_company_ei_id_company
+#, python-format
+msgid "Id Company"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: code:addons/electronic_invoice_cl/models/res_company.py:23
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_res_company_ei_id_user
+#, python-format
+msgid "Id User"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model,name:electronic_invoice_cl.model_account_invoice
+msgid "Invoice"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_reference_invoice_id
+msgid "Invoice id"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_reference___last_update
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_basic_code_desc_model___last_update
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_despatch_type___last_update
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_reference_doc_type___last_update
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_translation_type___last_update
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_res_partner_bussines_field___last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_reference_write_uid
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_despatch_type_write_uid
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_reference_doc_type_write_uid
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_translation_type_write_uid
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_res_partner_bussines_field_write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_reference_write_date
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_despatch_type_write_date
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_reference_doc_type_write_date
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_translation_type_write_date
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_res_partner_bussines_field_write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: code:addons/electronic_invoice_cl/models/account_invoice_reference.py:25
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_reference_RefMotivo
+#, python-format
+msgid "Motivo"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_basic_code_desc_model_name
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_despatch_type_name
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_reference_doc_type_name
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_electronic_invoice_translation_type_name
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_res_partner_bussines_field_name
+msgid "Name"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: code:addons/electronic_invoice_cl/models/account_invoice.py:45
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_TransNombreChofer
+#, python-format
+msgid "Nombre"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: code:addons/electronic_invoice_cl/models/account_invoice.py:83
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_ei_pdf
+#, python-format
+msgid "PDF"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model,name:electronic_invoice_cl.model_res_partner
+msgid "Partner"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: code:addons/electronic_invoice_cl/models/account_invoice.py:126
+#, python-format
+msgid "Partner must have VAT."
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: code:addons/electronic_invoice_cl/models/res_company.py:19
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_res_company_ei_password
+#, python-format
+msgid "Password"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: code:addons/electronic_invoice_cl/models/account_invoice.py:39
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_TransPatente
+#, python-format
+msgid "Patente"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model,name:electronic_invoice_cl.model_product_uom
+msgid "Product Unit of Measure"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: code:addons/electronic_invoice_cl/models/account_invoice.py:42
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_TransRutChofer
+#, python-format
+msgid "RUT"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: code:addons/electronic_invoice_cl/models/account_invoice_reference.py:38
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_reference_RefRazon
+#, python-format
+msgid "Razón"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_reference_ids
+msgid "Reference ids"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.ui.view,arch_db:electronic_invoice_cl.electronic_invoice_form
+msgid "References"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: code:addons/electronic_invoice_cl/models/account_invoice.py:87
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_ei_ring
+#, python-format
+msgid "Ring"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: code:addons/electronic_invoice_cl/models/res_company.py:35
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_res_company_ei_ringing
+#, python-format
+msgid "Ringing"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.ui.view,arch_db:electronic_invoice_cl.electronic_invoice_form
+msgid "Send XML"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: code:addons/electronic_invoice_cl/models/account_invoice.py:79
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_ei_status
+#, python-format
+msgid "Status"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_sucursal
+msgid "Sucursal"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model,name:electronic_invoice_cl.model_account_tax
+msgid "Tax"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: code:addons/electronic_invoice_cl/models/account_invoice.py:60
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_TipoTraslado
+#, python-format
+msgid "Traslado"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: code:addons/electronic_invoice_cl/models/res_company.py:11
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_res_company_ei_url
+#, python-format
+msgid "URL"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: code:addons/electronic_invoice_cl/models/res_company.py:15
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_res_company_ei_user
+#, python-format
+msgid "User"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: code:addons/electronic_invoice_cl/models/account_invoice.py:70
+#: model:ir.model.fields,field_description:electronic_invoice_cl.field_account_invoice_electronic_invoice_xml
+#, python-format
+msgid "XML"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model,name:electronic_invoice_cl.model_account_invoice_reference
+msgid "account.invoice.reference"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model,name:electronic_invoice_cl.model_basic_code_desc_model
+msgid "basic_code_desc_model"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model,name:electronic_invoice_cl.model_electronic_invoice__doc_type
+msgid "electronic_invoice._doc_type"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model,name:electronic_invoice_cl.model_electronic_invoice_despatch_type
+msgid "electronic_invoice.despatch_type"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model,name:electronic_invoice_cl.model_electronic_invoice_dispatch_type
+msgid "electronic_invoice.dispatch_type"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model,name:electronic_invoice_cl.model_electronic_invoice_doc_type
+msgid "electronic_invoice.doc_type"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model,name:electronic_invoice_cl.model_electronic_invoice_reference_doc_type
+msgid "electronic_invoice.reference_doc_type"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model,name:electronic_invoice_cl.model_electronic_invoice_translation_type
+msgid "electronic_invoice.translation_type"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: model:ir.model,name:electronic_invoice_cl.model_res_partner_bussines_field
+msgid "res.partner.bussines_field"
+msgstr ""
+
+#. module: electronic_invoice_cl
+#: code:addons/electronic_invoice_cl/models/account_invoice_reference.py:45
+#, python-format
+msgid "{} can not have that reason"
+msgstr ""
+
