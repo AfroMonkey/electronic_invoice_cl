@@ -172,7 +172,7 @@ class AccountInvoice(models.Model):
                 # TODO second stage 'BrutoxBotella': line.,
                 'ImptoCodigo': line.invoice_line_tax_ids[0].code if line.invoice_line_tax_ids else '',
                 'ImptoTaza': line.invoice_line_tax_ids[0].amount if line.invoice_line_tax_ids else '',
-                'ImptoMonto': line.invoice_line_tax_ids[0].amount * line.price_subtotal if line.invoice_line_tax_ids else '',
+                'ImptoMonto': line.invoice_line_tax_ids[0].amount / 100 * line.price_subtotal if line.invoice_line_tax_ids else '',
             }))
         return details
 
