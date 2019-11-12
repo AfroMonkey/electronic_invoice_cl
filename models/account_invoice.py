@@ -19,8 +19,8 @@ DESPATCH_DOC = 52
 def dict_string(d):
     for key in d:
         if type(d[key]) == unicode:
-            d[key] = unidecode(d[key])
-        d[key] = str(d[key])
+            d[key] = unidecode(d[key] or '')
+        d[key] = str(d[key] or '')
     return d
 
 
