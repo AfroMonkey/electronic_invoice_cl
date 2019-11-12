@@ -73,16 +73,20 @@ class AccountInvoice(models.Model):
         compute='_get_fname_electronic_invoice_xml'
     )
     ei_error_code = fields.Char(
+        copy=False,
     )
     ei_status = fields.Char(
+        copy=False,
         readonly=True,
         string=_('Status')
     )
     ei_pdf = fields.Char(
+        copy=False,
         readonly=True,
         string=_('PDF')
     )
     ei_ring = fields.Char(
+        copy=False,
         readonly=True,
         string=_('Ring')
     )
@@ -136,8 +140,8 @@ class AccountInvoice(models.Model):
         exento = sum(line.price_subtotal for line in self.invoice_line_ids if not line.invoice_line_tax_ids)
         data['Neto'] = self.amount_untaxed - exento
         data['Exento'] = exento
-        data['Iva'] = self.amount_tax
-        data['Total'] = self.amount_total
+        data['Iva'] = round(self.amount_tax)
+        data['Total'] = round(self.amount_total)
         dict_string(data)
         return data
 
@@ -157,6 +161,9 @@ class AccountInvoice(models.Model):
     def _get_details(self):
         details = []
         for i, line in enumerate(self.invoice_line_ids, start=1):
+            ir_values_obj = self.env['ir.values']
+            default_taxes = ir_values_obj.get_default('product.template', "taxes_id", company_id=self.company_id.id)
+            filtered_taxes = line.invoice_line_tax_ids.filtered(lambda line: line.id not in default_taxes)
             details.append(dict_string({
                 'NrLinDetalle': i,
                 'Codigo': line.product_id.default_code,
@@ -170,9 +177,9 @@ class AccountInvoice(models.Model):
                 'ValorDescuento': line.discount * line.price_subtotal,  # TODO check
                 'SubTotal': line.price_subtotal,
                 # TODO second stage 'BrutoxBotella': line.,
-                'ImptoCodigo': line.invoice_line_tax_ids[0].code if line.invoice_line_tax_ids else '',
-                'ImptoTaza': line.invoice_line_tax_ids[0].amount if line.invoice_line_tax_ids else '',
-                'ImptoMonto': line.invoice_line_tax_ids[0].amount / 100 * line.price_subtotal if line.invoice_line_tax_ids else '',
+                'ImptoCodigo': filtered_taxes.code if line.invoice_line_tax_ids else '',
+                'ImptoTaza': filtered_taxes.amount if line.invoice_line_tax_ids else '',
+                'ImptoMonto': round(filtered_taxes.amount / 100 * line.price_subtotal) if line.invoice_line_tax_ids else '',
             }))
         return details
 
@@ -195,7 +202,7 @@ class AccountInvoice(models.Model):
         )
         self.ei_error_code = response[0]
         self.ei_status = response[3]
-        if not self.ei_error_code:
+        if self.ei_error_code == '0':
             self.action_invoice_open()
         else:
             return  # TODO log

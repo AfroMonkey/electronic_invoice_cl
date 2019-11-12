@@ -99,8 +99,8 @@ def send_xml(url, user, password, id_user, id_company, environment, ringing, xml
         ringing,
     )
     res = res.split('|')
-    if res[0]:
-        _logger.error('Electronic Invoice: {}'.format(res))
+    if res[0] == '0':
+        _logger.info('Electronic Invoice Success: {}'.format(res))
     else:
-        _logger.info('Electronic Invoice: {}'.format(res))
+        _logger.error('Electronic Invoice Failed: {}'.format(res))
     return res
