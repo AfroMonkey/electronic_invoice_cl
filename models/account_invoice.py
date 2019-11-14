@@ -35,30 +35,30 @@ class AccountInvoice(models.Model):
     )
     sucursal = fields.Char(
     )
-    TransPatente = fields.Char(
-        string=_('Patente'),
-    )
-    TransRutChofer = fields.Char(
-        string=_('RUT'),
-    )
-    TransNombreChofer = fields.Char(
-        string=_('Nombre'),
-    )
-    TransDireccionDestino = fields.Char(
-        string=_('Dirección'),
-    )
-    TransComunaDestino = fields.Char(
-        string=_('Comuna'),
-    )
-    TransCiudadDestino = fields.Char(
-        string=_('Ciudad'),
-    )
-    TipoDespacho = fields.Many2one(
-        string=_('Despacho'),
-    )
-    TipoTraslado = fields.Many2one(
-        string=_('Traslado'),
-    )
+    # TransPatente = fields.Char(
+    #     string=_('Patente'),
+    # )
+    # TransRutChofer = fields.Char(
+    #     string=_('RUT'),
+    # )
+    # TransNombreChofer = fields.Char(
+    #     string=_('Nombre'),
+    # )
+    # TransDireccionDestino = fields.Char(
+    #     string=_('Dirección'),
+    # )
+    # TransComunaDestino = fields.Char(
+    #     string=_('Comuna'),
+    # )
+    # TransCiudadDestino = fields.Char(
+    #     string=_('Ciudad'),
+    # )
+    # TipoDespacho = fields.Many2one(
+    #     string=_('Despacho'),
+    # )
+    # TipoTraslado = fields.Many2one(
+    #     string=_('Traslado'),
+    # )
     reference_ids = fields.One2many(
         comodel_name='account.invoice.reference',
         inverse_name='invoice_id',
