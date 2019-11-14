@@ -154,7 +154,7 @@ class AccountInvoice(models.Model):
                 'RefCodigo': reference.name.code,
                 'RefMotivo': reference.RefMotivo,
                 'RefFolio': reference.RefFolio,
-                'RefFecha': datetime.strptime(reference.RefFecha, '%Y-%m-%d'),
+                'RefFecha': datetime.strftime(datetime.strptime(reference.RefFecha, '%Y-%m-%d'), DATE_FORMAT),
                 'RefRazon': reference.RefRazon,
             }))
         return references
