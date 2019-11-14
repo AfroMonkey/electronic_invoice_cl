@@ -4,6 +4,7 @@ from . import electronic_invoice_api
 
 from . import account_invoice
 from . import account_invoice_reference
+from . import account_journal
 from . import account_tax
 from . import basic_code_desc_model
 from . import electronic_invoice_despatch_type

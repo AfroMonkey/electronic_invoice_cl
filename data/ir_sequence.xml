@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo noupdate="1">
+    <record id="seq_FE" model="ir.sequence">
+        <field name="name">Factura electrónica</field>
+        <field name="code">electronic_invoice_cl.seq_FE</field>
+    </record>
+    <record id="seq_FN" model="ir.sequence">
+        <field name="name">Factura no afecta o excenta</field>
+        <field name="code">electronic_invoice_cl.seq_FN</field>
+    </record>
+    <record id="seq_NC" model="ir.sequence">
+        <field name="name">Nota de crédito</field>
+        <field name="code">electronic_invoice_cl.seq_NC</field>
+    </record>
+    <record id="seq_ND" model="ir.sequence">
+        <field name="name">Nota de débito</field>
+        <field name="code">electronic_invoice_cl.seq_ND</field>
+    </record>
+    <record id="seq_BE" model="ir.sequence">
+        <field name="name">Boleta electrónica</field>
+        <field name="code">electronic_invoice_cl.seq_BE</field>
+    </record>
+    <record id="seq_BN" model="ir.sequence">
+        <field name="name">Boleta electrónica exenta</field>
+        <field name="code">electronic_invoice_cl.seq_BN</field>
+    </record>
+    <record id="seq_GD" model="ir.sequence">
+        <field name="name">Guía de despacho</field>
+        <field name="code">electronic_invoice_cl.seq_GD</field>
+    </record>
+</odoo>

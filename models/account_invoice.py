@@ -114,7 +114,7 @@ class AccountInvoice(models.Model):
     def _get_data(self):
         data = OrderedDict()
         data['Tipo'] = self.journal_id.code[:-1]
-        data['Folio'] = self.id
+        data['Folio'] = self.journal_id.sequence_id.next_by_id()
         date_invoice = datetime.strptime(self.date_invoice, '%Y-%m-%d')
         date_invoice = datetime.strftime(date_invoice, DATE_FORMAT)
         data['FechaEmision'] = date_invoice
