@@ -73,6 +73,7 @@ class AccountInvoice(models.Model):
         compute='_get_fname_electronic_invoice_xml'
     )
     ei_error_code = fields.Char(
+        readonly=True,
         copy=False,
     )
     ei_status = fields.Char(
