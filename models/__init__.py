@@ -2,6 +2,7 @@
 
 from . import electronic_invoice_api
 
+from . import electronic_invoice
 from . import account_invoice
 from . import account_invoice_reference
 from . import account_journal

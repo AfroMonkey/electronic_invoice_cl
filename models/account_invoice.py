@@ -1,79 +1,17 @@
 # -*- coding: utf-8 -*-
 
 from datetime import timedelta, datetime
-from unidecode import unidecode  # pip install unidecode
 from collections import OrderedDict
-from base64 import encodestring
-from zeep import Client  # pip install zeep
 
 from odoo import api, fields, models, _
 from odoo.exceptions import ValidationError, UserError
 
-from electronic_invoice_api import get_xml, send_xml
-
-
-DATE_FORMAT = '%d-%m-%Y'
-DESPATCH_DOC = 52
-
-
-def dict_string(d):
-    for key in d:
-        if type(d[key]) == unicode:
-            d[key] = unidecode(d[key] or '')
-        d[key] = str(d[key] or '')
-    return d
+from electronic_invoice_api import dict_string, DATE_FORMAT
 
 
 class AccountInvoice(models.Model):
-    _inherit = 'account.invoice'
-
-    bussines_field_id = fields.Many2one(
-        comodel_name='res.partner.bussines_field',
-        compute='_get_bussines_field',
-        store=True,
-        readonly=False,
-    )
-    sucursal = fields.Char(
-    )
-    reference_ids = fields.One2many(
-        comodel_name='account.invoice.reference',
-        inverse_name='invoice_id',
-    )
-    electronic_invoice_xml = fields.Binary(
-        attachment=True,
-        copy=False,
-        readonly=True,
-        string=_('XML')
-    )
-    fname_electronic_invoice_xml = fields.Char(
-        compute='_get_fname_electronic_invoice_xml'
-    )
-    ei_error_code = fields.Char(
-        readonly=True,
-        copy=False,
-    )
-    ei_status = fields.Char(
-        copy=False,
-        readonly=True,
-        string=_('Status')
-    )
-    ei_pdf = fields.Char(
-        copy=False,
-        readonly=True,
-        string=_('PDF')
-    )
-    ei_ring = fields.Char(
-        copy=False,
-        readonly=True,
-        string=_('Ring')
-    )
-
-    @api.depends('partner_id')
-    def _get_bussines_field(self):
-        for record in self:
-            partner_id = self.partner_id.parent_id or self.partner_id
-            if partner_id and partner_id.bussines_field_ids:
-                record.bussines_field_id = partner_id.bussines_field_ids[0]
+    _name = 'account.invoice'
+    _inherit = ['account.invoice', 'electronic_invoice']
 
     @api.depends('number')
     def _get_fname_electronic_invoice_xml(self):
@@ -160,27 +98,9 @@ class AccountInvoice(models.Model):
 
     @api.multi
     def send_xml(self):
-        data = self._get_data()
-        references = self._get_references()
-        details = self._get_details()
-        xml_string = get_xml(data, references, details)
-        self.electronic_invoice_xml = encodestring(xml_string)
-        response = send_xml(
-            url=self.company_id.ei_url,
-            user=self.company_id.ei_user,
-            password=self.company_id.ei_password,
-            id_user=self.company_id.ei_id_user,
-            id_company=self.company_id.ei_id_company,
-            environment=self.company_id.ei_environment,
-            ringing=self.company_id.ei_ringing,
-            xml_string=xml_string
-        )
-        self.ei_error_code = response[0]
-        self.ei_status = response[3]
+        response = super(AccountInvoice, self).send_xml()
+        self.number = response[2]
         if self.ei_error_code == '0':
             self.action_invoice_open()
         else:
             return  # TODO log
-        self.number = response[2]
-        self.ei_pdf = response[4]
-        self.ei_ring = response[5]

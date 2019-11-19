@@ -1,9 +1,22 @@
 from lxml import etree
+from unidecode import unidecode  # pip install unidecode
 from zeep import Client
 
 import logging
 
 _logger = logging.getLogger(__name__)
+
+
+DATE_FORMAT = '%d-%m-%Y'
+DESPATCH_DOC = 52
+
+
+def dict_string(d):
+    for key in d:
+        if type(d[key]) == unicode:
+            d[key] = unidecode(d[key] or '')
+        d[key] = str(d[key] or '')
+    return d
 
 
 def insert(parent, child, text=""):
