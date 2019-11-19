@@ -71,8 +71,9 @@ class AccountInvoice(models.Model):
     @api.depends('partner_id')
     def _get_bussines_field(self):
         for record in self:
-            if record.partner_id and record.partner_id.bussines_field_ids:
-                record.bussines_field_id = record.partner_id.bussines_field_ids[0]
+            partner_id = self.partner_id.parent_id or self.partner_id
+            if partner_id and partner_id.bussines_field_ids:
+                record.bussines_field_id = partner_id.bussines_field_ids[0]
 
     @api.depends('number')
     def _get_fname_electronic_invoice_xml(self):
@@ -84,6 +85,7 @@ class AccountInvoice(models.Model):
                     record.fname_electronic_invoice_xml = '{} {}.xml'.format(record.partner_id.vat, record.date_invoice)
 
     def _get_data(self):
+        partner_id = self.partner_id.parent_id or self.partner_id
         data = OrderedDict()
         data['Tipo'] = self.journal_id.code[:-1]
         data['Folio'] = self.journal_id.sequence_id.next_by_id()
@@ -98,16 +100,17 @@ class AccountInvoice(models.Model):
         data['GlosaPago'] = self.payment_term_id.name
         data['Sucursal'] = self.sucursal
         data['Vendedor'] = self.user_id.name
-        if not self.partner_id or not self.partner_id.vat:
+        if not partner_id or not partner_id.vat:
             raise ValidationError(_('Partner must have VAT.'))
-        data['ReceptorRut'] = '{}-{}'.format(self.partner_id.vat[2:-1], self.partner_id.vat[-1:])
-        data['ReceptorRazon'] = self.partner_id.name
+        data['ReceptorRut'] = '{}-{}'.format(partner_id.vat[2:-1], partner_id.vat[-1:])
+        data['ReceptorRazon'] = partner_id.name  # TODO company
         data['ReceptorGiro'] = self.bussines_field_id.desc
         data['ReceptorContacto'] = self.partner_id.name
-        data['ReceptorDireccion'] = self.partner_id.street
-        data['ReceptorComuna'] = self.partner_id.street2
-        data['ReceptorCiudad'] = self.partner_id.city
-        data['ReceptorFono'] = self.partner_id.phone or self.partner_id.mobile
+        print(self.partner_id.name)
+        data['ReceptorDireccion'] = partner_id.street
+        data['ReceptorComuna'] = partner_id.street2
+        data['ReceptorCiudad'] = partner_id.city
+        data['ReceptorFono'] = partner_id.phone or partner_id.mobile
         data['Unitarios'] = 1
         exento = sum(line.price_subtotal for line in self.invoice_line_ids if not line.invoice_line_tax_ids)
         data['Neto'] = self.amount_untaxed - exento
