@@ -35,30 +35,6 @@ class AccountInvoice(models.Model):
     )
     sucursal = fields.Char(
     )
-    # TransPatente = fields.Char(
-    #     string=_('Patente'),
-    # )
-    # TransRutChofer = fields.Char(
-    #     string=_('RUT'),
-    # )
-    # TransNombreChofer = fields.Char(
-    #     string=_('Nombre'),
-    # )
-    # TransDireccionDestino = fields.Char(
-    #     string=_('Dirección'),
-    # )
-    # TransComunaDestino = fields.Char(
-    #     string=_('Comuna'),
-    # )
-    # TransCiudadDestino = fields.Char(
-    #     string=_('Ciudad'),
-    # )
-    # TipoDespacho = fields.Many2one(
-    #     string=_('Despacho'),
-    # )
-    # TipoTraslado = fields.Many2one(
-    #     string=_('Traslado'),
-    # )
     reference_ids = fields.One2many(
         comodel_name='account.invoice.reference',
         inverse_name='invoice_id',
@@ -91,11 +67,6 @@ class AccountInvoice(models.Model):
         readonly=True,
         string=_('Ring')
     )
-
-    @api.onchange('partner_id')
-    def _bussines_field_domain(self):
-        ids = [record.id for record in self.partner_id.bussines_field_ids]
-        return {'domain': {'bussines_field_id': [('id', 'in', ids)]}}
 
     @api.depends('partner_id')
     def _get_bussines_field(self):
