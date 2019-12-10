@@ -50,10 +50,10 @@ class AccountInvoice(models.Model):
         data['ReceptorFono'] = partner_id.phone or partner_id.mobile
         data['Unitarios'] = 1
         exento = sum(line.price_subtotal for line in self.invoice_line_ids if not line.invoice_line_tax_ids)
-        data['Neto'] = self.amount_untaxed - exento
-        data['Exento'] = exento
-        data['Iva'] = round(self.amount_tax)
-        data['Total'] = round(self.amount_total)
+        data['Neto'] = int(round(self.amount_untaxed - exento))
+        data['Exento'] = int(round(exento))
+        data['Iva'] = int(round(self.amount_tax))
+        data['Total'] = int(round(self.amount_total))
         dict_string(data)
         return data
 
