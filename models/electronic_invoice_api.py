@@ -8,7 +8,7 @@ _logger = logging.getLogger(__name__)
 
 
 DATE_FORMAT = '%d-%m-%Y'
-DESPATCH_DOC = 52
+DESPATCH_DOC = '52'  # TODO ref
 
 
 def dict_string(d):
@@ -30,8 +30,9 @@ def _process_data(DTE, data):
     insert(DTE, 'Folio', data['Folio'])
     insert(DTE, 'FechaEmision', data['FechaEmision'])
     insert(DTE, 'FechaVencimiento', data['FechaVencimiento'])
-    # TODO insert(DTE, 'TipoDespacho', data['TipoDespacho'])
-    # TODO insert(DTE, 'TipoTraslado', data['TipoTraslado'])
+    if data['Tipo'] == DESPATCH_DOC:
+        insert(DTE, 'TipoDespacho', data['TipoDespacho'])
+        insert(DTE, 'TipoTraslado', data['TipoTraslado'])
     insert(DTE, 'FormaPago', data['FormaPago'])
     insert(DTE, 'GlosaPago', data['GlosaPago'])
     insert(DTE, 'Sucursal', data['Sucursal'])
@@ -44,12 +45,13 @@ def _process_data(DTE, data):
     insert(DTE, 'ReceptorComuna', data['ReceptorComuna'])
     insert(DTE, 'ReceptorCiudad', data['ReceptorCiudad'])
     insert(DTE, 'ReceptorFono', data['ReceptorFono'])
-    # TODO insert(DTE, 'TransPatente', data['TransPatente'])
-    # TODO insert(DTE, 'TransRutChofer', data['TransRutChofer'])
-    # TODO insert(DTE, 'TransNombreChofer', data['TransNombreChofer'])
-    # TODO insert(DTE, 'TransDireccionDestino', data['TransDireccionDestino'])
-    # TODO insert(DTE, 'TransComunaDestino', data['TransComunaDestino'])
-    # TODO insert(DTE, 'TransCiudadDestino', data['TransCiudadDestino'])
+    if data['Tipo'] == DESPATCH_DOC:
+        insert(DTE, 'TransPatente', data['TransPatente'])
+        insert(DTE, 'TransRutChofer', data['TransRutChofer'])
+        insert(DTE, 'TransNombreChofer', data['TransNombreChofer'])
+        insert(DTE, 'TransDireccionDestino', data['TransDireccionDestino'])
+        insert(DTE, 'TransComunaDestino', data['TransComunaDestino'])
+        insert(DTE, 'TransCiudadDestino', data['TransCiudadDestino'])
     insert(DTE, 'Unitarios', data['Unitarios'])
     insert(DTE, 'Neto', data['Neto'])
     insert(DTE, 'Exento', data['Exento'])

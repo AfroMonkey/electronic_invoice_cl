@@ -9,33 +9,58 @@ from odoo.exceptions import ValidationError, UserError
 from electronic_invoice_api import dict_string, DATE_FORMAT
 
 
-class AccountInvoice(models.Model):
-    _name = 'account.invoice'
-    _inherit = ['account.invoice', 'electronic_invoice']
+class StockPicking(models.Model):
+    _name = 'stock.picking'
+    _inherit = ['stock.picking', 'electronic_invoice']
 
-    @api.depends('number')
+    journal_id = fields.Many2one(  # TODO
+        comodel_name='account.journal',
+    )
+    despatch_type_id = fields.Many2one(
+        comodel_name='electronic_invoice.despatch_type',
+    )
+    translation_type_id = fields.Many2one(
+        comodel_name='electronic_invoice.translation_type',
+    )
+    user_id = fields.Many2one(
+        comodel_name='res.users',
+    )
+    amount_untaxed = fields.Float(
+        compute='_get_amounts',
+    )
+    amount_tax = fields.Float(
+        compute='_get_amounts',
+    )
+    amount_total = fields.Float(
+        compute='_get_amounts',
+    )
+
+    @api.depends('move_lines')
+    def _get_amounts(self):
+        for record in self:
+            record.amount_untaxed = sum(line.amount_untaxed for line in record.move_lines)
+            record.amount_tax = sum(line.amount_tax for line in record.move_lines)
+            record.amount_total = sum(line.amount_total for line in record.move_lines)
+
+    @api.depends('name')
     def _get_fname_electronic_invoice_xml(self):
         for record in self:
             if record.electronic_invoice_xml:
-                if record.number:
-                    record.fname_electronic_invoice_xml = '{}.xml'.format(record.number)
-                else:
-                    record.fname_electronic_invoice_xml = '{} {}.xml'.format(record.partner_id.vat, record.date_invoice)
+                record.fname_electronic_invoice_xml = '{}.xml'.format(record.name)
 
     def _get_data(self):
         partner_id = self.partner_id.parent_id or self.partner_id
         data = OrderedDict()
         data['Tipo'] = self.journal_id.code[:-1]
         data['Folio'] = self.journal_id.sequence_id.next_by_id()
-        date_invoice = datetime.strptime(self.date_invoice, '%Y-%m-%d')
-        date_invoice = datetime.strftime(date_invoice, DATE_FORMAT)
-        data['FechaEmision'] = date_invoice
-        date_due = datetime.strptime(self.date_invoice, '%Y-%m-%d')
-        date_due += timedelta(days=self.payment_term_id.line_ids[0].days)
-        date_due = datetime.strftime(date_due, DATE_FORMAT)
-        data['FechaVencimiento'] = date_due
-        data['FormaPago'] = 1 if self.payment_term_id.line_ids[0].days == 0 else 2
-        data['GlosaPago'] = self.payment_term_id.name
+        min_date = datetime.strptime(self.min_date, '%Y-%m-%d %H:%M:%S')
+        min_date = datetime.strftime(min_date, DATE_FORMAT)
+        data['FechaEmision'] = min_date
+        data['FechaVencimiento'] = min_date
+        data['TipoDespacho'] = self.despatch_type_id.code
+        data['TipoTraslado'] = self.translation_type_id.code
+        data['FormaPago'] = ''  # TODO check
+        data['GlosaPago'] = ''
         data['Sucursal'] = self.sucursal
         data['Vendedor'] = self.user_id.name
         if not partner_id or not partner_id.vat:
@@ -48,10 +73,15 @@ class AccountInvoice(models.Model):
         data['ReceptorComuna'] = partner_id.street2
         data['ReceptorCiudad'] = partner_id.city
         data['ReceptorFono'] = partner_id.phone or partner_id.mobile
+        data['TransPatente'] = ''  # TODO
+        data['TransRutChofer'] = ''  # TODO
+        data['TransNombreChofer'] = ''  # TODO
+        data['TransDireccionDestino'] = ''  # TODO
+        data['TransComunaDestino'] = ''  # TODO
+        data['TransCiudadDestino'] = ''  # TODO
         data['Unitarios'] = 1
-        exento = sum(line.price_subtotal for line in self.invoice_line_ids if not line.invoice_line_tax_ids)
-        data['Neto'] = self.amount_untaxed - exento
-        data['Exento'] = exento
+        data['Neto'] = round(self.amount_untaxed)
+        data['Exento'] = ''
         data['Iva'] = round(self.amount_tax)
         data['Total'] = round(self.amount_total)
         dict_string(data)
@@ -72,33 +102,32 @@ class AccountInvoice(models.Model):
 
     def _get_details(self):
         details = []
-        for i, line in enumerate(self.invoice_line_ids, start=1):
+        for i, line in enumerate(self.move_lines, start=1):
             ir_values_obj = self.env['ir.values']
             default_taxes = ir_values_obj.get_default('product.template', "taxes_id", company_id=self.company_id.id)
-            filtered_taxes = line.invoice_line_tax_ids.filtered(lambda line: line.id not in default_taxes)
+            filtered_taxes = line.tax_ids.filtered(lambda line: line.id not in default_taxes)
             details.append(dict_string({
                 'NrLinDetalle': i,
                 'Codigo': line.product_id.default_code,
                 'Descripcion': line.product_id.name,
                 'Glosa': line.name,
-                'Cantidad': line.quantity,
-                'UnidadMedida': line.uom_id.code,
-                'IndExento': 'NO' if line.invoice_line_tax_ids else 'SI',
+                'Cantidad': line.product_uom_qty,
+                'UnidadMedida': line.product_uom.code,
+                'IndExento': 'NO' if line.tax_ids else 'SI',
                 'Unitario': line.price_unit,
                 'DescuentoLinea': '$',  # TODO check
-                'ValorDescuento': line.discount * line.price_subtotal,  # TODO check
-                'SubTotal': line.price_subtotal,
+                'ValorDescuento': '',  # TODO check
+                'SubTotal': line.amount_untaxed,
                 # TODO second stage 'BrutoxBotella': line.,
-                'ImptoCodigo': filtered_taxes.code if line.invoice_line_tax_ids else '',
-                'ImptoTaza': filtered_taxes.amount if line.invoice_line_tax_ids else '',
-                'ImptoMonto': round(filtered_taxes.amount / 100 * line.price_subtotal) if line.invoice_line_tax_ids else '',
+                'ImptoCodigo': filtered_taxes.code if line.tax_ids else '',
+                'ImptoTaza': filtered_taxes.amount if line.tax_ids else '',
+                'ImptoMonto': round(filtered_taxes.amount / 100 * line.amount_untaxed) if line.tax_ids else '',
             }))
         return details
 
     @api.multi
     def send_xml(self):
-        response = super(AccountInvoice, self).send_xml()
-        self.number = response[2]
+        response = super(StockPicking, self).send_xml()
         if self.ei_error_code == '0':
             self.action_invoice_open()
         else:
