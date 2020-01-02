@@ -128,7 +128,3 @@ class StockPicking(models.Model):
     @api.multi
     def send_xml(self):
         response = super(StockPicking, self).send_xml()
-        if self.ei_error_code == '0':
-            self.action_invoice_open()
-        else:
-            return  # TODO log
