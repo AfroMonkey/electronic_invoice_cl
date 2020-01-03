@@ -13,7 +13,7 @@ class StockPicking(models.Model):
     _name = 'stock.picking'
     _inherit = ['stock.picking', 'electronic_invoice']
 
-    journal_id = fields.Many2one(  # TODO
+    journal_id = fields.Many2one(
         comodel_name='account.journal',
     )
     despatch_type_id = fields.Many2one(
@@ -33,6 +33,18 @@ class StockPicking(models.Model):
     )
     amount_total = fields.Float(
         compute='_get_amounts',
+    )
+    trans_plates = fields.Char(
+    )
+    trans_driver_vat = fields.Char(
+    )
+    trans_driver_name = fields.Char(
+    )
+    trans_destination_address = fields.Char(
+    )
+    trans_destination_commune = fields.Char(
+    )
+    trans_destination_city = fields.Char(
     )
 
     @api.depends('move_lines')
@@ -66,19 +78,19 @@ class StockPicking(models.Model):
         if not partner_id or not partner_id.vat:
             raise ValidationError(_('Partner must have VAT.'))
         data['ReceptorRut'] = '{}-{}'.format(partner_id.vat[2:-1], partner_id.vat[-1:])
-        data['ReceptorRazon'] = partner_id.name  # TODO company
+        data['ReceptorRazon'] = partner_id.name
         data['ReceptorGiro'] = self.bussines_field_id.desc
         data['ReceptorContacto'] = self.partner_id.name
         data['ReceptorDireccion'] = partner_id.street
         data['ReceptorComuna'] = partner_id.street2
         data['ReceptorCiudad'] = partner_id.city
         data['ReceptorFono'] = partner_id.phone or partner_id.mobile
-        data['TransPatente'] = ''  # TODO
-        data['TransRutChofer'] = ''  # TODO
-        data['TransNombreChofer'] = ''  # TODO
-        data['TransDireccionDestino'] = ''  # TODO
-        data['TransComunaDestino'] = ''  # TODO
-        data['TransCiudadDestino'] = ''  # TODO
+        data['TransPatente'] = self.trans_plates
+        data['TransRutChofer'] = self.trans_driver_vat
+        data['TransNombreChofer'] = self.trans_driver_name
+        data['TransDireccionDestino'] = self.trans_destination_address
+        data['TransComunaDestino'] = self.trans_destination_commune
+        data['TransCiudadDestino'] = self.trans_destination_city
         data['Unitarios'] = 1
         data['Neto'] = round(self.amount_untaxed)
         data['Exento'] = ''
@@ -118,7 +130,7 @@ class StockPicking(models.Model):
                 'DescuentoLinea': '$',  # TODO check
                 'ValorDescuento': '',  # TODO check
                 'SubTotal': line.amount_untaxed,
-                # TODO second stage 'BrutoxBotella': line.,
+                # TODO 'BrutoxBotella'
                 'ImptoCodigo': filtered_taxes.code if line.tax_ids else '',
                 'ImptoTaza': filtered_taxes.amount if line.tax_ids else '',
                 'ImptoMonto': round(filtered_taxes.amount / 100 * line.amount_untaxed) if line.tax_ids else '',

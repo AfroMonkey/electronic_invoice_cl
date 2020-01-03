@@ -21,6 +21,17 @@
                 <field name="despatch_type_id" attrs="{'required': [('journal_id', '=', %(account_journal_52)d)]}"/>
                 <field name="translation_type_id" attrs="{'required': [('journal_id', '=', %(account_journal_52)d)]}"/>
             </field>
+            <xpath expr="//page[@name='extra']/group" position="inside">
+                <group>
+                    <field name="trans_plates" attrs="{'required': [('journal_id', '=', %(account_journal_52)d)]}"/>
+                    <field name="trans_driver_vat" attrs="{'required': [('journal_id', '=', %(account_journal_52)d)]}"/>
+                    <field name="trans_driver_name" attrs="{'required': [('journal_id', '=', %(account_journal_52)d)]}"/>
+                    <field name="trans_destination_address" attrs="{'required': [('journal_id', '=', %(account_journal_52)d)]}"/>
+                    <field name="trans_destination_commune" attrs="{'required': [('journal_id', '=', %(account_journal_52)d)]}"/>
+                    <field name="trans_destination_city" attrs="{'required': [('journal_id', '=', %(account_journal_52)d)]}"/>
+                </group>
+            </xpath>
+
 
             <field name="partner_id" position="after">
                 <field name="bussines_field_id" attrs="{'required': [('journal_id', '=', %(account_journal_52)d)]}"/>

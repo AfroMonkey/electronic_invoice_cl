@@ -41,7 +41,7 @@ class AccountInvoice(models.Model):
         if not partner_id or not partner_id.vat:
             raise ValidationError(_('Partner must have VAT.'))
         data['ReceptorRut'] = '{}-{}'.format(partner_id.vat[2:-1], partner_id.vat[-1:])
-        data['ReceptorRazon'] = partner_id.name  # TODO company
+        data['ReceptorRazon'] = partner_id.name
         data['ReceptorGiro'] = self.bussines_field_id.desc
         data['ReceptorContacto'] = self.partner_id.name
         data['ReceptorDireccion'] = partner_id.street
@@ -88,7 +88,7 @@ class AccountInvoice(models.Model):
                 'DescuentoLinea': '$',  # TODO check
                 'ValorDescuento': line.discount * line.price_subtotal,  # TODO check
                 'SubTotal': line.price_subtotal,
-                # TODO second stage 'BrutoxBotella': line.,
+                # TODO 'BrutoxBotella'
                 'ImptoCodigo': filtered_taxes.code if line.invoice_line_tax_ids else '',
                 'ImptoTaza': filtered_taxes.amount if line.invoice_line_tax_ids else '',
                 'ImptoMonto': round(filtered_taxes.amount / 100 * line.price_subtotal) if line.invoice_line_tax_ids else '',
