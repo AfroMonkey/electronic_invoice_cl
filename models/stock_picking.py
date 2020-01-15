@@ -140,7 +140,7 @@ class StockPicking(models.Model):
     @api.multi
     def send_xml(self):
         response = super(StockPicking, self).send_xml()
-        if self.ei_error_code == '0':
+        if self.ei_error_code == '0' and response[2] != '00':
             self.do_new_transfer()
             self.name = response[2]
         else:
