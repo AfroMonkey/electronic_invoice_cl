@@ -98,8 +98,8 @@ class AccountInvoice(models.Model):
     @api.multi
     def send_xml(self):
         response = super(AccountInvoice, self).send_xml()
-        self.number = response[2]
         if self.ei_error_code == '0':
             self.action_invoice_open()
+            self.number = response[2]
         else:
             return  # TODO log
