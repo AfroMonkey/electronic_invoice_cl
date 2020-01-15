@@ -139,6 +139,9 @@ class StockPicking(models.Model):
 
     @api.multi
     def send_xml(self):
+        for line in self.pack_operation_product_ids:
+            if line.qty_done == 0:
+                raise ValidationError(_('All operations must have a valid qty'))
         response = super(StockPicking, self).send_xml()
         if self.ei_error_code == '0' and response[2] != '00':
             self.do_new_transfer()
