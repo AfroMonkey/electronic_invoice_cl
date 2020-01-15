@@ -141,6 +141,7 @@ class StockPicking(models.Model):
     def send_xml(self):
         response = super(StockPicking, self).send_xml()
         if self.ei_error_code == '0':
+            self.do_new_transfer()
             self.name = response[2]
         else:
             return  # TODO log
