@@ -15,7 +15,8 @@ def dict_string(d):
     for key in d:
         if type(d[key]) == unicode:
             d[key] = unidecode(d[key] or '')
-        d[key] = str(d[key] or '')
+        if type(d[key]) not in [float or int]:
+            d[key] = str(d[key] or '')
     return d
 
 
