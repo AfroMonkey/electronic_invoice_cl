@@ -92,10 +92,10 @@ class StockPicking(models.Model):
         data['TransComunaDestino'] = self.trans_destination_commune
         data['TransCiudadDestino'] = self.trans_destination_city
         data['Unitarios'] = 1
-        data['Neto'] = round(self.amount_untaxed)
-        data['Exento'] = ''
-        data['Iva'] = round(self.amount_tax)
-        data['Total'] = round(self.amount_total)
+        data['Neto'] = int(round(self.amount_untaxed))
+        data['Exento'] = int(0)
+        data['Iva'] = int(round(self.amount_tax))
+        data['Total'] = int(round(self.amount_total))
         dict_string(data)
         return data
 
