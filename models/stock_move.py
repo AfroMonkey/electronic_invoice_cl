@@ -35,3 +35,13 @@ class StockMove(models.Model):
     def _get_amount_total(self):
         for record in self:
             record.amount_total = record.amount_untaxed + record.amount_tax
+
+    @api.model
+    def create(self, vals):
+        r = super(StockMove, self).create(vals)
+        if vals.get('tax_ids'):
+            print(vals['tax_ids'])
+            r.write({
+                'tax_ids': [(6, 0, vals['tax_ids'].ids)],
+            })
+        return r
