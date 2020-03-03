@@ -39,7 +39,7 @@ class StockMove(models.Model):
     @api.model
     def create(self, vals):
         result = super(StockMove, self).create(vals)
-        if vals.get('tax_ids') and vals['tax_ids'][0][2]:
+        if vals.get('tax_ids') and len(vals['tax_ids']) and len(vals['tax_ids'][0]) > 2:
             result.write({
                 'tax_ids': [(6, 0, vals['tax_ids'][0][2])],
             })
