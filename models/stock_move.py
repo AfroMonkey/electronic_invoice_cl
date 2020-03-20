@@ -39,11 +39,13 @@ class StockMove(models.Model):
     @api.model
     def create(self, vals):
         result = super(StockMove, self).create(vals)
-        try:
-            if vals.get('tax_ids'):
+        if vals.get('tax_ids'):
+            try:
                 result.write({
                     'tax_ids': [(6, 0, vals['tax_ids'][0][2])],
                 })
-        except IndexError:
-            pass
+            except IndexError:
+                result.write({
+                    'tax_ids': [(6, 0, vals['tax_ids'].ids)],
+                })
         return result
