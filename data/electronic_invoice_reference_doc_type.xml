@@ -1,12 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <record id="electronic_invoice_reference_doc_type_39" model="electronic_invoice.reference_doc_type">
+        <field name="code">33</field>
+        <field name="desc">Factura Electrónica.</field>
+    </record>
+    <record id="electronic_invoice_reference_doc_type_39" model="electronic_invoice.reference_doc_type">
+        <field name="code">34</field>
+        <field name="desc">Factura No Afecta o Exenta Electrónica.</field>
+    </record>
+    <record id="electronic_invoice_reference_doc_type_39" model="electronic_invoice.reference_doc_type">
+        <field name="code">35</field>
+        <field name="desc">Boleta.</field>
+    </record>
+    <record id="electronic_invoice_reference_doc_type_39" model="electronic_invoice.reference_doc_type">
+        <field name="code">38</field>
+        <field name="desc">Boleta exenta.</field>
+    </record>
+    <record id="electronic_invoice_reference_doc_type_39" model="electronic_invoice.reference_doc_type">
         <field name="code">39</field>
         <field name="desc">Boleta Electrónica.</field>
     </record>
     <record id="electronic_invoice_reference_doc_type_41" model="electronic_invoice.reference_doc_type">
         <field name="code">41</field>
         <field name="desc">Boleta Exenta Electrónica.</field>
+    </record>
+    <record id="electronic_invoice_reference_doc_type_39" model="electronic_invoice.reference_doc_type">
+        <field name="code">43</field>
+        <field name="desc">Liquidación-Factura Electrónica.</field>
+    </record>
+    <record id="electronic_invoice_reference_doc_type_39" model="electronic_invoice.reference_doc_type">
+        <field name="code">46</field>
+        <field name="desc">Factura de Compra Electrónica.</field>
+    </record>
+    <record id="electronic_invoice_reference_doc_type_39" model="electronic_invoice.reference_doc_type">
+        <field name="code">48</field>
+        <field name="desc">Pago electrónico.</field>
+    </record>
+    <record id="electronic_invoice_reference_doc_type_50" model="electronic_invoice.reference_doc_type">
+        <field name="code">50</field>
+        <field name="desc">Guía de Despacho.</field>
+    </record>
+    <record id="electronic_invoice_reference_doc_type_52" model="electronic_invoice.reference_doc_type">
+        <field name="code">52</field>
+        <field name="desc">Guía de Despacho Electrónica.</field>
     </record>
     <record id="electronic_invoice_reference_doc_type_56" model="electronic_invoice.reference_doc_type">
         <field name="code">56</field>
@@ -16,13 +52,21 @@
         <field name="code">61</field>
         <field name="desc">Nota Crédito Electrónica.</field>
     </record>
-    <record id="electronic_invoice_reference_doc_type_50" model="electronic_invoice.reference_doc_type">
-        <field name="code">50</field>
-        <field name="desc">Guía de Despacho.</field>
+    <record id="electronic_invoice_reference_doc_type_61" model="electronic_invoice.reference_doc_type">
+        <field name="code">103</field>
+        <field name="desc">Liquidación.</field>
     </record>
-    <record id="electronic_invoice_reference_doc_type_52" model="electronic_invoice.reference_doc_type">
-        <field name="code">52</field>
-        <field name="desc">Guía de Despacho Electrónica.</field>
+    <record id="electronic_invoice_reference_doc_type_61" model="electronic_invoice.reference_doc_type">
+        <field name="code">110</field>
+        <field name="desc">Factura de Exportación Electrónica.</field>
+    </record>
+    <record id="electronic_invoice_reference_doc_type_61" model="electronic_invoice.reference_doc_type">
+        <field name="code">111</field>
+        <field name="desc">Nota de Débito de Exportación Electrónica.</field>
+    </record>
+    <record id="electronic_invoice_reference_doc_type_61" model="electronic_invoice.reference_doc_type">
+        <field name="code">112</field>
+        <field name="desc">Nota de Crédito de Exportación Electrónica.</field>
     </record>
     <record id="electronic_invoice_reference_doc_type_801" model="electronic_invoice.reference_doc_type">
         <field name="code">801</field>

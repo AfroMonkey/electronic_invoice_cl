@@ -2,7 +2,7 @@
 
 {
     'name': 'Electronic Invoice Chile',
-    'version': '1.13.3',
+    'version': '1.13.4',
     'author': 'Navarro Moisés',
     'website': 'https://github.com/AfroMonkey/electronic_invoice_cl',
     'category': 'Localization',

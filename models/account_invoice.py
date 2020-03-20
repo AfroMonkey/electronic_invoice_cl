@@ -76,6 +76,7 @@ class AccountInvoice(models.Model):
             ir_values_obj = self.env['ir.values']
             default_taxes = ir_values_obj.get_default('product.template', "taxes_id", company_id=self.company_id.id)
             filtered_taxes = line.invoice_line_tax_ids.filtered(lambda line: line.id not in default_taxes)
+            discount = (line.quantity * line.price_unit) * line.discount / 100
             details.append(dict_string({
                 'NrLinDetalle': i,
                 'Codigo': line.product_id.default_code,
@@ -86,8 +87,8 @@ class AccountInvoice(models.Model):
                 'IndExento': 'NO' if line.invoice_line_tax_ids else 'SI',
                 'Unitario': line.price_unit,
                 'DescuentoLinea': '$',  # TODO check
-                'ValorDescuento': line.discount * line.price_subtotal,  # TODO check
-                'SubTotal': line.price_subtotal,
+                'ValorDescuento': discount,  # TODO check
+                'SubTotal': line.quantity * line.price_unit - discount,
                 # TODO 'BrutoxBotella'
                 'ImptoCodigo': filtered_taxes.code if line.invoice_line_tax_ids else '',
                 'ImptoTaza': filtered_taxes.amount if line.invoice_line_tax_ids else '',
