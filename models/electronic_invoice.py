@@ -85,7 +85,8 @@ class ElectronicInvoice(models.AbstractModel):
             id_company=self.company_id.ei_id_company,
             environment=self.company_id.ei_environment,
             ringing=self.company_id.ei_ringing,
-            xml_string=xml_string
+            xml_string=xml_string,
+            folio=data['Folio']
         )
         self.ei_error_code = response[0]
         self.ei_status = response[3]

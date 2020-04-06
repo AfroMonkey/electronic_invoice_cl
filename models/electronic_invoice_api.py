@@ -104,7 +104,12 @@ def get_xml(data, references, details):
     return '<?xml version="1.0" encoding="UTF-8"?>' + etree.tostring(DTE, pretty_print=True)
 
 
-def send_xml(url, user, password, id_user, id_company, environment, ringing, xml_string):
+def send_xml(url, user, password, id_user, id_company, environment, ringing, xml_string, folio):
+    if environment == '0':
+        res = '0|33|' + folio +'|Documento Creado Exitosamente!|http://desarrollo.yzingenieria.cl/desarrollo/descargar_archivo.php?ID=h4s=&CODIGO_SII=hoQ=&ambiente=1&id_empre=g4M=|http://desarrollo.yzingenieria.cl/desarrollo/descargar_timbre.php?ID=h4s=&CODIGO_SII=hoQ=&ambiente=1&id_empre=g4M='
+        res = res.split('|')
+        return res
+
     client = Client(url)
 
     res = client.service.recibexml(
