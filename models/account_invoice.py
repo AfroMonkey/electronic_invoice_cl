@@ -49,11 +49,17 @@ class AccountInvoice(models.Model):
         data['ReceptorCiudad'] = partner_id.city
         data['ReceptorFono'] = partner_id.phone or partner_id.mobile
         data['Unitarios'] = 1
-        exento = sum(line.price_subtotal for line in self.invoice_line_ids if not line.invoice_line_tax_ids)
-        data['Neto'] = int(round(self.amount_untaxed - exento))
-        data['Exento'] = int(round(exento))
-        data['Iva'] = int(round(self.amount_tax))
-        data['Total'] = int(round(self.amount_total))
+
+        untaxed = sum(((line.quantity * line.price_unit) - ((line.quantity * line.price_unit) * line.discount / 100)) for line in self.invoice_line_ids)
+        exempt = sum(line.price_subtotal for line in self.invoice_line_ids if not line.invoice_line_tax_ids)
+        ir_values_obj = self.env['ir.values']
+        default_taxes = ir_values_obj.get_default('product.template', "taxes_id", company_id=self.company_id.id)
+        tax = sum(((line.quantity * line.price_unit * (line.invoice_line_tax_ids.filtered(lambda line: line.id in default_taxes)).amount / 100)) for line in self.invoice_line_ids if line.invoice_line_tax_ids)
+
+        data['Neto'] = int(round(untaxed - exempt))
+        data['Exento'] = int(round(exempt))
+        data['Iva'] = int(round(tax))
+        data['Total'] = int(round(untaxed + exempt + tax))
         dict_string(data)
         return data
 
@@ -100,7 +106,7 @@ class AccountInvoice(models.Model):
     def send_xml(self):
         response = super(AccountInvoice, self).send_xml()
         if self.ei_error_code == '0':
+            self.move_name = response[2]
             self.action_invoice_open()
-            self.number = response[2]
         else:
             return  # TODO log

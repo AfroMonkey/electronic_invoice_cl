@@ -5,12 +5,13 @@
         <field name="model">account.invoice</field>
         <field name="inherit_id" ref="account.invoice_form"/>
         <field name="arch" type="xml">
-            <button name="action_invoice_open" position="after">
+            <button name="action_invoice_open" position="before">
                 <field name="ei_error_code" invisible="1"/>
                 <button name="send_xml" string="Send XML" type="object" class="oe_highlight" attrs="{'invisible': [('ei_error_code','=','0')]}"/>
             </button>
             <button name="action_invoice_open" position="attributes">
-                <attribute name="invisible">1</attribute>
+                <attribute name="string">Factura interna</attribute>
+                <attribute name="class">normal</attribute>
             </button>
             <field name="fiscal_position_id" position="before">
                 <field name="sucursal"/>
