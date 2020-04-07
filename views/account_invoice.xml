@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <odoo>
     <record id="electronic_invoice_form" model="ir.ui.view">
         <field name="name">account.electronic.invoice.form</field>
@@ -7,7 +7,20 @@
         <field name="arch" type="xml">
             <button name="action_invoice_open" position="before">
                 <field name="ei_error_code" invisible="1"/>
-                <button name="send_xml" string="Send XML" type="object" class="oe_highlight" attrs="{'invisible': [('ei_error_code','=','0')]}"/>
+                <button name="send_xml" string="Send XML" type="object" class="oe_highlight" attrs="{'invisible': [
+                '|',
+                ('ei_error_code','=','0'),
+                ('journal_id', 'not in', [
+                    %(account_journal_33)d,
+                    %(account_journal_34)d,
+                    %(account_journal_39)d,
+                    %(account_journal_41)d,
+                    %(account_journal_52)d,
+                    %(account_journal_56)d,
+                    %(account_journal_61)d,
+                    ]
+                ),
+            ]}"/>
             </button>
             <button name="action_invoice_open" position="attributes">
                 <attribute name="string">Factura interna</attribute>
