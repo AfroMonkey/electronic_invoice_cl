@@ -18,10 +18,6 @@ class ElectronicInvoice(models.AbstractModel):
     )
     sucursal = fields.Char(
     )
-    reference_ids = fields.One2many(
-        comodel_name='account.invoice.reference',
-        inverse_name='invoice_id',
-    )
     electronic_invoice_xml = fields.Binary(
         attachment=True,
         copy=False,

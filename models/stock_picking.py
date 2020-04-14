@@ -46,6 +46,10 @@ class StockPicking(models.Model):
     )
     trans_destination_city = fields.Char(
     )
+    reference_ids = fields.One2many(
+        comodel_name='stock.picking.reference',
+        inverse_name='picking_id',
+    )
 
     @api.depends('move_lines')
     def _get_amounts(self):

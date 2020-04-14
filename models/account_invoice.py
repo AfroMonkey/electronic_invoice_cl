@@ -13,6 +13,11 @@ class AccountInvoice(models.Model):
     _name = 'account.invoice'
     _inherit = ['account.invoice', 'electronic_invoice']
 
+    reference_ids = fields.One2many(
+        comodel_name='account.invoice.reference',
+        inverse_name='invoice_id',
+    )
+
     @api.depends('number')
     def _get_fname_electronic_invoice_xml(self):
         for record in self:
